@@ -1,8 +1,6 @@
 import Image from "next/image";
 
 export default function Cards({ product }) {
-	console.log(product);
-
 	return (
 		<div className="p-2">
 			<div className="relative" style={{ paddingTop: "100%" }}>

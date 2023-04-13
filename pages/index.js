@@ -1,4 +1,3 @@
-import Image from "next/image";
 import BreadCrumbs from "../components/BreadCrumbs";
 import PDPImages from "../components/PDPImages";
 import AddCart from "../components/AddCart";

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "./Button";
 
 export default function AddCart() {
 	return (
@@ -16,16 +17,19 @@ export default function AddCart() {
 					</li>
 				</ul>
 			</li>
-			<li>
+			<li className="mt-3">
 				Worcester Sales and Service, Inc.
-				<p>34200 LORAIN ROAD, NORTH RIDGEVILLE, OH 44039</p>
-				<p>
-					<a href="#top" className="underline">
-						Change Dealer
-					</a>
-				</p>
+				<br />
+				34200 LORAIN ROAD
+				<br />
+				NORTH RIDGEVILLE, OH 44039
+				<br />
+				<Button
+					title="Change Dealer"
+					addClass="inline-block py-1 px-3 text-xs"
+				/>
 			</li>
-			<li>
+			<li className="mt-3">
 				Delivering to: 44107
 				<p>
 					<a href="#top" className="underline">
@@ -33,8 +37,8 @@ export default function AddCart() {
 					</a>
 				</p>
 			</li>
-			<li>Availability: Pick up in 1-2 days</li>
-			<li>
+			<li className="mt-3">Availability: Pick up in 1-2 days</li>
+			<li className="mt-3">
 				<ul className="flex">
 					<li>
 						<p>Dealer Delivery</p>
@@ -51,8 +55,8 @@ export default function AddCart() {
 					</li>
 				</ul>
 			</li>
-			<li>
-				<button>Add to Cart</button>
+			<li className="mt-3">
+				<Button title="Add to Cart" addClass="w-full p-3 uppercase font-bold" />
 			</li>
 		</ul>
 	);
