@@ -8,7 +8,7 @@ import Specs from "../components/Specs";
 import Maintenance from "../components/Maintenance";
 import DocumentsGuides from "../components/DocumentsGuides";
 import FindParts from "../components/FindParts";
-import RelatedProducts from "../components/RelatedProducts";
+import RelatedProducts from "../components/RelatedProducts/RelatedProducts";
 import H1 from "../components/PDP/H1";
 import H2 from "../components/PDP/H2";
 import Price from "../components/PDP/Price";
@@ -16,11 +16,11 @@ import Price from "../components/PDP/Price";
 export default function Index() {
 	return (
 		<main className="p-5">
-			<ul className="flex flex-col md:flex-row min-h-full flex-wrap">
+			<ul className="md:flex flex-wrap">
 				<li className="flex flex-wrap basis-full">
 					<BreadCrumbs />
 				</li>
-				<li className="md:basis-9/12">
+				<li className="lg:w-8/12 py-4">
 					<div className="md:hidden">
 						<H1 />
 						<H2 />
@@ -28,6 +28,9 @@ export default function Index() {
 					</div>
 					<div>
 						<PDPImages />
+						<div className="md:hidden">
+							<AddCart />
+						</div>
 						<Reviews />
 						<Description />
 						<Specs />
@@ -37,8 +40,8 @@ export default function Index() {
 						<RelatedProducts />
 					</div>
 				</li>
-				<li className="md:basis-3/12 sticky top-0 h-full">
-					<div className="md:px-6">
+				<li className="hidden lg:block lg:w-4/12 sticky top-0 h-full">
+					<div className="lg:px-6 py-4">
 						<div className="">
 							<H1 />
 							<H2 />
