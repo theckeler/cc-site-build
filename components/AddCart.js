@@ -4,7 +4,9 @@ import Button from "./Button";
 export default function AddCart() {
 	return (
 		<ul className="min-w-full min-h-full">
-			<li>You&rsquo;re shopping available inventory from:</li>
+			<li>
+				<strong>You&rsquo;re shopping available inventory from:</strong>
+			</li>
 			<li>
 				<ul className="flex flex-col">
 					<li className="">
@@ -18,7 +20,7 @@ export default function AddCart() {
 				</ul>
 			</li>
 			<li className="mt-3">
-				Worcester Sales and Service, Inc.
+				<strong>Worcester Sales and Service, Inc.</strong>
 				<br />
 				34200 LORAIN ROAD
 				<br />
@@ -30,14 +32,12 @@ export default function AddCart() {
 				/>
 			</li>
 			<li className="mt-3">
-				Delivering to: 44107
-				<p>
-					<a href="#top" className="underline">
-						Change
-					</a>
-				</p>
+				<strong>Delivering to:</strong> 44107
+				<Button title="Change" addClass="ml-3 inline-block py-1 px-3 text-xs" />
 			</li>
-			<li className="mt-3">Availability: Pick up in 1-2 days</li>
+			<li className="mt-3">
+				<strong>Availability:</strong> Pick up in 1-2 days
+			</li>
 			<li className="mt-3">
 				<ul className="flex">
 					<li>
