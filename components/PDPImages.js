@@ -53,7 +53,9 @@ export default function Home() {
 			</li>
 			{imgs.map(function (img, i) {
 				return (
-					<li className={`basis-6/12 ${!!img.hidden && "hidden"}`} key={i}>
+					<li
+						className={`gallery-hidden basis-6/12 ${!!img.hidden && "hidden"}`}
+						key={i}>
 						<div
 							className="relative min-w-full min-h-full"
 							style={{ paddingTop: "100%" }}>
@@ -62,8 +64,15 @@ export default function Home() {
 					</li>
 				);
 			})}
-			<li className="basis-full flex justify-center">
-				<button className="px-8 py-4 bg-gray-300 border rounded flex items-center ">
+			<li id="gallery-button" className="basis-full flex justify-center">
+				<button
+					className="px-8 py-4 bg-gray-300 border rounded flex items-center"
+					onClick={(e) => {
+						document.querySelector("#gallery-button").classList.add("hidden");
+						document.querySelectorAll(".gallery-hidden").forEach((block) => {
+							block.classList.remove("hidden");
+						});
+					}}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="26"
