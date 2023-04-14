@@ -36,7 +36,7 @@ export default function Home() {
 		<ul className="md:flex flex-wrap mb-6">
 			<li className="basis-full">
 				<div
-					className="relative min-w-full min-h-full "
+					className="relative min-w-full min-h-full"
 					style={{ paddingTop: "56.6%" }}>
 					<embed
 						src="https://www.youtube.com/embed/mrqqpGpPYCM"
@@ -44,10 +44,11 @@ export default function Home() {
 						type="video/mp4"
 						width="100%"
 						height="100%"
-						className="absolute top-0 left-0"
+						className="absolute top-0 left-0 w-full"
 						allow="autoplay; encrypted-media; picture-in-picture"
 						allowfullscreen
-						title=""></embed>
+						title=""
+					/>
 				</div>
 			</li>
 			{imgs.map(function (img, i) {

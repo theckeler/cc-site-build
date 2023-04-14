@@ -15,11 +15,11 @@ import Price from "../components/PDP/Price";
 export default function Index() {
 	return (
 		<main className="p-5">
-			<ul className="md:flex flex-wrap">
+			<ul className="md:flex flex-wrap container mx-auto">
 				<li className="flex flex-wrap basis-full">
 					<BreadCrumbs />
 				</li>
-				<li className="lg:w-8/12 py-4">
+				<li className="md:w-8/12 py-4">
 					<div className="md:hidden">
 						<H1 />
 						<H2 />
@@ -39,8 +39,8 @@ export default function Index() {
 						<RelatedProducts />
 					</div>
 				</li>
-				<li className="hidden lg:block lg:w-4/12 sticky top-0 h-full">
-					<div className="lg:px-6 py-4">
+				<li className="hidden md:block md:w-4/12 sticky top-0 h-full">
+					<div className="md:px-6 py-4">
 						<div className="">
 							<H1 />
 							<H2 />
