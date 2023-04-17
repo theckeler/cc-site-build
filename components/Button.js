@@ -1,7 +1,5 @@
-export default function Button({ title, addClass, addStyle }) {
+export default function Button({ title, addClass, addStyle, icon }) {
 	return (
-		<button className={`text-center bg-amber-400 rounded-2xl ${addClass}`}>
-			{title}
-		</button>
+		<button className={`text-center rounded-2xl ${addClass}`}>{title}</button>
 	);
 }

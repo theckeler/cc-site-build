@@ -64,9 +64,11 @@ export default function Home() {
 					</li>
 				);
 			})}
-			<li id="gallery-button" className="basis-full flex justify-center">
+			<li
+				id="gallery-button"
+				className="basis-full flex justify-center relative pb-8">
 				<button
-					className="px-8 py-4 bg-gray-300 border rounded flex items-center"
+					className="px-8 py-4 bg-gray-300 border rounded flex items-center absolute -top-6"
 					onClick={(e) => {
 						document.querySelector("#gallery-button").classList.add("hidden");
 						document.querySelectorAll(".gallery-hidden").forEach((block) => {

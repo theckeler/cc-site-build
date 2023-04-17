@@ -2,7 +2,7 @@ import BreadCrumbs from "../components/BreadCrumbs";
 import PDPImages from "../components/PDPImages";
 import AddCart from "../components/AddCart";
 import Reviews from "../components/Reviews";
-import Description from "../components/Description";
+import Features from "../components/Features/Features";
 import Specs from "../components/Specs";
 import Maintenance from "../components/Maintenance";
 import DocumentsGuides from "../components/DocumentsGuides";
@@ -31,7 +31,7 @@ export default function Index() {
 							<AddCart />
 						</div>
 						<Reviews />
-						<Description />
+						<Features />
 						<Specs />
 						<Maintenance />
 						<DocumentsGuides />
