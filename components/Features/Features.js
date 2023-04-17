@@ -1,5 +1,4 @@
 import ToggleView from "../Icons/ToggleView";
-import Image from "next/image";
 import Cards from "./Cards";
 
 export default function DesFeaturescription() {

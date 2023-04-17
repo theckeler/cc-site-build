@@ -1,6 +1,8 @@
-export default function ButtonEdit({ title, addClass, addStyle }) {
+export default function ButtonEdit({ title, addClass, addStyle, addClick }) {
 	return (
-		<button class="text-center rounded-sm inline-block p-2 text-xs h-full uppercase font-bold bg-gray-200">
+		<button
+			className="text-center rounded-sm inline-block p-2 text-xs h-full uppercase font-bold bg-gray-200"
+			onClick={addClick}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="2em"

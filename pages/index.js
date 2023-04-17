@@ -15,7 +15,7 @@ import Price from "../components/PDP/Price";
 export default function Index() {
 	return (
 		<main className="p-5">
-			<ul className="md:flex flex-wrap container mx-auto">
+			<ul className="max-w-screen-2xl md:flex flex-wrap mx-auto">
 				<li className="flex flex-wrap basis-full">
 					<BreadCrumbs />
 				</li>

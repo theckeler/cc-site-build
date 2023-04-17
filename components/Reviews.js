@@ -3,6 +3,7 @@ import ToggleView from "./Icons/ToggleView";
 export default function Reviews() {
 	return (
 		<div className="border-y">
+			<a name="reviews" id="reviews" />
 			<ul className="flex items-center px-5 py-3">
 				<li>Reviews</li>
 				<li className="flex ml-auto">

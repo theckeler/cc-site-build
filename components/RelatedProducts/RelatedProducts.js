@@ -58,10 +58,13 @@ export default function RelatedProducts() {
 					</li>
 				</ul>
 				<div className="mb-6 overflow-scrollbar overflow-x-auto py-2">
-					<ul className="md:flex ">
+					<ul className="md:flex">
 						{products.map(function (product, i) {
 							return (
-								<li key={i} className="min-w-full" style={{ minWidth: "22%" }}>
+								<li
+									key={i}
+									className="min-w-full p-2"
+									style={{ minWidth: "22%" }}>
 									<Cards {...{ product }} />
 								</li>
 							);
