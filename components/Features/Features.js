@@ -29,11 +29,14 @@ export default function DesFeaturescription() {
 					document
 						.querySelector("#description-text")
 						.classList.toggle("hidden");
+					document
+						.querySelector("#toggle-description")
+						.classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
 					<li>Features</li>
 					<li className="ml-auto">
-						<ToggleView />
+						<ToggleView id="toggle-description" />
 					</li>
 				</ul>
 			</button>

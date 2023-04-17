@@ -49,29 +49,39 @@ const products = [
 
 export default function RelatedProducts() {
 	return (
-		<>
-			<div className="border-y">
+		<div className="border-y">
+			<button
+				className="w-full"
+				onClick={(e) => {
+					document.querySelector("#related-text").classList.toggle("hidden");
+					document
+						.querySelector("#toggle-related")
+						.classList.toggle("rotate-180");
+				}}>
 				<ul className="flex items-center px-5 py-3">
 					<li>Related Products</li>
 					<li className="ml-auto">
-						<ToggleView addClass="rotate-180" />
+						<ToggleView addClass="rotate-180" id="toggle-related" />
 					</li>
 				</ul>
-				<div className="mb-6 overflow-scrollbar overflow-x-auto py-2">
-					<ul className="md:flex">
-						{products.map(function (product, i) {
-							return (
-								<li
-									key={i}
-									className="min-w-full p-2"
-									style={{ minWidth: "22%" }}>
-									<Cards {...{ product }} />
-								</li>
-							);
-						})}
-					</ul>
-				</div>
+			</button>
+
+			<div
+				className="mb-6 overflow-scrollbar overflow-x-auto py-2"
+				id="related-text">
+				<ul className="md:flex">
+					{products.map(function (product, i) {
+						return (
+							<li
+								key={i}
+								className="min-w-full p-2"
+								style={{ minWidth: "22%" }}>
+								<Cards {...{ product }} />
+							</li>
+						);
+					})}
+				</ul>
 			</div>
-		</>
+		</div>
 	);
 }
