@@ -21,7 +21,7 @@ export default function DesFeaturescription() {
 	];
 
 	return (
-		<div className="border-y" id="description">
+		<div className="border-b" id="description">
 			<button
 				className="w-full"
 				id="description-button"

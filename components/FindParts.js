@@ -2,7 +2,7 @@ import Link from "./Icons/Link";
 
 export default function FindParts() {
 	return (
-		<div className="border-y">
+		<div className="border-b">
 			<a href="#top">
 				<ul className="flex items-center px-5 py-3">
 					<li>Find Parts</li>

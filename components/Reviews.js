@@ -2,7 +2,7 @@ import ToggleView from "./Icons/ToggleView";
 
 export default function Reviews() {
 	return (
-		<div className="border-y">
+		<div className="border-b">
 			<a name="reviews" id="reviews" />
 			<button
 				className="w-full"

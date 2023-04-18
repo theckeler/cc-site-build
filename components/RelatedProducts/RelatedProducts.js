@@ -49,7 +49,7 @@ const products = [
 
 export default function RelatedProducts() {
 	return (
-		<div className="border-y">
+		<div className="border-b">
 			<button
 				className="w-full"
 				onClick={(e) => {
