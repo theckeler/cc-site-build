@@ -52,7 +52,7 @@ export default function DealerInfo() {
 						<li className="basis-1/4">
 							<Button
 								title="Next"
-								addClass="p-3 text-sm font-bold bg-amber-400 rounded-r-lg"
+								addClass="flex items-center justify-center p-3 text-sm font-bold bg-amber-400 rounded-r-lg"
 							/>
 						</li>
 					</ul>

@@ -1,5 +1,5 @@
 import ToggleView from "./Icons/ToggleView";
-import Cards from "../components/RelatedProducts/Cards";
+import Cards from "./RelatedProducts/Card";
 import Button from "../components/Button";
 
 const articles = [
@@ -73,7 +73,7 @@ export default function Maintenance() {
 									<Button
 										title="Read Article"
 										noIcon={false}
-										addClass="px-1 py-2 mt-auto text-sm font-bold bg-gray-300 rounded-lg w-full"
+										addClass="flex items-center justify-center  px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full"
 									/>
 								</div>
 							</li>

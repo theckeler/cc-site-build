@@ -25,7 +25,7 @@ export default function Index() {
 					<li className="col-span-12 lg:col-span-7 xl:col-span-8">
 						<Gallery />
 					</li>
-					<li className="col-span-12 lg:col-span-5 xl:col-span-4 lg:sticky lg:top-0 self-start">
+					<li className="col-span-12 lg:col-span-5 xl:col-span-4 lg:sticky lg:top-0 self-start row-span-2">
 						<div className="md:px-6 py-4">
 							<H1 />
 							<H2 />

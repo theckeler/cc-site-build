@@ -1,6 +1,6 @@
 import ToggleView from "../Icons/ToggleView";
 import Image from "next/image";
-import Cards from "./Cards";
+import Card from "./Card";
 
 const products = [
 	{
@@ -79,7 +79,7 @@ export default function RelatedProducts() {
 					{products.map(function (product, i) {
 						return (
 							<li key={i} className="p-2" style={{ minWidth: "240px" }}>
-								<Cards {...{ product }} />
+								<Card {...{ product }} />
 							</li>
 						);
 					})}

@@ -49,9 +49,9 @@ export default function Specs() {
 						);
 					})}
 
-					<ul class="mb-6">
-						<li class="font-bold text-xl uppercase">Disclaimers</li>
-						<li class="attribute-values mb-2 text-xs" tabindex="0">
+					<ul className="mb-6">
+						<li className="font-bold text-xl uppercase">Disclaimers</li>
+						<li className="attribute-values mb-2 text-xs" tabIndex="0">
 							Specifications subject to change without notice and without
 							incurring obligation. Products depicted on website and other
 							advertisements are for demonstration purposes only. Actual

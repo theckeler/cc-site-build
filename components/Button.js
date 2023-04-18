@@ -1,7 +1,6 @@
 export default function Button({ title, addClass, addStyle, noIcon = false }) {
 	return (
-		<button
-			className={`flex items-center justify-center text-center ${addClass}`}>
+		<button className={`${addClass}`}>
 			{title}{" "}
 			{!noIcon && (
 				<svg
