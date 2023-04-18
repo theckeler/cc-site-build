@@ -1,11 +1,12 @@
 import Image from "next/image";
-import Button from "./Button";
-import ButtonEdit from "./ButtonEdit";
+import Button from "../Button";
+import ButtonEdit from "../ButtonEdit";
 import DealerInfo from "./DealerInfo";
 
 export default function AddCart() {
 	const buyButtonsClick = (e) => {
 		e.preventDefault();
+		console.log(e.currentTarget.dataset.availability);
 
 		document.querySelectorAll(".buy-button").forEach((block) => {
 			block.classList.add("bg-gray-200");
@@ -14,6 +15,11 @@ export default function AddCart() {
 
 		e.currentTarget.classList.remove("bg-gray-200");
 		e.currentTarget.classList.add("bg-amber-200");
+
+		document.querySelector("#availability-update").textContent =
+			e.currentTarget.dataset.availability;
+		document.querySelector("#availability-type").textContent =
+			e.currentTarget.dataset.type;
 	};
 
 	return (
@@ -24,7 +30,10 @@ export default function AddCart() {
 			<li className="mt-3 border-b pb-4 mb-2 text-sm">
 				<ul className="flex items-center">
 					<li className="basis-11/12 text-sm">
-						<strong>Delivering to:</strong> 44107
+						<strong>
+							<span id="availability-type">Delivering</span> to:
+						</strong>{" "}
+						44107
 					</li>
 					<li className="basis-1/12">
 						<ButtonEdit
@@ -64,10 +73,11 @@ export default function AddCart() {
 				</div>
 			</li>
 			<li className="mt-3 border-b pb-4 mb-2 text-sm">
-				<strong>Availability:</strong> Pick up in 1-2 days
+				<strong>Availability:</strong>{" "}
+				<span id="availability-update">Pick up in 1-2 days</span>
 			</li>
 			<li className="mt-3 border-b pb-4 mb-2">
-				<ul className="flex flex-col md:flex-row justify-center">
+				<ul className="flex flex-col xl:flex-row justify-center">
 					<li className="p-1 basis-1/3">
 						<button
 							className="buy-button flex flex-col items-center h-full py-4 px-3 bg-gray-200 rounded-md w-full opacity-50 border border-gray-400"
@@ -90,6 +100,8 @@ export default function AddCart() {
 					<li className="p-1 basis-1/3">
 						<button
 							className="buy-button flex flex-col items-center h-full py-4 px-3 rounded-md text-xs w-full border border-gray-400 bg-amber-200"
+							data-availability="Pick up in 1-2 days"
+							data-type="Delivering"
 							onClick={(e) => {
 								buyButtonsClick(e);
 							}}>
@@ -104,13 +116,15 @@ export default function AddCart() {
 							<p className="uppercase text-sm leading-3 font-bold">
 								Dealer Pick-Up
 							</p>
-							<p className="mt-auto text-xs pt-3">Available in 1-2 days</p>
+							<p className="mt-auto text-xs pt-3">Pick up in 1-2 days</p>
 							<p className="mt-3 text-lg font-bold">FREE</p>
 						</button>
 					</li>
 					<li className="p-1 basis-1/3">
 						<button
 							className="buy-button flex flex-col items-center h-full py-4 px-3 rounded-md text-xs w-full border border-gray-400 bg-gray-200"
+							data-availability="Ships in 8-10 days"
+							data-type="Shipping"
 							onClick={(e) => {
 								buyButtonsClick(e);
 							}}>

@@ -53,7 +53,7 @@ export default function RelatedProducts() {
 			<button
 				className="w-full"
 				onClick={(e) => {
-					document.querySelector("#related-text").classList.toggle("hidden");
+					document.querySelector("#related-text").classList.toggle("lg:hidden");
 					document
 						.querySelector("#toggle-related")
 						.classList.toggle("rotate-180");
@@ -67,15 +67,12 @@ export default function RelatedProducts() {
 			</button>
 
 			<div
-				className="mb-6 overflow-scrollbar overflow-x-auto py-2"
+				className="hidden lg:block mb-6 overflow-scrollbar overflow-x-auto py-2"
 				id="related-text">
 				<ul className="md:flex">
 					{products.map(function (product, i) {
 						return (
-							<li
-								key={i}
-								className="min-w-full p-2"
-								style={{ minWidth: "22%" }}>
+							<li key={i} className="p-2" style={{ minWidth: "240px" }}>
 								<Cards {...{ product }} />
 							</li>
 						);

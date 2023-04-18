@@ -43,10 +43,10 @@ export default function DesFeaturescription() {
 
 			<div className="hidden" id="description-text">
 				<div className="px-5 py-3">
-					<ul className="flex flex-col md:flex-row flex-wrap">
+					<ul className="flex flex-col xl:flex-row flex-wrap">
 						{products.map(function (product, i) {
 							return (
-								<li className="basis-2/6 md:p-1 flex" key={i}>
+								<li className="basis-2/6 p-1 flex" key={i}>
 									<Cards {...{ product }} />
 								</li>
 							);

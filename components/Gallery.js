@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Gallery() {
 	const imgs = [
 		{
 			src: "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg",
@@ -33,7 +33,7 @@ export default function Home() {
 	];
 
 	return (
-		<ul className="md:flex flex-wrap mb-6">
+		<ul className="flex flex-col lg:flex-row lg:flex-wrap mb-6">
 			<li className="basis-full">
 				<div
 					className="relative min-w-full min-h-full"

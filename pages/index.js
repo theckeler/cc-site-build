@@ -1,6 +1,6 @@
 import BreadCrumbs from "../components/BreadCrumbs";
-import PDPImages from "../components/PDPImages";
-import AddCart from "../components/AddCart";
+import Gallery from "../components/Gallery";
+import AddCart from "../components/AddCart/AddCart";
 import Reviews from "../components/Reviews";
 import Features from "../components/Features/Features";
 import Specs from "../components/Specs";
@@ -17,37 +17,18 @@ export default function Index() {
 		<>
 			<div className="bg-gray-400" style={{ minHeight: "160px" }}></div>
 			<main className="p-5">
-				<ul className="max-w-screen-2xl md:flex flex-wrap mx-auto">
-					<li className="flex flex-wrap basis-full">
+				<ul className="max-w-screen-2xl grid grid-cols-12 gap-3 mx-auto">
+					<li className="col-span-12">
 						<BreadCrumbs />
 					</li>
-					<li className="md:w-8/12 py-4">
-						<div className="md:hidden">
+					<li className="col-span-12 lg:col-span-7 xl:col-span-8">
+						<Gallery />
+					</li>
+					<li className="col-span-12 lg:col-span-5 xl:col-span-4 lg:sticky lg:top-0 self-start">
+						<div className="md:px-6 py-4">
 							<H1 />
 							<H2 />
 							<Price />
-						</div>
-						<div>
-							<PDPImages />
-							<div className="md:hidden">
-								<AddCart />
-							</div>
-							<Reviews />
-							<Features />
-							<Specs />
-							<Maintenance />
-							<DocumentsGuides />
-							<FindParts />
-							<RelatedProducts />
-						</div>
-					</li>
-					<li className="hidden md:block md:w-4/12 sticky top-0 h-full">
-						<div className="md:px-6 py-4">
-							<div className="">
-								<H1 />
-								<H2 />
-								<Price />
-							</div>
 							<AddCart />
 							<ul className="list-disc px-8 text-xs leading-6">
 								<li className="mt-5">
@@ -70,6 +51,16 @@ export default function Index() {
 							</ul>
 						</div>
 					</li>
+					<li className="col-span-12 lg:col-span-7 xl:col-span-8">
+						<Reviews />
+						<Features />
+						<Specs />
+						<Maintenance />
+						<DocumentsGuides />
+						<FindParts />
+						<RelatedProducts />
+					</li>
+					{/* <li className="hidden md:block lg:w-5/12 xl:w-4/12 sticky top-0 h-full"> */}
 				</ul>
 			</main>
 			<div className="bg-gray-400" style={{ minHeight: "600px" }}></div>
