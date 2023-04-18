@@ -4,13 +4,13 @@ export default function DocumentsGuides() {
 	return (
 		<div className="border-b">
 			<button
-				className="w-full"
+				className="w-full lg:hover:bg-amber-200"
 				onClick={(e) => {
 					document.querySelector("#docs-text").classList.toggle("hidden");
 					document.querySelector("#toggle-docs").classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
-					<li>Documents and Guides</li>
+					<li className="font-bold">Documents and Guides</li>
 					<li className="ml-auto">
 						<ToggleView id="toggle-docs" />
 					</li>

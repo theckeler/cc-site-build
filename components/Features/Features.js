@@ -23,7 +23,7 @@ export default function DesFeaturescription() {
 	return (
 		<div className="border-b" id="description">
 			<button
-				className="w-full"
+				className="w-full lg:hover:bg-amber-200"
 				id="description-button"
 				onClick={(e) => {
 					document
@@ -34,7 +34,7 @@ export default function DesFeaturescription() {
 						.classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
-					<li>Features</li>
+					<li className="font-bold">Features</li>
 					<li className="ml-auto">
 						<ToggleView id="toggle-description" />
 					</li>

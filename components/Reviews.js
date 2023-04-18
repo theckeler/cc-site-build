@@ -5,7 +5,7 @@ export default function Reviews() {
 		<div className="border-b">
 			<a name="reviews" id="reviews" />
 			<button
-				className="w-full"
+				className="w-full lg:hover:bg-amber-200"
 				onClick={(e) => {
 					document.querySelector("#reviews-text").classList.toggle("hidden");
 					document
@@ -13,7 +13,7 @@ export default function Reviews() {
 						.classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
-					<li>Reviews</li>
+					<li className="font-bold">Reviews</li>
 					<li className="flex ml-auto">
 						<ul className="flex">
 							{[...Array(5)].map((x, i) => (

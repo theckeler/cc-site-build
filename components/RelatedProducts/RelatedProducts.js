@@ -51,7 +51,7 @@ export default function RelatedProducts() {
 	return (
 		<div className="border-b">
 			<button
-				className="w-full"
+				className="w-full lg:hover:bg-amber-200"
 				onClick={(e) => {
 					const relatedText = document.querySelector("#related-text");
 					const toggleRelated = document.querySelector("#toggle-related");
@@ -65,7 +65,7 @@ export default function RelatedProducts() {
 					toggleRelated.classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
-					<li>Related Products</li>
+					<li className="font-bold">Related Products</li>
 					<li className="ml-auto">
 						<ToggleView addClass="rotate-0 lg:rotate-180" id="toggle-related" />
 					</li>

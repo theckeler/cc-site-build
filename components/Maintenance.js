@@ -45,7 +45,7 @@ export default function Maintenance() {
 	return (
 		<div className="border-b">
 			<button
-				className="w-full"
+				className="w-full lg:hover:bg-amber-200"
 				onClick={(e) => {
 					document.querySelector("#maintance-text").classList.toggle("hidden");
 					document
@@ -53,7 +53,7 @@ export default function Maintenance() {
 						.classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
-					<li>Maintenance</li>
+					<li className="font-bold">Maintenance</li>
 					<li className="ml-auto">
 						<ToggleView id="toggle-maintance" />
 					</li>

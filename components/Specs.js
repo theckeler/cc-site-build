@@ -7,7 +7,7 @@ export default function Specs() {
 	return (
 		<div className="border-b">
 			<button
-				className="w-full"
+				className="w-full lg:hover:bg-amber-200"
 				onClick={(e) => {
 					document.querySelector("#specs-text").classList.toggle("hidden");
 					document
@@ -15,7 +15,7 @@ export default function Specs() {
 						.classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
-					<li>Specs</li>
+					<li className="font-bold">Specs</li>
 					<li className="ml-auto">
 						<ToggleView id="toggle-specs" />
 					</li>
