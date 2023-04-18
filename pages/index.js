@@ -8,9 +8,9 @@ import Maintenance from "../components/Maintenance";
 import DocumentsGuides from "../components/DocumentsGuides";
 import FindParts from "../components/FindParts";
 import RelatedProducts from "../components/RelatedProducts/RelatedProducts";
-import H1 from "../components/PDP/H1";
-import H2 from "../components/PDP/H2";
-import Price from "../components/PDP/Price";
+import H1 from "../components/H1";
+import H2 from "../components/H2";
+import Price from "../components/Price";
 import Desc from "../components/Desc";
 
 export default function Index() {

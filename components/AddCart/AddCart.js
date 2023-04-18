@@ -124,7 +124,7 @@ export default function AddCart() {
 			<li className="mt-3">
 				<Button
 					title="Add to Cart"
-					addClass="flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 rounded-2xl"
+					addClass="flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 lg:hover:bg-amber-300 rounded-2xl"
 				/>
 			</li>
 		</ul>

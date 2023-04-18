@@ -3,7 +3,9 @@ export default function ShippingButton({ button, buyButtonsClick }) {
 		<button
 			className={`buy-button h-full py-3 px-2 xl:py-4 xl:px-3 rounded-md w-full border border-gray-400 ${
 				button.disabled && " opacity-50"
-			} ${button.active ? " bg-amber-200" : "bg-gray-200"}`}
+			} ${
+				button.active ? " bg-amber-200" : "bg-gray-200"
+			} lg:hover:bg-amber-300`}
 			disabled={button.disabled && true}
 			onClick={buyButtonsClick}
 			data-availability={button.availability}

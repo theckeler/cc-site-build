@@ -68,7 +68,7 @@ export default function Gallery() {
 				id="gallery-button"
 				className="basis-full flex justify-center relative pb-8 border-t">
 				<button
-					className="px-8 py-4 bg-amber-200 border-amber-300 border rounded flex items-center absolute -top-7"
+					className="px-8 py-4 bg-amber-200 lg:hover:bg-amber-300 border-amber-300 border rounded flex items-center absolute -top-7"
 					onClick={(e) => {
 						document.querySelector("#gallery-button").classList.add("hidden");
 						document.querySelectorAll(".gallery-hidden").forEach((block) => {

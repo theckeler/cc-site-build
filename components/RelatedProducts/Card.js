@@ -3,7 +3,9 @@ import Button from "../Button";
 
 export default function Cards({ product }) {
 	return (
-		<a href="#top" className="p-3 border flex flex-col rounded-md h-full">
+		<a
+			href="#top"
+			className="p-3 border lg:hover:bg-gray-300 flex flex-col rounded-md h-full">
 			<div className="relative" style={{ paddingTop: "100%" }}>
 				<Image src={product.img} alt="" fill />
 			</div>

@@ -1,4 +1,4 @@
-import ToolTip from "../ToolTip";
+import ToolTip from "./ToolTip";
 
 export default function H3({ addClass = null }) {
 	return (

@@ -67,7 +67,9 @@ export default function Maintenance() {
 					{articles.map(function (article, i) {
 						return (
 							<li key={i} className="p-2 " style={{ minWidth: "240px" }}>
-								<div className="flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 rounded-md h-full">
+								<a
+									href="#top"
+									className="flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 rounded-md h-full">
 									<h3 className="text-lg font-bold w-full">{article.title}</h3>
 									<p className="text-xs leading-5 mt-3 mb-3">{article.copy}</p>
 									<Button
@@ -75,7 +77,7 @@ export default function Maintenance() {
 										noIcon={false}
 										addClass="flex items-center justify-center  px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full"
 									/>
-								</div>
+								</a>
 							</li>
 						);
 					})}
