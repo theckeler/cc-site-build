@@ -17,7 +17,7 @@ export default function Index() {
 	return (
 		<>
 			<div className="bg-gray-400" style={{ minHeight: "160px" }}></div>
-			<main className="p-5">
+			<main className="p-3">
 				<ul className="max-w-screen-2xl grid grid-cols-12 gap-3 mx-auto">
 					<li className="col-span-12">
 						<BreadCrumbs />

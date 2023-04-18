@@ -1,28 +1,28 @@
 export default function BreadCrumbs() {
 	return (
-		<ul className="flex flex-wrap w-full">
+		<ul className="flex flex-col flex-wrap w-full">
 			<li>
 				<ul className="flex items-center text-xs">
-					<li className="">
+					<li className="truncate">
 						<a href="#top" className="underline p-2">
 							Lawn Mowers
 						</a>
 					</li>
 					<li>/</li>
-					<li className="">
+					<li className="truncate">
 						<a href="#top" className="underline p-2">
 							Riding Lawn Mowers
 						</a>
 					</li>
 					<li>/</li>
-					<li>
+					<li className="basis-full">
 						<a href="#top" className="underline p-2">
 							Zero-Turn Mowers
 						</a>
 					</li>
 				</ul>
 			</li>
-			<li className="ml-auto">
+			<li className="hidden lg:ml-auto">
 				<button
 					href="#reviews"
 					onClick={(e) => {
