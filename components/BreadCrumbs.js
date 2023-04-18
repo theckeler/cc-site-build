@@ -1,6 +1,6 @@
 export default function BreadCrumbs() {
 	return (
-		<ul className="flex flex-col flex-wrap w-full">
+		<ul className="flex flex-col lg:flex-row flex-wrap w-full">
 			<li>
 				<ul className="flex items-center text-xs">
 					<li className="truncate">
@@ -22,7 +22,7 @@ export default function BreadCrumbs() {
 					</li>
 				</ul>
 			</li>
-			<li className="hidden lg:ml-auto">
+			<li className="hidden lg:block lg:ml-auto">
 				<button
 					href="#reviews"
 					onClick={(e) => {
