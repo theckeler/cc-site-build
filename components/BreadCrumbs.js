@@ -1,28 +1,31 @@
 export default function BreadCrumbs() {
 	return (
-		<ul className="flex flex-col lg:flex-row flex-wrap w-full">
-			<li>
-				<ul className="flex items-center text-xs">
+		<ul className="flex flex-col lg:flex-row flex-wrap w-full py-2">
+			<li className="lg:basis-auto">
+				<ul
+					className="flex items-center text-xs w-full min-w-full"
+					// style={{minWidth: "800px"}}
+				>
 					<li className="truncate">
-						<a href="#top" className="underline p-2">
+						<a href="#top" className="underline ">
 							Lawn Mowers
 						</a>
 					</li>
 					<li>/</li>
-					<li className="truncate">
-						<a href="#top" className="underline p-2">
+					<li className="w-auto truncate">
+						<a href="#top" className="underline">
 							Riding Lawn Mowers
 						</a>
 					</li>
 					<li>/</li>
 					<li className="basis-full">
-						<a href="#top" className="underline p-2">
+						<a href="#top" className="underline">
 							Zero-Turn Mowers
 						</a>
 					</li>
 				</ul>
 			</li>
-			<li className="hidden lg:block lg:ml-auto">
+			<li className="hidden lg:block lg:ml-auto basis-auto">
 				<button
 					href="#reviews"
 					onClick={(e) => {
