@@ -53,15 +53,21 @@ export default function RelatedProducts() {
 			<button
 				className="w-full"
 				onClick={(e) => {
-					document.querySelector("#related-text").classList.toggle("lg:hidden");
-					document
-						.querySelector("#toggle-related")
-						.classList.toggle("rotate-180");
+					const relatedText = document.querySelector("#related-text");
+					const toggleRelated = document.querySelector("#toggle-related");
+
+					relatedText.classList.toggle("lg:hidden");
+					relatedText.classList.toggle("hidden");
+
+					toggleRelated.classList.toggle("lg:rotate-180");
+					toggleRelated.classList.toggle("lg:rotate-0");
+					toggleRelated.classList.toggle("rotate-0");
+					toggleRelated.classList.toggle("rotate-180");
 				}}>
 				<ul className="flex items-center px-5 py-3">
 					<li>Related Products</li>
 					<li className="ml-auto">
-						<ToggleView addClass="rotate-180" id="toggle-related" />
+						<ToggleView addClass="rotate-0 lg:rotate-180" id="toggle-related" />
 					</li>
 				</ul>
 			</button>

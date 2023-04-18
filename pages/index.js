@@ -11,6 +11,7 @@ import RelatedProducts from "../components/RelatedProducts/RelatedProducts";
 import H1 from "../components/PDP/H1";
 import H2 from "../components/PDP/H2";
 import Price from "../components/PDP/Price";
+import Desc from "../components/Desc";
 
 export default function Index() {
 	return (
@@ -30,25 +31,7 @@ export default function Index() {
 							<H2 />
 							<Price />
 							<AddCart />
-							<ul className="list-disc px-8 text-xs leading-6">
-								<li className="mt-5">
-									A 24HP/725cc Kohler 7000 Series V-Twin OHV Engine, OHV engine
-									delivers high-performance power and exceptionally smooth,
-									quiet operation
-								</li>
-
-								<li className="mt-1">
-									Dual hydrostatic transmissions allow for quick and effortless
-									7 MPH forward (3.5 MPH reverse) ground speeds that leaves your
-									lawn with a professional-quality finish
-								</li>
-
-								<li className="mt-1">
-									54-in. AeroForce fabricated deck that delivers a signature cut
-									with fewer clumps and stragglers, finer clippings and
-									increased evenness
-								</li>
-							</ul>
+							<Desc />
 						</div>
 					</li>
 					<li className="col-span-12 lg:col-span-7 xl:col-span-8">
@@ -60,7 +43,6 @@ export default function Index() {
 						<FindParts />
 						<RelatedProducts />
 					</li>
-					{/* <li className="hidden md:block lg:w-5/12 xl:w-4/12 sticky top-0 h-full"> */}
 				</ul>
 			</main>
 			<div className="bg-gray-400" style={{ minHeight: "600px" }}></div>

@@ -23,7 +23,18 @@ export default function BreadCrumbs() {
 				</ul>
 			</li>
 			<li className="ml-auto">
-				<a href="#reviews">
+				<button
+					href="#reviews"
+					onClick={(e) => {
+						const a = document.querySelector("#toggle-review");
+						document.querySelector("#reviews-text").classList.remove("hidden");
+						a.classList.add("rotate-180");
+						a.scrollIntoView({
+							block: "start",
+							behavior: "smooth",
+							inline: "start",
+						});
+					}}>
 					<ul className="flex items-center text-xs">
 						{[...Array(5)].map((x, i) => (
 							<li key={i}>
@@ -40,7 +51,7 @@ export default function BreadCrumbs() {
 							<u>203</u>
 						</li>
 					</ul>
-				</a>
+				</button>
 			</li>
 		</ul>
 	);
