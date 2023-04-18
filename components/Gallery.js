@@ -44,11 +44,20 @@ export default function Gallery() {
 						type="video/mp4"
 						width="100%"
 						height="100%"
-						className="absolute top-0 left-0 w-full"
+						className="absolute top-0 left-0 w-full hidden lg:block"
 						allow="autoplay; encrypted-media; picture-in-picture"
 						allowFullScreen
 						title=""
 					/>
+					<iframe
+						width="100%"
+						height="100%"
+						className="absolute top-0 left-0 w-full block lg:hidden"
+						src="https://www.youtube.com/embed/mrqqpGpPYCM"
+						title="YouTube video player hidden lg:block"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
 				</div>
 			</li>
 			{imgs.map(function (img, i) {
