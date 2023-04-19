@@ -1,5 +1,6 @@
 import ToggleView from "../Icons/ToggleView";
 import Stars from "../Stars";
+import Link from "../Icons/Link";
 
 export default function ButtonToggle({
 	title,
@@ -7,12 +8,23 @@ export default function ButtonToggle({
 	className,
 	style,
 	onClick,
-	stars,
-	opened,
+	stars = false,
+	opened = false,
+	linkOnly = false,
 }) {
-	return (
+	const linkCSS = "bg-gray-200";
+	return linkOnly ? (
+		<a href="#top" className={`block w-full lg:hover:${linkCSS}`}>
+			<ul className="flex items-center px-5 py-3">
+				<li className="font-bold">{title}</li>
+				<li className="ml-auto">
+					<Link />
+				</li>
+			</ul>
+		</a>
+	) : (
 		<button
-			className="w-full lg:hover:bg-amber-100"
+			className={`w-full lg:hover:${linkCSS}`}
 			onClick={(e) => {
 				const relatedText = document.querySelector(`#${id}-text`);
 				const toggleRelated = document.querySelector(`#toggle-${id}`);

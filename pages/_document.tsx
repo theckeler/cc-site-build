@@ -5,7 +5,7 @@ export default function Document() {
 	return (
 		<Html lang="en">
 			<Head />
-			<body>
+			<body className="bg-white">
 				<div className="bg-gray-400" style={{ minHeight: "160px" }}>
 					<Link href="/" className="p-4 block">
 						Home
