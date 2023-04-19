@@ -47,7 +47,7 @@ export default function ButtonToggle({
 						<u className="ml-1">203</u>
 					</li>
 				)}
-				<li className={!stars && `ml-auto`}>
+				<li className={!stars ? `ml-auto` : undefined}>
 					<ToggleView id={`toggle-${id}`} />
 				</li>
 			</ul>

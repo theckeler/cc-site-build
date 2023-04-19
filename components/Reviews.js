@@ -3,7 +3,7 @@ import ToggleButton from "./Buttons/Toggle";
 export default function Reviews() {
 	return (
 		<div className="border-b">
-			<a name="reviews" id="reviews" />
+			<a name="reviews" id="reviews-scroll-to" />
 			<ToggleButton title="Reviews" id="reviews" stars={true} />
 
 			<div className="hidden" id="reviews-text">

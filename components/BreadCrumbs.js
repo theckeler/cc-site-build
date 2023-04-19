@@ -1,24 +1,25 @@
 export default function BreadCrumbs() {
+	const crumbCSS = "p-2";
+
 	return (
 		<ul className="flex flex-col lg:flex-row flex-wrap w-full py-2">
 			<li className="lg:basis-auto">
-				<ul
-					className="flex items-center text-xs w-full min-w-full"
-					// style={{minWidth: "800px"}}
-				>
-					<li className="truncate">
-						<a href="#top" className="underline ">
+				<ul className="flex items-center text-xs w-full min-w-full">
+					<li
+						className={`${crumbCSS} truncate md:whitespace-nowrap md:overflow-visible`}>
+						<a href="#top" className="underline">
 							Lawn Mowers
 						</a>
 					</li>
 					<li>/</li>
-					<li className="w-auto truncate">
+					<li
+						className={`${crumbCSS} w-auto truncate md:whitespace-nowrap md:overflow-visible`}>
 						<a href="#top" className="underline">
 							Riding Lawn Mowers
 						</a>
 					</li>
 					<li>/</li>
-					<li className="basis-full">
+					<li className={`${crumbCSS} basis-full`}>
 						<a href="#top" className="underline">
 							Zero-Turn Mowers
 						</a>
@@ -29,13 +30,16 @@ export default function BreadCrumbs() {
 				<button
 					href="#reviews"
 					onClick={(e) => {
-						const a = document.querySelector("#toggle-review");
 						document.querySelector("#reviews-text").classList.remove("hidden");
-						a.classList.add("rotate-180");
-						a.scrollIntoView({
-							block: "start",
+						document
+							.querySelector("#toggle-reviews")
+							.classList.add("rotate-180");
+
+						window.scrollTo({
 							behavior: "smooth",
-							inline: "start",
+							top:
+								document.querySelector("#reviews-text").getBoundingClientRect()
+									.top - 80,
 						});
 					}}>
 					<ul className="flex items-center text-xs">
