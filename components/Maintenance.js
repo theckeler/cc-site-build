@@ -45,9 +45,9 @@ const articles = [
 export default function Maintenance() {
 	return (
 		<div className="border-b">
-			<ToggleButton title="Maintance" id="maintance" />
+			<ToggleButton title="Maintenance" id="maintance" />
 
-			<div className="group hidden relative" id="maintance-text">
+			<div className="group/buttons hidden relative" id="maintance-text">
 				<ScrollButton
 					buttonType="back"
 					rotate={true}
@@ -83,10 +83,10 @@ export default function Maintenance() {
 					<ul className="md:flex" id="maintance-scroll">
 						{articles.map(function (article, i) {
 							return (
-								<li key={i} className="p-2 " style={{ minWidth: "240px" }}>
+								<li key={i} className="p-2" style={{ minWidth: "240px" }}>
 									<a
 										href="#top"
-										className="flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 rounded-md h-full select-auto">
+										className="group flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 rounded-md h-full select-auto">
 										<h3 className="text-lg font-bold w-full">
 											{article.title}
 										</h3>
@@ -96,7 +96,7 @@ export default function Maintenance() {
 										<Button
 											title="Read Article"
 											noIcon={false}
-											className="flex items-center justify-center  px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full"
+											className="flex items-center justify-center px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full group-hover:bg-black group-hover:text-white"
 										/>
 									</a>
 								</li>

@@ -137,7 +137,7 @@ export default function RelatedProducts() {
 		<div className="border-b">
 			<ToggleButton title="Related Products" id="related" opened={true} />
 
-			<div className="group hidden lg:block relative" id="related-text">
+			<div className="group/buttons hidden lg:block relative" id="related-text">
 				<ScrollButton
 					buttonType="back"
 					rotate={true}

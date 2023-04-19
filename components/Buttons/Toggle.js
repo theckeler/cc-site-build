@@ -12,7 +12,7 @@ export default function ButtonToggle({
 	opened = false,
 	linkOnly = false,
 }) {
-	const linkCSS = `my-1 rounded-lg block w-full lg:hover:bg-gray-200`;
+	const linkCSS = `my-1 rounded-lg block w-full lg:hover:bg-gray-200 select-auto`;
 	const ulCSS = `flex items-center px-4 py-2`;
 
 	return linkOnly ? (
