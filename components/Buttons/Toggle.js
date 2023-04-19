@@ -12,10 +12,12 @@ export default function ButtonToggle({
 	opened = false,
 	linkOnly = false,
 }) {
-	const linkCSS = "bg-gray-200";
+	const linkCSS = `my-1 rounded-lg block w-full lg:hover:bg-gray-200`;
+	const ulCSS = `flex items-center px-4 py-2`;
+
 	return linkOnly ? (
-		<a href="#top" className={`block w-full lg:hover:${linkCSS}`}>
-			<ul className="flex items-center px-5 py-3">
+		<a href="#top" className={linkCSS}>
+			<ul className={ulCSS}>
 				<li className="font-bold">{title}</li>
 				<li className="ml-auto">
 					<Link />
@@ -24,7 +26,7 @@ export default function ButtonToggle({
 		</a>
 	) : (
 		<button
-			className={`w-full lg:hover:${linkCSS}`}
+			className={linkCSS}
 			onClick={(e) => {
 				const relatedText = document.querySelector(`#${id}-text`);
 				const toggleRelated = document.querySelector(`#toggle-${id}`);
@@ -39,7 +41,7 @@ export default function ButtonToggle({
 					toggleRelated.classList.toggle("lg:rotate-0");
 				}
 			}}>
-			<ul className="flex items-center px-5 py-3">
+			<ul className={ulCSS}>
 				<li className="font-bold">{title}</li>
 				{!!stars && (
 					<li className="flex ml-auto">

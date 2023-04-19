@@ -17,7 +17,7 @@ export default function ShippingButton({ button, buyButtonsClick }) {
 					</div>
 				</li>
 				<li className="basis-full text-xs xl:text-center">
-					<div className="uppercase leading-3 font-bold lg:leading-4 lg:text-base">
+					<div className="uppercase leading-3 font-bold lg:leading-4 lg:text-sm">
 						{button.title}
 					</div>
 					{!!button.availability && (

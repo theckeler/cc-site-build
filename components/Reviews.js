@@ -8,7 +8,7 @@ export default function Reviews() {
 
 			<div className="hidden" id="reviews-text">
 				<div
-					className="px-5 py-3 bg-gray-300 flex justify-center items-center"
+					className="mt-2 px-5 py-3 bg-gray-300 flex justify-center items-center"
 					style={{ minHeight: "600px" }}>
 					Reviews Plugin Info
 				</div>
