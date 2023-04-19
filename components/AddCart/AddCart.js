@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Button from "../Button";
-import ButtonEdit from "../ButtonEdit";
+import Button from "../Buttons/Main";
+import ButtonEdit from "../Buttons/Edit";
 import DealerInfo from "./DealerInfo";
 import ShippingButton from "./ShippingButton";
 
@@ -124,7 +124,7 @@ export default function AddCart() {
 			<li className="mt-3">
 				<Button
 					title="Add to Cart"
-					addClass="flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 lg:hover:bg-amber-300 rounded-2xl"
+					className="group flex items-center justify-center w-full p-3 uppercase font-bold bg-amber-400 lg:hover:bg-black lg:hover:text-white rounded-2xl"
 				/>
 			</li>
 		</ul>

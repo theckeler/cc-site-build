@@ -55,9 +55,9 @@ export default function Gallery() {
 						className="absolute top-0 left-0 w-full block lg:hidden"
 						src="https://www.youtube.com/embed/mrqqpGpPYCM"
 						title="YouTube video player hidden lg:block"
-						frameborder="0"
+						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen></iframe>
+						allowFullScreen></iframe>
 				</div>
 			</li>
 			{imgs.map(function (img, i) {

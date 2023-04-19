@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../Button";
+import Button from "../Buttons/Main";
 
 export default function Cards({ product }) {
 	return (

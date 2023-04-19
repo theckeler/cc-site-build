@@ -1,6 +1,6 @@
 import ToggleView from "../Icons/ToggleView";
-import Image from "next/image";
 import Card from "./Card";
+import ScrollButton from "../Buttons/Scroll";
 
 const products = [
 	{
@@ -72,18 +72,49 @@ export default function RelatedProducts() {
 				</ul>
 			</button>
 
-			<div
-				className="hidden lg:block mb-6 overflow-scrollbar overflow-x-auto py-2"
-				id="related-text">
-				<ul className="md:flex">
-					{products.map(function (product, i) {
-						return (
-							<li key={i} className="p-2" style={{ minWidth: "240px" }}>
-								<Card {...{ product }} />
-							</li>
-						);
-					})}
-				</ul>
+			<div className="group hidden lg:block relative" id="related-text">
+				<ScrollButton
+					buttonType="back"
+					rotate={true}
+					className="left-0 -translate-x-1/4"
+					onClick={(e) => {
+						document.querySelector("#related-container").scrollTo({
+							top: 0,
+							left: -document
+								.querySelector("#related-scroll")
+								.getBoundingClientRect().width,
+							behavior: "smooth",
+						});
+					}}
+				/>
+
+				<ScrollButton
+					buttonType="forward"
+					className="right-0 translate-x-1/4"
+					onClick={(e) => {
+						document.querySelector("#related-container").scrollTo({
+							top: 0,
+							left: document
+								.querySelector("#related-scroll")
+								.getBoundingClientRect().width,
+							behavior: "smooth",
+						});
+					}}
+				/>
+
+				<div
+					className="mb-6 overflow-scrollbar overflow-x-auto py-2"
+					id="related-container">
+					<ul className="md:flex" id="related-scroll">
+						{products.map(function (product, i) {
+							return (
+								<li key={i} className="p-2" style={{ minWidth: "240px" }}>
+									<Card {...{ product }} />
+								</li>
+							);
+						})}
+					</ul>
+				</div>
 			</div>
 		</div>
 	);

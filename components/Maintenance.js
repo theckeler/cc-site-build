@@ -1,6 +1,7 @@
 import ToggleView from "./Icons/ToggleView";
-import Cards from "./RelatedProducts/Card";
-import Button from "../components/Button";
+//import Cards from "./RelatedProducts/Card";
+import Button from "./Buttons/Main";
+import ScrollButton from "./Buttons/Scroll";
 
 const articles = [
 	{
@@ -47,7 +48,9 @@ export default function Maintenance() {
 			<button
 				className="w-full lg:hover:bg-amber-200"
 				onClick={(e) => {
-					document.querySelector("#maintance-text").classList.toggle("hidden");
+					document
+						.querySelector("#maintance-container")
+						.classList.toggle("hidden");
 					document
 						.querySelector("#toggle-maintance")
 						.classList.toggle("rotate-180");
@@ -60,28 +63,63 @@ export default function Maintenance() {
 				</ul>
 			</button>
 
-			<div
-				className="hidden mb-6 overflow-scrollbar overflow-x-auto py-2"
-				id="maintance-text">
-				<ul className="md:flex">
-					{articles.map(function (article, i) {
-						return (
-							<li key={i} className="p-2 " style={{ minWidth: "240px" }}>
-								<a
-									href="#top"
-									className="flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 rounded-md h-full">
-									<h3 className="text-lg font-bold w-full">{article.title}</h3>
-									<p className="text-xs leading-5 mt-3 mb-3">{article.copy}</p>
-									<Button
-										title="Read Article"
-										noIcon={false}
-										addClass="flex items-center justify-center  px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full"
-									/>
-								</a>
-							</li>
-						);
-					})}
-				</ul>
+			<div className="group hidden lg:block relative" id="maintance-text">
+				<ScrollButton
+					buttonType="back"
+					rotate={true}
+					className="left-0 -translate-x-1/4"
+					onClick={(e) => {
+						document.querySelector("#maintance-container").scrollTo({
+							top: 0,
+							left: -document
+								.querySelector("#maintance-scroll")
+								.getBoundingClientRect().width,
+							behavior: "smooth",
+						});
+					}}
+				/>
+
+				<ScrollButton
+					buttonType="forward"
+					className="right-0 translate-x-1/4"
+					onClick={(e) => {
+						document.querySelector("#maintance-container").scrollTo({
+							top: 0,
+							left: document
+								.querySelector("#maintance-scroll")
+								.getBoundingClientRect().width,
+							behavior: "smooth",
+						});
+					}}
+				/>
+
+				<div
+					className="hidden mb-6 overflow-scrollbar overflow-x-auto py-2"
+					id="maintance-container">
+					<ul className="md:flex" id="maintance-scroll">
+						{articles.map(function (article, i) {
+							return (
+								<li key={i} className="p-2 " style={{ minWidth: "240px" }}>
+									<a
+										href="#top"
+										className="flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 rounded-md h-full">
+										<h3 className="text-lg font-bold w-full">
+											{article.title}
+										</h3>
+										<p className="text-xs leading-5 mt-3 mb-3">
+											{article.copy}
+										</p>
+										<Button
+											title="Read Article"
+											noIcon={false}
+											addClass="flex items-center justify-center  px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full"
+										/>
+									</a>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
 			</div>
 		</div>
 	);

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ButtonEdit from "../ButtonEdit";
-import Button from "../Button";
+import ButtonEdit from "../Buttons/Edit";
+import Button from "../Buttons/Main";
 
 export default function DealerInfo() {
 	return (
