@@ -1,4 +1,4 @@
-import ToggleView from "./Icons/ToggleView";
+import ToggleButton from "./Buttons/Toggle";
 import specsJson from "../Data/specs.json";
 
 export default function Specs() {
@@ -6,21 +6,7 @@ export default function Specs() {
 
 	return (
 		<div className="border-b">
-			<button
-				className="w-full lg:hover:bg-amber-200"
-				onClick={(e) => {
-					document.querySelector("#specs-text").classList.toggle("hidden");
-					document
-						.querySelector("#toggle-specs")
-						.classList.toggle("rotate-180");
-				}}>
-				<ul className="flex items-center px-5 py-3">
-					<li className="font-bold">Specs</li>
-					<li className="ml-auto">
-						<ToggleView id="toggle-specs" />
-					</li>
-				</ul>
-			</button>
+			<ToggleButton title="Specs" id="specs" />
 
 			<div className="hidden" id="specs-text">
 				<div className="p-7 bg-gray-200">

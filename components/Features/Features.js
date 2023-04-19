@@ -1,4 +1,4 @@
-import ToggleView from "../Icons/ToggleView";
+import ToggleButton from "../Buttons/Toggle";
 import Cards from "./Cards";
 
 export default function DesFeaturescription() {
@@ -21,25 +21,8 @@ export default function DesFeaturescription() {
 	];
 
 	return (
-		<div className="border-b" id="description">
-			<button
-				className="w-full lg:hover:bg-amber-200"
-				id="description-button"
-				onClick={(e) => {
-					document
-						.querySelector("#description-text")
-						.classList.toggle("hidden");
-					document
-						.querySelector("#toggle-description")
-						.classList.toggle("rotate-180");
-				}}>
-				<ul className="flex items-center px-5 py-3">
-					<li className="font-bold">Features</li>
-					<li className="ml-auto">
-						<ToggleView id="toggle-description" />
-					</li>
-				</ul>
-			</button>
+		<div className="border-b">
+			<ToggleButton title="Features" id="description" />
 
 			<div className="hidden" id="description-text">
 				<div className="px-5 py-3">

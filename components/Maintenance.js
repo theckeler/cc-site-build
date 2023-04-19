@@ -1,4 +1,4 @@
-import ToggleView from "./Icons/ToggleView";
+import ToggleButton from "./Buttons/Toggle";
 //import Cards from "./RelatedProducts/Card";
 import Button from "./Buttons/Main";
 import ScrollButton from "./Buttons/Scroll";
@@ -45,25 +45,9 @@ const articles = [
 export default function Maintenance() {
 	return (
 		<div className="border-b">
-			<button
-				className="w-full lg:hover:bg-amber-200"
-				onClick={(e) => {
-					document
-						.querySelector("#maintance-container")
-						.classList.toggle("hidden");
-					document
-						.querySelector("#toggle-maintance")
-						.classList.toggle("rotate-180");
-				}}>
-				<ul className="flex items-center px-5 py-3">
-					<li className="font-bold">Maintenance</li>
-					<li className="ml-auto">
-						<ToggleView id="toggle-maintance" />
-					</li>
-				</ul>
-			</button>
+			<ToggleButton title="Maintance" id="maintance" />
 
-			<div className="group hidden lg:block relative" id="maintance-text">
+			<div className="group hidden relative" id="maintance-text">
 				<ScrollButton
 					buttonType="back"
 					rotate={true}
@@ -94,7 +78,7 @@ export default function Maintenance() {
 				/>
 
 				<div
-					className="hidden mb-6 overflow-scrollbar overflow-x-auto py-2"
+					className="mb-6 overflow-scrollbar overflow-x-auto py-2"
 					id="maintance-container">
 					<ul className="md:flex" id="maintance-scroll">
 						{articles.map(function (article, i) {
@@ -112,7 +96,7 @@ export default function Maintenance() {
 										<Button
 											title="Read Article"
 											noIcon={false}
-											addClass="flex items-center justify-center  px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full"
+											className="flex items-center justify-center  px-1 py-2 mt-auto text-sm font-bold bg-amber-300 rounded-lg w-full"
 										/>
 									</a>
 								</li>

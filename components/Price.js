@@ -1,6 +1,6 @@
 import ToolTip from "./ToolTip";
 
-export default function H3({ addClass = null }) {
+export default function H3({ className = null }) {
 	return (
 		<h3 className="text-xl font-bold">
 			$3,599.00{" "}

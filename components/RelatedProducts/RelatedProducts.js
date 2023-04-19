@@ -1,4 +1,4 @@
-import ToggleView from "../Icons/ToggleView";
+import ToggleButton from "../Buttons/Toggle";
 import Card from "./Card";
 import ScrollButton from "../Buttons/Scroll";
 
@@ -50,27 +50,7 @@ const products = [
 export default function RelatedProducts() {
 	return (
 		<div className="border-b">
-			<button
-				className="w-full lg:hover:bg-amber-200"
-				onClick={(e) => {
-					const relatedText = document.querySelector("#related-text");
-					const toggleRelated = document.querySelector("#toggle-related");
-
-					relatedText.classList.toggle("lg:hidden");
-					relatedText.classList.toggle("hidden");
-
-					toggleRelated.classList.toggle("lg:rotate-180");
-					toggleRelated.classList.toggle("lg:rotate-0");
-					toggleRelated.classList.toggle("rotate-0");
-					toggleRelated.classList.toggle("rotate-180");
-				}}>
-				<ul className="flex items-center px-5 py-3">
-					<li className="font-bold">Related Products</li>
-					<li className="ml-auto">
-						<ToggleView addClass="rotate-0 lg:rotate-180" id="toggle-related" />
-					</li>
-				</ul>
-			</button>
+			<ToggleButton title="Related Products" id="related" opened={true} />
 
 			<div className="group hidden lg:block relative" id="related-text">
 				<ScrollButton

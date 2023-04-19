@@ -29,7 +29,7 @@ export default function Cards({ product }) {
 				<Button
 					title={`View ${product.title}`}
 					noIcon={true}
-					addClass="w-full p-2 mt-2 text-sm font-bold bg-gray-200 rounded-lg overflow-hidden truncate"
+					className="w-full p-2 mt-2 text-sm font-bold bg-gray-200 rounded-lg overflow-hidden truncate"
 				/>
 			</div>
 		</a>

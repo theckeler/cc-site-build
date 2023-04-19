@@ -1,4 +1,4 @@
-export default function ButtonEdit({ title, addClass, addStyle, addClick }) {
+export default function ButtonEdit({ title, className, addStyle, addClick }) {
 	return (
 		<button
 			className="group lg:hover:bg-amber-400 text-center rounded-sm inline-block p-3 text-xs h-full uppercase font-bold bg-gray-200 "
