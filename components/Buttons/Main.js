@@ -1,6 +1,14 @@
-export default function Button({ title, className, addStyle, noIcon = false }) {
+export default function Button({
+	title,
+	className,
+	addStyle,
+	noIcon = false,
+	href = null,
+}) {
+	const Type = href ? "a" : "button";
+
 	return (
-		<button className={`${className}`}>
+		<Type className={`${className}`} href={href}>
 			{title}{" "}
 			{!noIcon && (
 				<svg
@@ -15,6 +23,6 @@ export default function Button({ title, className, addStyle, noIcon = false }) {
 					/>
 				</svg>
 			)}
-		</button>
+		</Type>
 	);
 }

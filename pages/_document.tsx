@@ -11,7 +11,7 @@ export default function Document() {
 						Home
 					</Link>
 				</div>
-				<main className="p-3">
+				<main className="">
 					<Main />
 				</main>
 				<div className="bg-gray-400" style={{ minHeight: "600px" }}></div>

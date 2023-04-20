@@ -1,6 +1,6 @@
-import ToggleButton from "../Buttons/Toggle";
-import Card from "./Card";
-import ScrollButton from "../Buttons/Scroll";
+import ToggleButton from "./Buttons/Toggle";
+import Card from "./ProductCard";
+import ScrollButton from "./Buttons/Scroll";
 
 const products = [
 	{
@@ -174,7 +174,10 @@ export default function RelatedProducts() {
 						{products.map(function (product, i) {
 							return (
 								<li key={i} className="p-2" style={{ minWidth: "240px" }}>
-									<Card {...{ product }} />
+									<Card
+										{...{ product }}
+										className="border lg:hover:bg-gray-300"
+									/>
 								</li>
 							);
 						})}

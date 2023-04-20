@@ -1,7 +1,7 @@
-export default function H1({ className = null }) {
+export default function H1({ title, srOnly, className = null }) {
 	return (
-		<h1 className="text-4xl">
-			<span className="sr-only">Cub Cadet Zero-Turn Mower</span> ZT1 54
+		<h1 className={`text-4xl ${className}`}>
+			<span className="sr-only">{srOnly}</span> {title}
 		</h1>
 	);
 }
