@@ -3,6 +3,7 @@ import BreadCrumbs from "../../components/BreadCrumbs";
 import H1 from "../../components/H1";
 import productJSON from "../../Data/products.json";
 import ProductCard from "../../components/ProductCard";
+import Button from "../../components/Buttons/Main";
 
 export default function Index() {
 	return (
@@ -15,7 +16,7 @@ export default function Index() {
 							{ title: "Riding Lawn Mowers" },
 							{ title: "Zero-Turn Mowers" },
 						]}
-						//cta={{ title: "Buy Stuff", url: "#products" }}
+						cta={{ title: "Buy Stuff", url: "#products" }}
 					/>
 				</li>
 				<li className="max-w-screen-2xl mx-auto p-3">
@@ -81,8 +82,36 @@ export default function Index() {
 									<li className="text-xs uppercase">All Filters</li>
 								</ul>
 							</button>
+							<button
+								className="bg-amber-400 rounded p-3 ml-2"
+								onClick={(e) => {
+									const productFinder = document.querySelector("#product-finder");
+									productFinder.classList.toggle("hidden");
+									productFinder.scrollIntoView();
+								}}>
+								<ul className="flex items-center">
+									<li className="h-6 w-6 mr-2">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 96 960 960">
+											<path d="M476 821q18 0 30.5-12.5T519 778q0-18-12.5-30.5T476 735q-18 0-30.5 12.5T433 778q0 18 12.5 30.5T476 821Zm-39-155h69q0-32 9.5-53.5T557 559q29-28 42.5-54.5T613 447q0-57-39-88t-98-31q-57 0-94 28t-54 72l63 26q11-23 31-41t56-18q33 0 50 17t17 41q0 22-12 39.5T499 531q-45 43-53.5 64.5T437 666ZM180 949q-29 0-51-22t-22-51V276q0-29 22-51t51-22h600q29 0 51 22t22 51v600q0 29-22 51t-51 22H180Z" />
+										</svg>
+									</li>
+									<li className="text-xs uppercase">Help Me Decide</li>
+								</ul>
+							</button>
 						</li>
 					</ul>
+
+					<div className="hidden" id="product-finder">
+						<div className="bg-gray-400 p-5 border-y-2 border-gray-500">
+							<div
+								className="max-w-screen-2xl mx-auto bg-white rounded-lg flex justify-center items-center w-full"
+								style={{ minHeight: "500px" }}>
+								Product Finder
+							</div>
+						</div>
+					</div>
 				</li>
 				<li className="px-3 py-10">
 					<ul className="md:grid lg:grid-cols-2 xl:grid-cols-4 gap-2 max-w-screen-2xl mx-auto">
