@@ -1,4 +1,4 @@
-export default function ToggleView({ className = null, id = null }) {
+export default function IconToggleView({ className = null, id = null }) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,4 @@
-export default function Delivery({ className = null }) {
+export default function IconDelivery({ className = null }) {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"

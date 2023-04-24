@@ -1,7 +1,12 @@
+import superToggle from "./Functions/SuperToggle";
+
+import Link from "next/link";
 import Image from "next/image";
 import Button from "./Buttons/Main";
+import IconText from "./Buttons/IconText";
 import Stars from "./Stars";
-import Link from "next/link";
+import AddtoCart from "./Icons/AddtoCart";
+import Compare from "./Icons/Compare";
 
 export default function Cards({
 	product,
@@ -71,43 +76,43 @@ export default function Cards({
 			</Link>
 
 			{!!addToCart && (
-				<div className="mt-4 p-3 border-t">
-					<ul className="flex">
-						<li className="flex">
-							<button className="bg-amber-400 rounded-full h-12 w-12 p-3">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									viewBox="0 96 960 960"
-									className="">
-									<path d="M457 443V319H332v-73h125V122h73v124h124v73H530v124h-73ZM282.708 986Q250 986 227 962.708t-23-56Q204 874 227.292 851t56-23Q316 828 339 851.292t23 56Q362 940 338.708 963t-56 23Zm415 0Q665 986 642 962.708t-23-56Q619 874 642.292 851t56-23Q731 828 754 851.292t23 56Q777 940 753.708 963t-56 23ZM283 777q-44.742 0-66.871-37.5Q194 702 216 664l60-110-151-320H44v-73h127l175 372h294l160-287 63 35-158 286q-10.362 17.667-27.206 28.333Q660.949 606 638 606H331l-56 98h502v73H283Z" />
-								</svg>
-							</button>
-						</li>
-						<li className="flex">
-							<button className="bg-gray-300 rounded-full h-12 w-12 p-3 ml-2">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960">
-									<path d="m315 907-51-52 116-115H70v-73h310L264 551l51-51 204 203-204 204Zm330-256L441 447l204-203 51 51-115 116h309v73H581l115 115-51 52Z" />
-								</svg>
-							</button>
-						</li>
-					</ul>
-				</div>
+				<ul className="flex items-center mt-4 p-3 border-t">
+					<li className="basis-full pr-2">
+						<IconText
+							title="Add to Cart"
+							Icon={() => <AddtoCart className="w-6 mr-1" />}
+							className="bg-amber-400 text-sm w-full p-3 font-bold"
+						/>
+					</li>
+					<li className="basis-2/4">
+						<IconText
+							title="Compare"
+							Icon={() => <Compare className="w-6 mr-1" />}
+							className="bg-gray-200 text-xs w-full p-3"
+							onClick={(e) => {
+								superToggle(e, ["bg-gray-200", "bg-green-400"]);
+								document.querySelector("#compare").classList.remove("hidden");
+								document
+									.querySelector("#compare-button")
+									.classList.remove("hidden");
+							}}
+						/>
+					</li>
+				</ul>
 			)}
 
 			{!!displayAvailablity && (
 				<div className="mt-2 px-3">
 					{!!product.inStock && (
-						<ul className="flex items-center">
-							<li className="mr-2">
-								<span className="block bg-green-500 rounded-full h-4 w-4"></span>
-							</li>
-							<li className="text-sm">{product.inStock} [change]</li>
-						</ul>
+						<div className="flex items-center text-sm">
+							<span className="block bg-green-400 rounded-full h-4 w-4"></span>
+							{product.inStock} [change]
+						</div>
 					)}
 					{!!product.available && (
 						<ul className="flex items-center mt-2">
 							<li className="mr-2">
-								<span className="block bg-green-500 rounded-full h-4 w-4"></span>
+								<span className="block bg-green-400 rounded-full h-4 w-4"></span>
 							</li>
 							<li className="text-sm">{product.available}</li>
 						</ul>

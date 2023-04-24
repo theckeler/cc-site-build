@@ -3,7 +3,12 @@ import BreadCrumbs from "../../components/BreadCrumbs";
 import H1 from "../../components/H1";
 import productJSON from "../../Data/products.json";
 import ProductCard from "../../components/ProductCard";
-import Button from "../../components/Buttons/Main";
+import AppliedFilter from "../../components/Buttons/AppliedFilter";
+import ProductFinder from "../../components/ProductFinder";
+import Compare from "../../components/Compare";
+import ViewMore from "../../components/Buttons/ViewMore";
+import IconCompare from "../../components/Icons/Compare";
+import Filters from "../../components/Filters";
 
 export default function Index() {
 	return (
@@ -21,7 +26,7 @@ export default function Index() {
 				</li>
 				<li className="max-w-screen-2xl mx-auto p-3">
 					<H1 title="Zero-Turn Mowers" srOnly="Cub Cadet" />
-					<p className="text-sm mt-8">
+					<p className="text-sm mt-8 max-w-6xl leading-loose">
 						Zero-turn lawn mowers answer the call of challenging yards and
 						difficult obstacles. It’s time to explore the full Cub Cadet line-up
 						of innovative zero-turns, including lap bar and Cub Cadet exclusive
@@ -32,16 +37,22 @@ export default function Index() {
 				<li className="sticky top-0 z-50 bg-gray-200" id="products">
 					<ul className="flex items-center max-w-screen-2xl mx-auto px-3 py-2 mt-20">
 						<li>
-							<button className="bg-amber-400 rounded p-3">
+							<button
+								className="bg-amber-400 rounded p-3"
+								onClick={() => {
+									document
+										.querySelector("#all-filters")
+										.classList.toggle("hidden");
+								}}>
 								<ul className="flex items-center">
-									<li className="h-6 w-6 mr-2">
+									<li className="h-6 w-6 xl:mr-2">
 										<svg
 											xmlns="http://www.w3.org/2000/svg"
 											viewBox="0 96 960 960">
 											<path d="M111 843v-73h255v73H111Zm0-242v-73h497v73H111Zm0-243v-73h739v73H111Z" />
 										</svg>
 									</li>
-									<li className="text-xs uppercase">Sort</li>
+									<li className="hidden xl:block text-xs uppercase">Sort</li>
 								</ul>
 							</button>
 						</li>
@@ -69,23 +80,41 @@ export default function Index() {
 								</li>
 							</ul>
 						</li>
-						<li className="ml-auto">
-							<button className="bg-amber-400 rounded p-3">
-								<ul className="flex items-center">
-									<li className="h-6 w-6 mr-2">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 96 960 960">
-											<path d="M425 946V707h73v84h352v73H498v82h-73Zm-315-82v-73h265v73H110Zm192-169v-83H110v-73h192v-84h73v240h-73Zm123-83v-73h425v73H425Zm160-168V205h73v83h192v73H658v83h-73Zm-475-83v-73h425v73H110Z" />
-										</svg>
-									</li>
-									<li className="text-xs uppercase">All Filters</li>
-								</ul>
-							</button>
+						<li className="ml-2 lg:ml-auto flex">
+							<div>
+								<button
+									className="bg-amber-400 rounded p-3"
+									onClick={() => {
+										document
+											.querySelector("#all-filters")
+											.classList.toggle("hidden");
+									}}>
+									<ul className="flex items-center">
+										<li className="h-6 w-6 xl:mr-2">
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												viewBox="0 96 960 960">
+												<path d="M425 946V707h73v84h352v73H498v82h-73Zm-315-82v-73h265v73H110Zm192-169v-83H110v-73h192v-84h73v240h-73Zm123-83v-73h425v73H425Zm160-168V205h73v83h192v73H658v83h-73Zm-475-83v-73h425v73H110Z" />
+											</svg>
+										</li>
+										<li className="hidden xl:block text-xs uppercase">
+											All Filters
+										</li>
+									</ul>
+								</button>
+
+								<div
+									className="hidden fixed top-0 right-0 z-50 w-full lg:w-6/12 xl:w-5/12 2xl:w-3/12 h-screen bg-white border-l border-l-4 border-gray-200"
+									id="all-filters">
+									<Filters />
+								</div>
+							</div>
+
 							<button
 								className="bg-amber-400 rounded p-3 ml-2"
 								onClick={(e) => {
-									const productFinder = document.querySelector("#product-finder");
+									const productFinder =
+										document.querySelector("#product-finder");
 									productFinder.classList.toggle("hidden");
 									productFinder.scrollIntoView();
 								}}>
@@ -100,17 +129,27 @@ export default function Index() {
 									<li className="text-xs uppercase">Help Me Decide</li>
 								</ul>
 							</button>
+
+							<button
+								className="hidden bg-red-500 rounded p-3 ml-2"
+								id="compare-button"
+								onClick={() => {
+									document.querySelector("#compare").classList.toggle("hidden");
+								}}>
+								<ul className="flex items-center">
+									<li className="h-6 w-6 mr-2">
+										<IconCompare />
+									</li>
+									<li className="text-xs uppercase">Compare</li>
+								</ul>
+							</button>
 						</li>
 					</ul>
-
+					<div className="hidden" id="compare">
+						<Compare className="p-2" />
+					</div>
 					<div className="hidden" id="product-finder">
-						<div className="bg-gray-400 p-5 border-y-2 border-gray-500">
-							<div
-								className="max-w-screen-2xl mx-auto bg-white rounded-lg flex justify-center items-center w-full"
-								style={{ minHeight: "500px" }}>
-								Product Finder
-							</div>
-						</div>
+						<ProductFinder className="p-2" />
 					</div>
 				</li>
 				<li className="px-3 py-10">
@@ -131,8 +170,18 @@ export default function Index() {
 							);
 						})}
 					</ul>
+					<div className="max-w-screen-2xl mx-auto border-b pb-8 my-10 relative">
+						<div className="text-xs text-center">Showing 8 of 32</div>
+
+						<ViewMore
+							title="Show More Products"
+							className="bg-amber-400 absolute left-2/4 -translate-x-2/4 top-3/4"
+						/>
+					</div>
 				</li>
 				<li className="bg-gray-200">
+					<ProductFinder className="" />
+
 					<section class="py-5 px-1 max-w-screen-2xl mx-auto">
 						<div class="">
 							<ul class="flex">
