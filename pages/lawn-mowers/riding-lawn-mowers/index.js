@@ -23,14 +23,32 @@ export default function Index() {
 					electric mowers, all featuring the strength and durability that bring
 					your lawn to life.
 				</p>
-			</li>
 
-			<li className="max-w-screen-2xl mx-auto px-3 py-10">
-				<section>
-					<Link href="/lawn-mowers/riding-lawn-mowers/zero-turn-mowers">
-						Zero Turn Mowers
-					</Link>
-				</section>
+				<ul className="grid grid-cols-3 gap-2">
+					<li className="">
+						<div className="bg-gray-200">
+							<Link
+								href="/lawn-mowers/riding-lawn-mowers/zero-turn-mowers"
+								className="block p-2">
+								Zero Turn Mowers
+							</Link>
+						</div>
+					</li>
+					<li>
+						<div className="bg-gray-200">
+							<div href="#top" className="block p-2">
+								Lawn & Garden Tractors
+							</div>
+						</div>
+					</li>
+					<li>
+						<div className="bg-gray-200">
+							<div href="#top" className="block p-2">
+								Electric Riding Mowers
+							</div>
+						</div>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	);
