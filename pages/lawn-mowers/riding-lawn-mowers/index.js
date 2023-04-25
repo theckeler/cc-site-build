@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import BreadCrumbs from "../../components/BreadCrumbs";
-import H1 from "../../components/H1";
+import BreadCrumbs from "../../../components/BreadCrumbs";
+import H1 from "../../../components/H1";
 
 export default function Index() {
 	return (
@@ -27,7 +27,9 @@ export default function Index() {
 
 			<li className="max-w-screen-2xl mx-auto px-3 py-10">
 				<section>
-					<Link href="/zero-turn-mowers">Zero Turn Mowers</Link>
+					<Link href="/lawn-mowers/riding-lawn-mowers/zero-turn-mowers">
+						Zero Turn Mowers
+					</Link>
 				</section>
 			</li>
 		</ul>

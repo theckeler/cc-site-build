@@ -18,7 +18,7 @@ export default function Index() {
 
 			<li className="max-w-screen-2xl mx-auto px-3 py-10">
 				<section>
-					<Link href="/riding-lawn-mowers">Riding Lawn Mowers</Link>
+					<Link href="/lawn-mowers/riding-lawn-mowers">Riding Lawn Mowers</Link>
 				</section>
 			</li>
 		</ul>

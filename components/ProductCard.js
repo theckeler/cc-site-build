@@ -19,7 +19,12 @@ export default function Cards({
 	return (
 		<div className="h-full">
 			<Link
-				href={product.slug && !product.ad ? "/pdp/" + product.slug : "#top"}
+				href={
+					product.slug && !product.ad
+						? "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers/pdp/" +
+						  product.slug
+						: "#top"
+				}
 				className={`p-3 flex flex-col rounded-md ${className}`}>
 				{!product.ad ? (
 					<div className="relative" style={{ paddingTop: "100%" }}>
