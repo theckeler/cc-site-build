@@ -7,7 +7,7 @@ import IconText from "./Buttons/IconText";
 import Stars from "./Stars";
 import AddtoCart from "./Icons/AddtoCart";
 import Compare from "./Icons/Compare";
-import CatAd from "./CatAd";
+import CatAd from "./Ad";
 
 export default function Cards({
 	product,
@@ -28,7 +28,12 @@ export default function Cards({
 				className={`p-3 flex flex-col rounded-md ${className}`}>
 				{!product.ad ? (
 					<div className="relative" style={{ paddingTop: "100%" }}>
-						<Image src={product.img} alt="" fill />
+						<Image
+							src={product.img}
+							alt=""
+							fill
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						/>
 					</div>
 				) : (
 					<CatAd />

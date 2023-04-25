@@ -25,8 +25,14 @@ const IndexID = (id) => {
 					crumbs={[
 						{ title: "Home", url: "/" },
 						{ title: "Lawn Mowers", url: "/lawn-mowers" },
-						{ title: "Riding Lawn Mowers", url: "/riding-lawn-mowers" },
-						{ title: "Zero-Turn Mowers", url: "/zero-turn-mowers" },
+						{
+							title: "Riding Lawn Mowers",
+							url: "/lawn-mowers/riding-lawn-mowers",
+						},
+						{
+							title: "Zero-Turn Mowers",
+							url: "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers",
+						},
 						{ title: product.title },
 					]}
 					stars={true}

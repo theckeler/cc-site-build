@@ -27,7 +27,12 @@ export default function Gallery({ gallery }) {
 						<div
 							className="relative min-w-full min-h-full"
 							style={{ paddingTop: "100%" }}>
-							<Image src={img.src} alt="" fill />
+							<Image
+								src={img.src}
+								alt=""
+								fill
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							/>
 						</div>
 					</li>
 				);
