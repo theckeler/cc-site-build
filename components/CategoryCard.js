@@ -10,7 +10,7 @@ export default function CategoryCard({ h2, h3, p, href }) {
 			<Selector
 				href={href}
 				className="block md:flex md:flex-col p-6 rounded-lg bg-gray-200 md:h-full">
-				<h2 className="text-2xl font-bold">{h2}</h2>
+				<h2 className="text-xl font-bold">{h2}</h2>
 				{!!h3 && <h3 className="text-lg mt-2">{h3}</h3>}
 				<p className="mt-4 text-sm leading-6">{p}</p>
 				<div className="mt-auto">

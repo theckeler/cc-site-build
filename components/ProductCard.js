@@ -27,7 +27,7 @@ export default function Cards({
 				}
 				className={`p-3 flex flex-col rounded-md ${className}`}>
 				{!product.ad ? (
-					<div className="relative" style={{ paddingTop: "100%" }}>
+					<div className="relative pt-[100%]">
 						<Image
 							src={product.img}
 							alt=""

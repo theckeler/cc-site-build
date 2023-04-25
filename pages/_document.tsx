@@ -6,7 +6,7 @@ export default function Document() {
 		<Html lang="en">
 			<Head />
 			<body className="bg-white">
-				<div className="bg-gray-400" style={{ minHeight: "160px" }}>
+				<div className="bg-gray-200" style={{ minHeight: "160px" }}>
 					<Link href="/" className="p-4 block">
 						Home
 					</Link>
@@ -14,7 +14,7 @@ export default function Document() {
 				<main className="">
 					<Main />
 				</main>
-				<div className="bg-gray-400" style={{ minHeight: "600px" }}></div>
+				<div className="bg-gray-200" style={{ minHeight: "600px" }}></div>
 				<NextScript />
 			</body>
 		</Html>

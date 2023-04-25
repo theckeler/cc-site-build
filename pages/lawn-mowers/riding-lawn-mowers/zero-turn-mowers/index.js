@@ -146,7 +146,7 @@ export default function Index() {
 						<div className="">
 							<ul className="flex">
 								<li className="basis-4/12">
-									<div className="relative" style={{ paddingTop: "100%" }}>
+									<div className="relative pt-[100%]">
 										<Image
 											src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/intro.jpg"
 											alt=""

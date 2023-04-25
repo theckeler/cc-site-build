@@ -1,6 +1,6 @@
 import ToggleButton from "./Buttons/Toggle";
 //import Cards from "./RelatedProducts/Card";
-import Button from "./Buttons/Main";
+import Button from "@/buttons/Main";
 import ScrollButton from "./Buttons/Scroll";
 
 const articles = [

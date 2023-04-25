@@ -28,9 +28,7 @@ export default function Gallery({ gallery = null }) {
 									!!img.hidden && "hidden"
 								}`}
 								key={i}>
-								<div
-									className="relative min-w-full min-h-full"
-									style={{ paddingTop: "100%" }}>
+								<div className="relative min-w-full min-h-full pt-[100%]">
 									<Image
 										src={img.src}
 										alt=""
