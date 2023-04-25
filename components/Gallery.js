@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ViewMore from "../components/Buttons/ViewMore";
 
-export default function Gallery({ gallery }) {
+export default function Gallery({ gallery = null }) {
 	return (
 		<ul className="flex flex-col lg:flex-row lg:flex-wrap mb-6">
 			{gallery.map(function (img, i) {
