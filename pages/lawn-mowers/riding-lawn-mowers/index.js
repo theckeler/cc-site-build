@@ -11,14 +11,18 @@ export default function Index() {
 				<BreadCrumbs
 					crumbs={[
 						{ title: "Home", url: "/" },
-						{ title: "Lawn Mowers", url: "lawn-mowers" },
+						{ title: "Lawn Mowers", url: "/lawn-mowers" },
 						{ title: "Riding Lawn Mowers" },
 					]}
 					cta={{ title: "Buy Stuff", url: "#products" }}
 				/>
 			</li>
 			<li className="max-w-screen-2xl mx-auto p-3">
-				<H1 title="Explore Riding Lawn Mowers" srOnly="Cub Cadet" />
+				<H1
+					title="Explore Riding Lawn Mowers"
+					srOnly="Cub Cadet"
+					className="text-4xl border-b pb-4 mb-4"
+				/>
 				<p className="text-sm mt-8 max-w-6xl leading-loose">
 					A complete lineup of zero-turn mowers, lawn and garden tractors, and
 					electric mowers, all featuring the strength and durability that bring

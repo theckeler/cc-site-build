@@ -14,7 +14,11 @@ export default function Index() {
 				/>
 			</li>
 			<li className="max-w-screen-2xl mx-auto p-3">
-				<H1 title="Explore Lawn Mowers" srOnly="Cub Cadet" />
+				<H1
+					title="Explore Lawn Mowers"
+					srOnly="Cub Cadet"
+					className="text-4xl border-b pb-4 mb-4"
+				/>
 				<ul className="grid grid-cols-3 gap-2 mt-8">
 					<li className="">
 						<div className="bg-gray-200">

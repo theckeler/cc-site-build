@@ -1,7 +1,7 @@
 [
 	{
 		"title": "ZT1 50",
-		"slug": "0",
+		"slug": "1",
 		"url": "/pdp/0",
 		"series": "Ultima Series™ ZT",
 		"price": "3,599.00",
@@ -55,7 +55,7 @@
 	},
 	{
 		"title": "ZT1 54",
-		"slug": "1",
+		"slug": "2",
 		"url": "/pdp/1",
 		"series": "Ultima Series™ ZT",
 		"price": "3,599.00",
@@ -109,7 +109,7 @@
 	},
 	{
 		"title": "ZT1 42",
-		"slug": "2",
+		"slug": "3",
 		"series": "Ultima Series™ ZT",
 		"price": "3,499.00",
 		"msrp": "",
@@ -168,7 +168,7 @@
 
 	{
 		"title": "",
-		"slug": "3",
+		"slug": "4",
 		"desc": [""],
 		"ad": true,
 		"addToCart": false,
@@ -177,7 +177,7 @@
 	},
 	{
 		"title": "ZT1 46",
-		"slug": "4",
+		"slug": "5",
 		"series": "Ultima Series™ ZT",
 		"price": "3,699.00",
 		"msrp": "",
@@ -228,7 +228,7 @@
 	},
 	{
 		"title": "ZTS1 46",
-		"slug": "5",
+		"slug": "6",
 		"series": "Ultima Series™ ZTS",
 		"price": "4,999.00",
 		"msrp": "",
@@ -280,7 +280,7 @@
 	},
 	{
 		"title": "ZTS1 42",
-		"slug": "6",
+		"slug": "7",
 		"series": "Ultima Series™ ZTS",
 		"price": "4,899.00",
 		"msrp": "",
@@ -332,7 +332,7 @@
 	},
 	{
 		"title": "ZTS2 60",
-		"slug": "7",
+		"slug": "8",
 		"series": "Ultima Series™ ZTS",
 		"price": "6,199.00",
 		"msrp": "",

@@ -16,7 +16,7 @@ import Desc from "../../../../../components/Desc";
 import productsJSON from "../../../../../Data/products.json";
 
 const IndexID = (id) => {
-	const product = productsJSON[id.slug];
+	const product = productsJSON[Number(id.slug - 1)];
 
 	return (
 		<ul className="max-w-screen-2xl grid grid-cols-12 gap-3 mx-auto p-3">
