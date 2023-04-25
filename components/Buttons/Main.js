@@ -4,8 +4,9 @@ export default function Button({
 	addStyle,
 	noIcon = false,
 	href = null,
+	noButton = false,
 }) {
-	const Type = href ? "a" : "button";
+	const Type = noButton ? "div" : href ? "a" : "button";
 
 	return (
 		<Type className={`${className}`} href={href}>

@@ -19,39 +19,33 @@ export default function Index() {
 					srOnly="Cub Cadet"
 					className="text-4xl border-b pb-4 mb-4"
 				/>
-				<ul className="grid grid-cols-3 gap-2 mt-8">
-					<li className="">
-						<div className="bg-gray-200">
+				<ul className="grid grid-cols-3 gap-4 mt-8">
+					<li>
+						<CategoryCard
+							h2="Riding Lawn Mowers"
+							h3="Incredible strength. Incredibly comfortable."
+							p="Our quality lineup of riding lawn mowers, such as our zero-turn riders and lawn tractors, offers unparalleled strength and comfort so you can get the most out of your lawn."
+							href="/lawn-mowers/riding-lawn-mowers"
+						/>
+					</li>
+					<li>
+						<div>
 							<CategoryCard
-								h2="Riding Lawn Mowers"
-								h3="Incredible strength. Incredibly comfortable."
-								p="Our quality lineup of riding lawn mowers, such as our zero-turn riders and lawn tractors, offers unparalleled strength and comfort so you can get the most out of your lawn."
-								href="/lawn-mowers/riding-lawn-mowers"
+								h2="Walk-Behind Mowers"
+								h3="A power walk."
+								p="From the Signature Cut™ series lawn mowers to the wide area mowers, every walk-behind mower features incredible control and maneuverability to match your mowing needs."
+								href="#top"
 							/>
 						</div>
 					</li>
 					<li>
-						<div className="bg-gray-200">
-							<div href="#top" className="block p-2">
-								<CategoryCard
-									h2="Walk-Behind Mowers"
-									h3="A power walk."
-									p="From the Signature Cut™ series lawn mowers to the wide area mowers, every walk-behind mower features incredible control and maneuverability to match your mowing needs."
-									href="#top"
-								/>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div className="bg-gray-200">
-							<div href="#top" className="block p-2">
-								<CategoryCard
-									h2="Robotic Mowers"
-									h3="Cutting-edge results. Zero effort."
-									p="With the XR3 robotic mower, we combined Cub Cadet power with innovative technology like the Smart Mode feature. With the touch of a button, you get a just-mowed look so you can focus on getting the most out of your yard."
-									href="#top"
-								/>
-							</div>
+						<div>
+							<CategoryCard
+								h2="Robotic Mowers"
+								h3="Cutting-edge results. Zero effort."
+								p="With the XR3 robotic mower, we combined Cub Cadet power with innovative technology like the Smart Mode feature. With the touch of a button, you get a just-mowed look so you can focus on getting the most out of your yard."
+								href="#top"
+							/>
 						</div>
 					</li>
 				</ul>
