@@ -7,25 +7,27 @@ import IconText from "./Buttons/IconText";
 import Stars from "./Stars";
 import AddtoCart from "./Icons/AddtoCart";
 import Compare from "./Icons/Compare";
+import CatAd from "./CatAd";
 
 export default function Cards({
 	product,
 	displayButton = true,
 	displayMSRP = true,
-	className,
-	displayPrice = false,
-	displayStars = false,
-	addToCart = false,
+	className = "",
 	displayAvailablity = false,
 }) {
 	return (
-		<div>
+		<div className="h-full">
 			<Link
-				href={product.url ? product.url : "#top"}
-				className={`p-3 flex flex-col rounded-md h-full ${className}`}>
-				<div className="relative" style={{ paddingTop: "100%" }}>
-					<Image src={product.img} alt="" fill />
-				</div>
+				href={product.slug && !product.ad ? "/pdp/" + product.slug : "#top"}
+				className={`p-3 flex flex-col rounded-md ${className}`}>
+				{!product.ad ? (
+					<div className="relative" style={{ paddingTop: "100%" }}>
+						<Image src={product.img} alt="" fill />
+					</div>
+				) : (
+					<CatAd />
+				)}
 
 				<div className="mt-2 text-lg font-bold" itemProp="name">
 					{product.title}
@@ -40,11 +42,11 @@ export default function Cards({
 
 				{!!product.series && <div className="text-xs">{product.series}</div>}
 
-				{!!displayPrice && (
+				{!!product.displayPrice && (
 					<div className="text-lg font-bold">${product.price}</div>
 				)}
 
-				{!!displayStars && (
+				{!!product.displayStars && (
 					<div className="flex text-sm">
 						<Stars num={5} /> ({product.reviews})
 					</div>
@@ -75,7 +77,7 @@ export default function Cards({
 				)}
 			</Link>
 
-			{!!addToCart && (
+			{product.addToCart && (
 				<ul className="flex items-center mt-4 p-3 border-t">
 					<li className="basis-full pr-2">
 						<IconText
@@ -103,12 +105,12 @@ export default function Cards({
 
 			{!!displayAvailablity && (
 				<div className="mt-2 px-3">
-					{!!product.inStock && (
+					{/* {!!product.inStock && (
 						<div className="flex items-center text-sm">
 							<span className="block bg-green-400 rounded-full h-4 w-4"></span>
 							{product.inStock} [change]
 						</div>
-					)}
+					)} */}
 					{!!product.available && (
 						<ul className="flex items-center mt-2">
 							<li className="mr-2">

@@ -104,7 +104,7 @@ export default function Index() {
 								</button>
 
 								<div
-									className="hidden fixed top-0 right-0 z-50 w-full lg:w-6/12 xl:w-5/12 2xl:w-3/12 h-screen bg-white border-l border-l-4 border-gray-200"
+									className="hidden fixed top-0 right-0 z-50 w-full lg:w-6/12 xl:w-5/12 2xl:w-3/12 h-screen bg-white border-l-0 lg:border-l lg:border-l-4 border-amber-200"
 									id="all-filters">
 									<Filters />
 								</div>
@@ -182,10 +182,10 @@ export default function Index() {
 				<li className="bg-gray-200">
 					<ProductFinder className="" />
 
-					<section class="py-5 px-1 max-w-screen-2xl mx-auto">
-						<div class="">
-							<ul class="flex">
-								<li class="basis-4/12">
+					<section className="py-5 px-1 max-w-screen-2xl mx-auto">
+						<div className="">
+							<ul className="flex">
+								<li className="basis-4/12">
 									<div className="relative" style={{ paddingTop: "100%" }}>
 										<Image
 											src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/intro.jpg"
@@ -194,16 +194,16 @@ export default function Index() {
 										/>
 									</div>
 								</li>
-								<li class="basis-8/12">
-									<div class="p-3">
-										<h2 class="mb-2 display-2">
+								<li className="basis-8/12">
+									<div className="p-3">
+										<h2 className="mb-2 display-2">
 											Introducing the Ultima Series™ ZTXS
 										</h2>
-										<h3 class="mb-2 display-3">
+										<h3 className="mb-2 display-3">
 											The Ultima Series™ Zero-Turn with <br />
 											Commercial-Grade Features
 										</h3>
-										<p class="mb-2">
+										<p className="mb-2">
 											From tight turns to inclined hillsides and stretching
 											valleys, the Ultima ZTXS is built to help tackle your
 											yard’s unique challenges. The Ultima ZTXS brings Cub
@@ -213,7 +213,7 @@ export default function Index() {
 										</p>
 										<a
 											href="https://www.cubcadet.com/en_US/lp/ztxs--zero-turn-mowers"
-											class="button text-uppercase font-weight-bold text-decoration-none d-inline-block border-0 bg-black">
+											clas="button text-uppercase font-weight-bold text-decoration-none d-inline-block border-0 bg-black">
 											Learn more about the Ultima ztxs
 										</a>
 									</div>

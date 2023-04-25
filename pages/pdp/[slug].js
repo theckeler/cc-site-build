@@ -13,7 +13,11 @@ import H2 from "../../components/H2";
 import Price from "../../components/Price";
 import Desc from "../../components/Desc";
 
-export default function Index() {
+import productsJSON from "../../Data/products.json";
+
+const IndexID = (id) => {
+	const product = productsJSON[id.slug];
+
 	return (
 		<ul className="max-w-screen-2xl grid grid-cols-12 gap-3 mx-auto p-3">
 			<li className="col-span-12">
@@ -22,25 +26,26 @@ export default function Index() {
 						{ title: "Lawn Mowers" },
 						{ title: "Riding Lawn Mowers", url: "/category" },
 						{ title: "Zero-Turn Mowers", url: "/category" },
-						{ title: "ZT1 54" },
+						{ title: product.title },
 					]}
 					stars={true}
+					starNum={product.reviews}
 				/>
 			</li>
 			<li className="col-span-12 lg:col-span-7 xl:col-span-8">
-				<Gallery />
+				<Gallery gallery={product.gallery} />
 			</li>
 			<li className="col-span-12 lg:col-span-5 xl:col-span-4 lg:sticky lg:top-0 self-start row-span-2">
 				<div className="md:px-6 py-4">
-					<H1 title="ZT1 54" srOnly="Cub Cadet Zero-Turn Mower" />
-					<H2 />
-					<Price />
+					<H1 title={product.title} srOnly="Cub Cadet Zero-Turn Mower" />
+					<H2 title={product.series} />
+					<Price price={product.price} msrp={product.msrp} />
 					<AddCart />
-					<Desc />
+					<Desc blocks={product.desc} />
 				</div>
 			</li>
 			<li className="col-span-12 lg:col-span-7 xl:col-span-8">
-				<Reviews />
+				<Reviews starNum={product.reviews} />
 				<Features />
 				<Specs />
 				<Maintenance />
@@ -50,4 +55,25 @@ export default function Index() {
 			</li>
 		</ul>
 	);
+};
+
+export async function getStaticProps({ params }) {
+	return {
+		props: params,
+	};
 }
+
+export async function getStaticPaths() {
+	return {
+		paths: productsJSON.map((product, i) => {
+			return {
+				params: {
+					slug: product.slug,
+				},
+			};
+		}),
+		fallback: false,
+	};
+}
+
+export default IndexID;

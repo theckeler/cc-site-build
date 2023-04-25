@@ -1,6 +1,7 @@
 [
 	{
 		"title": "ZT1 50",
+		"slug": "0",
 		"url": "/pdp/0",
 		"series": "Ultima Series™ ZT",
 		"price": "3,599.00",
@@ -15,10 +16,46 @@
 		],
 		"inStock": "In stock at Worcester Sales and Service, Inc.",
 		"available": "Available for Pick-Up",
-		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1d89b2c9/products/Equipment/Cub-Cadet_ZT150_6.jpg"
+		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1d89b2c9/products/Equipment/Cub-Cadet_ZT150_6.jpg",
+		"ad": false,
+		"addToCart": true,
+		"displayPrice": true,
+		"displayStars": true,
+		"gallery": [
+			{ "video": true, "src": "https://www.youtube.com/embed/mrqqpGpPYCM" },
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw700797e6/products/Equipment/Cub-Cadet_ZT154_6.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwdd14887d/products/Equipment/Cub-Cadet_ZT154_4.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa9c39c10/products/Equipment/Cub-Cadet_ZT154_9.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw543c20be/products/Cub_Cadet_ZT1_54_Accessories.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			}
+		]
 	},
 	{
 		"title": "ZT1 54",
+		"slug": "1",
 		"url": "/pdp/1",
 		"series": "Ultima Series™ ZT",
 		"price": "3,599.00",
@@ -38,10 +75,41 @@
 			{ "title": "Riding Lawn Mowers", "url": "/category" },
 			{ "title": "Zero-Turn Mowers", "url": "/category" },
 			{ "title": "ZT1 54" }
+		],
+		"ad": false,
+		"addToCart": true,
+		"displayPrice": true,
+		"displayStars": true,
+		"gallery": [
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwdd14887d/products/Equipment/Cub-Cadet_ZT154_4.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw79237af3/products/Equipment/Cub-Cadet_ZT154_7.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwb3f59f28/products/Equipment/Cub-Cadet_ZT154_1.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw700797e6/products/Equipment/Cub-Cadet_ZT154_6.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			}
 		]
 	},
 	{
 		"title": "ZT1 42",
+		"slug": "2",
 		"series": "Ultima Series™ ZT",
 		"price": "3,499.00",
 		"msrp": "",
@@ -61,27 +129,55 @@
 			{ "title": "Riding Lawn Mowers", "url": "/category" },
 			{ "title": "Zero-Turn Mowers", "url": "/category" },
 			{ "title": "ZT1 42" }
+		],
+		"ad": false,
+		"addToCart": true,
+		"displayPrice": true,
+		"displayStars": true,
+		"gallery": [
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw700797e6/products/Equipment/Cub-Cadet_ZT154_6.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwdd14887d/products/Equipment/Cub-Cadet_ZT154_4.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa9c39c10/products/Equipment/Cub-Cadet_ZT154_9.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw543c20be/products/Cub_Cadet_ZT1_54_Accessories.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			}
 		]
 	},
 
 	{
-		"title": "ZT1 54P",
-		"series": "Ultima Series™ ZT",
-		"price": "4,099.00",
-		"msrp": "4,299.00",
-		"stars": 4.9,
-		"reviews": 21,
-		"desc": [
-			"A premium 23 HP/726cc Kawasaki FR691V twin-cylinder OHV engine, commercial-grade power that meets your yard's toughest demands",
-			"Equipped with additional high-performance features like front caster suspension, steel fenders and larger rear wheels help you power through challenging terrain with greater comfort.",
-			"Dual hydrostatic transmissions allow for quick and effortless 7 MPH forward (3.5 MPH reverse) ground speeds that leaves your lawn with a professional-quality finish"
-		],
-		"inStock": "In stock at Worcester Sales and Service, Inc.",
-		"available": "Available for Pick-Up",
-		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1391e3d5/products/Equipment/Cub_Cadet_ZT154P_2000x2000_9.jpg"
+		"title": "",
+		"slug": "3",
+		"desc": [""],
+		"ad": true,
+		"addToCart": false,
+		"displayPrice": false,
+		"displayStars": false
 	},
 	{
 		"title": "ZT1 46",
+		"slug": "4",
 		"series": "Ultima Series™ ZT",
 		"price": "3,699.00",
 		"msrp": "",
@@ -94,10 +190,45 @@
 		],
 		"inStock": "In stock at Worcester Sales and Service, Inc.",
 		"available": "Available for Pick-Up",
-		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw9ded41f9/products/Equipment/Cub-Cadet_ZT146_2000x2000_1.jpg"
+		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw9ded41f9/products/Equipment/Cub-Cadet_ZT146_2000x2000_1.jpg",
+		"ad": false,
+		"addToCart": true,
+		"displayPrice": true,
+		"displayStars": true,
+		"gallery": [
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw700797e6/products/Equipment/Cub-Cadet_ZT154_6.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwdd14887d/products/Equipment/Cub-Cadet_ZT154_4.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa9c39c10/products/Equipment/Cub-Cadet_ZT154_9.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw543c20be/products/Cub_Cadet_ZT1_54_Accessories.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			}
+		]
 	},
 	{
 		"title": "ZTS1 46",
+		"slug": "5",
 		"series": "Ultima Series™ ZTS",
 		"price": "4,999.00",
 		"msrp": "",
@@ -111,10 +242,45 @@
 		],
 		"inStock": "In stock at Worcester Sales and Service, Inc.",
 		"available": "Available for Pick-Up",
-		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1313e037/products/Equipment/Cub-Cadet_ZTS146_2000x2000_2.jpg"
+		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw1313e037/products/Equipment/Cub-Cadet_ZTS146_2000x2000_2.jpg",
+		"ad": false,
+		"addToCart": true,
+		"displayPrice": true,
+		"displayStars": true,
+		"gallery": [
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw700797e6/products/Equipment/Cub-Cadet_ZT154_6.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwdd14887d/products/Equipment/Cub-Cadet_ZT154_4.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa9c39c10/products/Equipment/Cub-Cadet_ZT154_9.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw543c20be/products/Cub_Cadet_ZT1_54_Accessories.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			}
+		]
 	},
 	{
 		"title": "ZTS1 42",
+		"slug": "6",
 		"series": "Ultima Series™ ZTS",
 		"price": "4,899.00",
 		"msrp": "",
@@ -128,10 +294,45 @@
 		],
 		"inStock": "In stock at Worcester Sales and Service, Inc.",
 		"available": "Available for Pick-Up",
-		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw430689bb/products/Equipment/Cub-Cadet_ZTS142_2000x2000_10.jpg"
+		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw430689bb/products/Equipment/Cub-Cadet_ZTS142_2000x2000_10.jpg",
+		"ad": false,
+		"addToCart": true,
+		"displayPrice": true,
+		"displayStars": true,
+		"gallery": [
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw700797e6/products/Equipment/Cub-Cadet_ZT154_6.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwdd14887d/products/Equipment/Cub-Cadet_ZT154_4.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa9c39c10/products/Equipment/Cub-Cadet_ZT154_9.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw543c20be/products/Cub_Cadet_ZT1_54_Accessories.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			}
+		]
 	},
 	{
 		"title": "ZTS2 60",
+		"slug": "7",
 		"series": "Ultima Series™ ZTS",
 		"price": "6,199.00",
 		"msrp": "",
@@ -145,6 +346,39 @@
 		],
 		"inStock": "In stock at Worcester Sales and Service, Inc.",
 		"available": "Available for Pick-Up",
-		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw042f6c12/products/Equipment/Cub-Cadet_ZTS260_2000x2000_8.jpg"
+		"img": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw042f6c12/products/Equipment/Cub-Cadet_ZTS260_2000x2000_8.jpg",
+		"addToCart": true,
+		"displayPrice": true,
+		"displayStars": true,
+		"gallery": [
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw44c750be/products/Equipment/Cub-Cadet_ZT154_5.jpg",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw700797e6/products/Equipment/Cub-Cadet_ZT154_6.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwdd14887d/products/Equipment/Cub-Cadet_ZT154_4.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": false
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwa9c39c10/products/Equipment/Cub-Cadet_ZT154_9.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw543c20be/products/Cub_Cadet_ZT1_54_Accessories.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			},
+			{
+				"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
+				"hidden": true
+			}
+		]
 	}
 ]

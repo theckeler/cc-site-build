@@ -1,6 +1,12 @@
+import { Fragment } from "react";
 import Button from "./Buttons/Main";
 
-export default function BreadCrumbs({ crumbs, stars = false, cta = null }) {
+export default function BreadCrumbs({
+	crumbs,
+	stars = false,
+	cta = null,
+	starNum,
+}) {
 	return (
 		<ul className="flex flex-col lg:flex-row flex-wrap w-full py-2">
 			<li className="lg:basis-auto">
@@ -9,16 +15,14 @@ export default function BreadCrumbs({ crumbs, stars = false, cta = null }) {
 						const checkNum = i < crumbs.length - 1 ? true : false;
 						const LinkElement = checkNum ? "a" : "div";
 						const crumbCSS = i === 0 ? "py-1 pr-1" : "p-1";
-
 						return (
-							<>
+							<Fragment key={i}>
 								<li
 									className={`${crumbCSS} ${
 										checkNum
 											? "w-auto truncate md:whitespace-nowrap md:overflow-visible"
 											: "basis-full"
-									} `}
-									key={i}>
+									} `}>
 									<LinkElement
 										href={crumb.url ? crumb.url : "#top"}
 										className={checkNum ? "underline" : ""}>
@@ -26,7 +30,7 @@ export default function BreadCrumbs({ crumbs, stars = false, cta = null }) {
 									</LinkElement>
 								</li>
 								{checkNum && <li>›</li>}
-							</>
+							</Fragment>
 						);
 					})}
 				</ul>
@@ -64,7 +68,7 @@ export default function BreadCrumbs({ crumbs, stars = false, cta = null }) {
 								</li>
 							))}
 							<li>
-								<u>203</u>
+								<u>{starNum}</u>
 							</li>
 						</ul>
 					</button>

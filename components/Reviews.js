@@ -1,10 +1,15 @@
 import ToggleButton from "./Buttons/Toggle";
 
-export default function Reviews() {
+export default function Reviews({ starNum }) {
 	return (
 		<div className="border-b">
 			<a name="reviews" id="reviews-scroll-to" />
-			<ToggleButton title="Reviews" id="reviews" stars={true} />
+			<ToggleButton
+				title="Reviews"
+				id="reviews"
+				stars={true}
+				starNum={starNum}
+			/>
 
 			<div className="hidden" id="reviews-text">
 				<div

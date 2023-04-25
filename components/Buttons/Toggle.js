@@ -11,6 +11,7 @@ export default function ButtonToggle({
 	stars = false,
 	opened = false,
 	linkOnly = false,
+	starNum,
 }) {
 	const linkCSS = `my-1 rounded-lg block w-full lg:hover:bg-gray-200 select-auto`;
 	const ulCSS = `flex items-center px-4 py-2`;
@@ -46,7 +47,7 @@ export default function ButtonToggle({
 				{!!stars && (
 					<li className="flex ml-auto">
 						<Stars num={5} />
-						<u className="ml-1">203</u>
+						<u className="ml-1">{starNum}</u>
 					</li>
 				)}
 				<li className={!stars ? `ml-auto` : undefined}>
