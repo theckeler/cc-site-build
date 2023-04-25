@@ -69,7 +69,7 @@ export default function Index() {
 			</li>
 
 			<li className="bg-gray-200 p-8">
-				<ul className="xl:grid grid-cols-3 gap-4 max-w-screen-2xl mx-auto">
+				<ul className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-screen-2xl mx-auto">
 					<li className="bg-white p-10">
 						<CTABlock
 							src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw4fcbb82e/images/product-line-browse/Main-Carousel/CC_Family-UltimaFull-env2023-desktop.jpg"
@@ -88,7 +88,7 @@ export default function Index() {
 							href="#top"
 						/>
 					</li>
-					<li className="bg-amber-400 p-10">
+					<li className="bg-amber-400 p-10 md:col-span-2 xl:col-auto">
 						<CTABlock
 							src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw76d5a715/images/product-line-browse/Main-Carousel/33ABA7ES710_XT1_Enduro_LT42E_Env_02-1015x630.jpg"
 							title="Premium Results, Minimal Maintenance"
