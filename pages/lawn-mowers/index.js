@@ -3,10 +3,12 @@ import Link from "next/link";
 import CategoryCard from "@/components/CategoryCard";
 import BreadCrumbs from "@/components/BreadCrumbs";
 import H1 from "@/components/H1";
+import SEOGreek from "@/components/SEOGreek";
+import SEOLinks from "@/components/SEOLinks";
 
 export default function Index() {
 	return (
-		<ul className="">
+		<ul className="pb-20">
 			<li className="max-w-screen-2xl mx-auto p-3">
 				<BreadCrumbs
 					crumbs={[{ title: "Home", url: "/" }, { title: "Lawn Mowers" }]}
@@ -17,10 +19,11 @@ export default function Index() {
 				<H1
 					title="Explore Lawn Mowers"
 					srOnly="Cub Cadet"
-					className="text-4xl border-b pb-4 mb-4"
+					className="text-4xl mb-4"
 				/>
-				<ul className="grid grid-cols-3 gap-4 mt-8">
-					<li>
+
+				<ul className="lg:grid lg:grid-cols-3 lg:gap-4">
+					<li className="">
 						<CategoryCard
 							h2="Riding Lawn Mowers"
 							h3="Incredible strength. Incredibly comfortable."
@@ -28,27 +31,29 @@ export default function Index() {
 							href="/lawn-mowers/riding-lawn-mowers"
 						/>
 					</li>
-					<li>
-						<div>
-							<CategoryCard
-								h2="Walk-Behind Mowers"
-								h3="A power walk."
-								p="From the Signature Cut™ series lawn mowers to the wide area mowers, every walk-behind mower features incredible control and maneuverability to match your mowing needs."
-								href="#top"
-							/>
-						</div>
+					<li className="mt-4 lg:mt-0">
+						<CategoryCard
+							h2="Walk-Behind Mowers"
+							h3="A power walk."
+							p="From the Signature Cut™ series lawn mowers to the wide area mowers, every walk-behind mower features incredible control and maneuverability to match your mowing needs."
+							href="#top"
+						/>
 					</li>
-					<li>
-						<div>
-							<CategoryCard
-								h2="Robotic Mowers"
-								h3="Cutting-edge results. Zero effort."
-								p="With the XR3 robotic mower, we combined Cub Cadet power with innovative technology like the Smart Mode feature. With the touch of a button, you get a just-mowed look so you can focus on getting the most out of your yard."
-								href="#top"
-							/>
-						</div>
+					<li className="mt-4 lg:mt-0">
+						<CategoryCard
+							h2="Robotic Mowers"
+							h3="Cutting-edge results. Zero effort."
+							p="With the XR3 robotic mower, we combined Cub Cadet power with innovative technology like the Smart Mode feature. With the touch of a button, you get a just-mowed look so you can focus on getting the most out of your yard."
+							href="#top"
+						/>
 					</li>
 				</ul>
+			</li>
+			<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">
+				<SEOLinks />
+			</li>
+			<li className="max-w-screen-2xl mx-auto p-3 mt-10">
+				<SEOGreek />
 			</li>
 		</ul>
 	);

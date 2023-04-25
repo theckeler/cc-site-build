@@ -3,10 +3,12 @@ import Link from "next/link";
 import BreadCrumbs from "@/components/BreadCrumbs";
 import CategoryCard from "@/components/CategoryCard";
 import H1 from "@/components/H1";
+import SEOGreek from "@/components/SEOGreek";
+import SEOLinks from "@/components/SEOLinks";
 
 export default function Index() {
 	return (
-		<ul className="">
+		<ul className="pb-20">
 			<li className="max-w-screen-2xl mx-auto p-3">
 				<BreadCrumbs
 					crumbs={[
@@ -21,15 +23,15 @@ export default function Index() {
 				<H1
 					title="Explore Riding Lawn Mowers"
 					srOnly="Cub Cadet"
-					className="text-4xl border-b pb-4 mb-4"
+					className=""
 				/>
-				<p className="text-sm mt-8 max-w-6xl leading-loose">
+				<p className="text-sm my-8 max-w-6xl leading-6">
 					A complete lineup of zero-turn mowers, lawn and garden tractors, and
 					electric mowers, all featuring the strength and durability that bring
 					your lawn to life.
 				</p>
 
-				<ul className="grid grid-cols-3 gap-4 mt-8">
+				<ul className="lg:grid lg:grid-cols-3 lg:gap-4">
 					<li className="">
 						<CategoryCard
 							h2="Zero Turn Mowers"
@@ -38,35 +40,37 @@ export default function Index() {
 							href="/lawn-mowers/riding-lawn-mowers/zero-turn-mowers"
 						/>
 					</li>
-					<li>
-						<div>
-							<CategoryCard
-								h2="Lawn & Garden Tractors"
-								h3="Power & Precision for the Bigger Challenges"
-								p="Built in America since ‘61 and backed by the industry’s
+					<li className="mt-4 lg:mt-0">
+						<CategoryCard
+							h2="Lawn & Garden Tractors"
+							h3="Power & Precision for the Bigger Challenges"
+							p="Built in America since ‘61 and backed by the industry’s
 									strongest warranty, Cub Cadet® lawn and garden tractors all
 									come standard with the strongest cutting systems for mowing
 									performance, refined ergonomics designed around you and an
 									array of attachments and accessories for year-round
 									versatility and utility."
-								href="#top"
-							/>
-						</div>
+							href="#top"
+						/>
 					</li>
-					<li>
-						<div>
-							<CategoryCard
-								h2="Electric Riding Mowers"
-								h3="Zero Gasoline, Zero Emissions"
-								p="We took the proven strength and performance of our gas-powered
+					<li className="mt-4 lg:mt-0">
+						<CategoryCard
+							h2="Electric Riding Mowers"
+							h3="Zero Gasoline, Zero Emissions"
+							p="We took the proven strength and performance of our gas-powered
 									machines and combined them with a powerful and convenient
 									lithium-ion battery to create electric lawn mowers with no
 									power fade and reduced noise for a more enjoyable ride."
-								href="#top"
-							/>
-						</div>
+							href="#top"
+						/>
 					</li>
 				</ul>
+			</li>
+			<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">
+				<SEOLinks />
+			</li>
+			<li className="max-w-screen-2xl mx-auto p-3 mt-10">
+				<SEOGreek />
 			</li>
 		</ul>
 	);
