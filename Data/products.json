@@ -173,7 +173,8 @@
 		"ad": true,
 		"addToCart": false,
 		"displayPrice": false,
-		"displayStars": false
+		"displayStars": false,
+		"gallery": null
 	},
 	{
 		"title": "ZT1 46",
