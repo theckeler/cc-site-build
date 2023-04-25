@@ -23,9 +23,10 @@ const IndexID = (id) => {
 			<li className="col-span-12">
 				<BreadCrumbs
 					crumbs={[
-						{ title: "Lawn Mowers" },
-						{ title: "Riding Lawn Mowers", url: "/category" },
-						{ title: "Zero-Turn Mowers", url: "/category" },
+						{ title: "Home", url: "/" },
+						{ title: "Lawn Mowers", url: "/lawn-mowers" },
+						{ title: "Riding Lawn Mowers", url: "/riding-lawn-mowers" },
+						{ title: "Zero-Turn Mowers", url: "/zero-turn-mowers" },
 						{ title: product.title },
 					]}
 					stars={true}

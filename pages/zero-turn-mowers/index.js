@@ -3,12 +3,12 @@ import BreadCrumbs from "../../components/BreadCrumbs";
 import H1 from "../../components/H1";
 import productJSON from "../../Data/products.json";
 import ProductCard from "../../components/ProductCard";
-import AppliedFilter from "../../components/Buttons/AppliedFilter";
+import Sort from "../../components/Buttons/Sort";
 import ProductFinder from "../../components/ProductFinder";
 import Compare from "../../components/Compare";
 import ViewMore from "../../components/Buttons/ViewMore";
 import IconCompare from "../../components/Icons/Compare";
-import Filters from "../../components/Filters";
+import Filter from "../../components/Buttons/Filter";
 
 export default function Index() {
 	return (
@@ -17,8 +17,9 @@ export default function Index() {
 				<li className="max-w-screen-2xl mx-auto p-3">
 					<BreadCrumbs
 						crumbs={[
-							{ title: "Lawn Mowers" },
-							{ title: "Riding Lawn Mowers" },
+							{ title: "Home", url: "/" },
+							{ title: "Lawn Mowers", url: "lawn-mowers" },
+							{ title: "Riding Lawn Mowers", url: "/riding-lawn-mowers" },
 							{ title: "Zero-Turn Mowers" },
 						]}
 						cta={{ title: "Buy Stuff", url: "#products" }}
@@ -37,24 +38,7 @@ export default function Index() {
 				<li className="sticky top-0 z-50 bg-gray-200" id="products">
 					<ul className="flex items-center max-w-screen-2xl mx-auto px-3 py-2 mt-20">
 						<li>
-							<button
-								className="bg-amber-400 rounded p-3"
-								onClick={() => {
-									document
-										.querySelector("#all-filters")
-										.classList.toggle("hidden");
-								}}>
-								<ul className="flex items-center">
-									<li className="h-6 w-6 xl:mr-2">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											viewBox="0 96 960 960">
-											<path d="M111 843v-73h255v73H111Zm0-242v-73h497v73H111Zm0-243v-73h739v73H111Z" />
-										</svg>
-									</li>
-									<li className="hidden xl:block text-xs uppercase">Sort</li>
-								</ul>
-							</button>
+							<Sort />
 						</li>
 						<li className="hidden lg:block">
 							<ul className="flex items-center text-sm">
@@ -81,34 +65,7 @@ export default function Index() {
 							</ul>
 						</li>
 						<li className="ml-2 lg:ml-auto flex">
-							<div>
-								<button
-									className="bg-amber-400 rounded p-3"
-									onClick={() => {
-										document
-											.querySelector("#all-filters")
-											.classList.toggle("hidden");
-									}}>
-									<ul className="flex items-center">
-										<li className="h-6 w-6 xl:mr-2">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 96 960 960">
-												<path d="M425 946V707h73v84h352v73H498v82h-73Zm-315-82v-73h265v73H110Zm192-169v-83H110v-73h192v-84h73v240h-73Zm123-83v-73h425v73H425Zm160-168V205h73v83h192v73H658v83h-73Zm-475-83v-73h425v73H110Z" />
-											</svg>
-										</li>
-										<li className="hidden xl:block text-xs uppercase">
-											All Filters
-										</li>
-									</ul>
-								</button>
-
-								<div
-									className="hidden fixed top-0 right-0 z-50 w-full lg:w-6/12 xl:w-5/12 2xl:w-3/12 h-screen bg-white border-l-0 lg:border-l lg:border-l-4 border-amber-200"
-									id="all-filters">
-									<Filters />
-								</div>
-							</div>
+							<Filter />
 
 							<button
 								className="bg-amber-400 rounded p-3 ml-2"
