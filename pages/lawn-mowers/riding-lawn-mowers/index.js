@@ -5,6 +5,7 @@ import CategoryCard from "@/components/CategoryCard";
 import H1 from "@/components/H1";
 import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
+import ProductFinder from "@/components/ProductFinder";
 
 export default function Index() {
 	return (
@@ -65,6 +66,9 @@ export default function Index() {
 						/>
 					</li>
 				</ul>
+			</li>
+			<li className="mt-4">
+				<ProductFinder />
 			</li>
 			<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">
 				<SEOLinks />

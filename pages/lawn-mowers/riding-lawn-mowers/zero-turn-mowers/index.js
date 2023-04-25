@@ -1,14 +1,14 @@
 import Image from "next/image";
-import BreadCrumbs from "../../../../components/BreadCrumbs";
-import H1 from "../../../../components/H1";
-import productJSON from "../../../../Data/products.json";
-import ProductCard from "../../../../components/ProductCard";
-import Sort from "../../../../components/Buttons/Sort";
-import ProductFinder from "../../../../components/ProductFinder";
-import Compare from "../../../../components/Compare";
-import ViewMore from "../../../../components/Buttons/ViewMore";
-import IconCompare from "../../../../components/Icons/Compare";
-import Filter from "../../../../components/Buttons/Filter";
+import BreadCrumbs from "@/components/BreadCrumbs";
+import H1 from "@/components/H1";
+import productJSON from "@/Data/products.json";
+import ProductCard from "@/components/ProductCard";
+import Sort from "@/components/Buttons/Sort";
+import ProductFinder from "@/components/ProductFinder";
+import Compare from "@/components/Compare";
+import ViewMore from "@/components/Buttons/ViewMore";
+import IconCompare from "@/components/Icons/Compare";
+import Filter from "@/components/Buttons/Filter";
 
 export default function Index() {
 	return (
