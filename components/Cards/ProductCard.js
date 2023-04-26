@@ -1,13 +1,13 @@
-import superToggle from "./Functions/SuperToggle";
+import superToggle from "../Functions/SuperToggle";
 
 import Link from "next/link";
 import Image from "next/image";
-import Button from "./Buttons/Main";
-import IconText from "./Buttons/IconText";
-import Stars from "./Stars";
-import AddtoCart from "./Icons/AddtoCart";
-import Compare from "./Icons/Compare";
-import CatAd from "./Ad";
+import Button from "../Buttons/Main";
+import IconText from "../Buttons/IconText";
+import Stars from "../Stars";
+import AddtoCart from "../Icons/AddtoCart";
+import Compare from "../Icons/Compare";
+import CatAd from "../Ad";
 
 export default function Cards({
 	product,

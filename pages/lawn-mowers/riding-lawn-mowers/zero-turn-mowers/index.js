@@ -1,14 +1,16 @@
 import Image from "next/image";
 import BreadCrumbs from "@/components/BreadCrumbs";
 import H1 from "@/components/H1";
-import productJSON from "@/Data/products.json";
-import ProductCard from "@/components/ProductCard";
+import ProductCard from "@/cards/ProductCard";
 import Sort from "@/components/Buttons/Sort";
 import ProductFinder from "@/components/ProductFinder";
 import Compare from "@/components/Compare";
 import ViewMore from "@/components/Buttons/ViewMore";
 import IconCompare from "@/components/Icons/Compare";
 import Filter from "@/components/Buttons/Filter";
+import CTAHero from "@/cta/Hero";
+
+import pdpJSON from "@/Data/pdp.json";
 
 export default function Index() {
 	return (
@@ -105,18 +107,18 @@ export default function Index() {
 							</button>
 						</li>
 					</ul>
-					<div className="hidden" id="compare">
+					<section className="hidden" id="compare">
 						<Compare className="p-2" />
-					</div>
-					<div className="hidden" id="product-finder">
+					</section>
+					<section className="hidden" id="product-finder">
 						<ProductFinder className="p-2" />
-					</div>
+					</section>
 				</li>
 				<li className="px-3 py-10">
-					<ul className="md:grid lg:grid-cols-2 xl:grid-cols-4 gap-2 max-w-screen-2xl mx-auto">
-						{productJSON.map(function (product, i) {
+					<ul className="md:grid lg:grid-cols-2 xl:grid-cols-4 gap-3 max-w-screen-2xl mx-auto">
+						{pdpJSON.products.map(function (product, i) {
 							return (
-								<li key={i} className="p-2" style={{ minWidth: "240px" }}>
+								<li key={i} className="" style={{ minWidth: "240px" }}>
 									<ProductCard
 										{...{ product }}
 										displayButton={false}
@@ -139,49 +141,15 @@ export default function Index() {
 						/>
 					</div>
 				</li>
-				<li className="bg-gray-200">
-					<ProductFinder className="" />
 
-					<section className="py-5 px-1 max-w-screen-2xl mx-auto">
-						<div className="">
-							<ul className="flex">
-								<li className="basis-4/12">
-									<div className="relative pt-[100%]">
-										<Image
-											src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/v70fc5788285a154928b80b856144e85813f5051f/ZeroTurnLanding/intro.jpg"
-											alt=""
-											fill
-											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-										/>
-									</div>
-								</li>
-								<li className="basis-8/12">
-									<div className="p-3">
-										<h2 className="mb-2 display-2">
-											Introducing the Ultima Series™ ZTXS
-										</h2>
-										<h3 className="mb-2 display-3">
-											The Ultima Series™ Zero-Turn with <br />
-											Commercial-Grade Features
-										</h3>
-										<p className="mb-2">
-											From tight turns to inclined hillsides and stretching
-											valleys, the Ultima ZTXS is built to help tackle your
-											yard’s unique challenges. The Ultima ZTXS brings Cub
-											Cadet’s innovative and proprietary Synchro-Steer ™
-											technology to the proven Ultima Series™ platform for
-											reliable precision and confident control.
-										</p>
-										<a
-											href="https://www.cubcadet.com/en_US/lp/ztxs--zero-turn-mowers"
-											clas="button text-uppercase font-weight-bold text-decoration-none d-inline-block border-0 bg-black">
-											Learn more about the Ultima ztxs
-										</a>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</section>
+				<li className="mt-4 bg-gray-300">
+					<div className="p-3 lg:py-8 max-w-screen-2xl mx-auto">
+						<ProductFinder />
+					</div>
+				</li>
+
+				<li className="max-w-screen-2xl mx-auto p-3 lg:py-8">
+					<CTAHero block={pdpJSON.ctaHero[0]} />
 				</li>
 			</ul>
 		</>

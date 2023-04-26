@@ -19,8 +19,11 @@
 			"@/*": ["./*"],
 			"@/components/*": ["components/*"],
 			"@/buttons/*": ["components/Buttons/*"],
+			"@/tabs/*": ["components/Tabs/*"],
+			"@/cards/*": ["components/Cards/*"],
 			"@/icons/*": ["Icons/*"],
-			"@/data/*": ["Data/*"]
+			"@/data/*": ["Data/*"],
+			"@/cta/*": ["components/CTA/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.js"],

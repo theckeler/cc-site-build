@@ -5,51 +5,17 @@ import H1 from "@/components/H1";
 import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
 import ProductFinder from "@/components/ProductFinder";
-import Button from "@/buttons/Main";
-import CTABlock from "@/components/CTABlock";
+import CTABlock from "@/cta/Block";
+import CTAHero from "@/cta/Hero";
+import ProductBlock from "@/components/ProductBlock";
 
-import cats from "@/data/home.json";
+import homeJSON from "@/data/home.json";
 
 export default function Index() {
 	return (
 		<ul className="pb-20">
 			<li className="max-w-screen-2xl mx-auto p-3">
-				<ul className="xl:flex">
-					<li className="xl:basis-8/12">
-						<div className="relative min-h-[34em]">
-							<Image
-								src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw65a0ad0d/images/product-line-browse/Main-Carousel/47RTCAB7010_ZTXS554_Env_01-1015x630.jpg"
-								fill
-								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-								alt=""
-								className="object-cover"
-							/>
-						</div>
-					</li>
-					<li className="xl:basis-4/12 bg-amber-400 p-10">
-						<ul>
-							<li className="text-3xl font-bold">
-								Up to $300 off select Ultima Series™ Zero-Turns
-							</li>
-							<li className="mt-2">
-								Save up to $300 off on select Ultima Series Zero-Turns now
-								through April 30th.
-							</li>
-							<li className="mt-2 text-xs pl-6">
-								*Restrictions apply. Click here to learn more for complete
-								details.
-							</li>
-							<li className="mt-8">
-								<Button
-									title="Shop Ultima Series™ Zero-Turns"
-									className="block bg-black text-white px-10 py-2 rounded-2xl w-full text-center"
-									noIcon
-									href="/lawn-mowers/riding-lawn-mowers/zero-turn-mowers"
-								/>
-							</li>
-						</ul>
-					</li>
-				</ul>
+				<CTAHero block={homeJSON.ctaHero[0]} />
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3 my-10">
@@ -58,19 +24,18 @@ export default function Index() {
 					srOnly="Cub Cadet"
 					className="text-4xl mb-8 text-center"
 				/>
-
-				<ProductCategories title="Product Lineup" cats={cats} />
+				<ProductCategories categories={homeJSON.categories} />
 			</li>
 
 			<li className="mt-4">
-				<div className="bg-gray-400 p-8">
-					<ProductFinder />
+				<div className="bg-gray-300 p-3 lg:py-8">
+					<ProductFinder className="max-w-screen-2xl mx-auto" />
 				</div>
 			</li>
 
-			<li className="bg-gray-200 p-8">
+			<li className="bg-gray-200 p-4 lg:p-8">
 				<ul className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 max-w-screen-2xl mx-auto">
-					<li className="bg-white p-10">
+					<li className="bg-white p-4 lg:p-8">
 						<CTABlock
 							src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw4fcbb82e/images/product-line-browse/Main-Carousel/CC_Family-UltimaFull-env2023-desktop.jpg"
 							title="Find The Right Zero-Turn"
@@ -79,7 +44,7 @@ export default function Index() {
 							href="#top"
 						/>
 					</li>
-					<li className="bg-white p-10">
+					<li className="bg-white p-4 lg:p-8">
 						<CTABlock
 							src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dweda7b4bb/images/product-line-browse/Main-Carousel/53RZ3CSB050_ProX_636_Env_02_v1-1015x630.jpg"
 							title="Stand Up To Any Job"
@@ -88,7 +53,7 @@ export default function Index() {
 							href="#top"
 						/>
 					</li>
-					<li className="bg-amber-400 p-10 md:col-span-2 xl:col-auto">
+					<li className="bg-amber-400 p-4 lg:p-8 md:col-span-2 xl:col-auto">
 						<CTABlock
 							src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw76d5a715/images/product-line-browse/Main-Carousel/33ABA7ES710_XT1_Enduro_LT42E_Env_02-1015x630.jpg"
 							title="Premium Results, Minimal Maintenance"
@@ -100,6 +65,15 @@ export default function Index() {
 						/>
 					</li>
 				</ul>
+			</li>
+
+			<li className="max-w-screen-2xl mx-auto p-3">
+				<CTAHero block={homeJSON.ctaHero[1]} reverse />
+			</li>
+
+			<li className="max-w-screen-2xl mx-auto p-3 mt-20 pt-8">
+				<h2 className="text-3xl mb-8 text-center">Recently Viewed</h2>
+				<ProductBlock products={homeJSON.recentlyViewed} />
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">

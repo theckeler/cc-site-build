@@ -1,7 +1,7 @@
-import ToggleButton from "./Buttons/Toggle";
+import ToggleButton from "../Buttons/Toggle";
 //import Cards from "./RelatedProducts/Card";
 import Button from "@/buttons/Main";
-import ScrollButton from "./Buttons/Scroll";
+import ScrollButton from "../Buttons/Scroll";
 
 const articles = [
 	{
@@ -42,7 +42,7 @@ const articles = [
 	},
 ];
 
-export default function Maintenance() {
+export default function TabMaintenance() {
 	return (
 		<div className="border-b">
 			<ToggleButton title="Maintenance" id="maintance" />

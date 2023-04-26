@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import BreadCrumbs from "@/components/BreadCrumbs";
 import ProductCategories from "@/components/ProductCategories";
 import H1 from "@/components/H1";
@@ -7,28 +5,9 @@ import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
 import ProductFinder from "@/components/ProductFinder";
 
-export default function Index() {
-	const cats = [
-		{
-			h2: "Zero Turn Mowers",
-			h3: "A Strong Experience at Every Turn",
-			p: "Designed with strength, comfort and the ability to get the job done 50% faster than riding tractors, each Cub Cadet zero-turn riding mower is engineered to handle a range of terrain and cover up to 5 acres, with steering wheel options that increase ease.",
-			href: "/lawn-mowers/riding-lawn-mowers/zero-turn-mowers",
-		},
-		{
-			h2: "Lawn & Garden Tractors",
-			h3: "Power & Precision for the Bigger Challenges",
-			p: "Built in America since ‘61 and backed by the industry’s strongest warranty, Cub Cadet® lawn and garden tractors all come standard with the strongest cutting systems for mowing performance, refined ergonomics designed around you and an array of attachments and accessories for year-round versatility and utility.",
-			href: "#top",
-		},
-		{
-			h2: "Electric Riding Mowers",
-			h3: "Zero Gasoline, Zero Emissions",
-			p: "We took the proven strength and performance of our gas-powered machines and combined them with a powerful and convenient lithium-ion battery to create electric lawn mowers with no power fade and reduced noise for a more enjoyable ride.",
-			href: "#top",
-		},
-	];
+import zeroTurnJSON from "@/data/riding-lawn-mowers.json";
 
+export default function Index() {
 	return (
 		<ul className="pb-20">
 			<li className="max-w-screen-2xl mx-auto p-3">
@@ -41,6 +20,7 @@ export default function Index() {
 					cta={{ title: "Buy Stuff", url: "#products" }}
 				/>
 			</li>
+
 			<li className="max-w-screen-2xl mx-auto p-3">
 				<H1
 					title="Explore Riding Lawn Mowers"
@@ -53,14 +33,19 @@ export default function Index() {
 					your lawn to life.
 				</p>
 
-				<ProductCategories title="Explore Lawn Mowers" cats={cats} />
+				<ProductCategories categories={zeroTurnJSON.categories} />
 			</li>
-			<li className="mt-4">
-				<ProductFinder />
+
+			<li className="mt-4 bg-gray-300">
+				<div className="p-3 lg:py-8 max-w-screen-2xl mx-auto">
+					<ProductFinder />
+				</div>
 			</li>
+
 			<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">
 				<SEOLinks />
 			</li>
+
 			<li className="max-w-screen-2xl mx-auto p-3 mt-10">
 				<SEOGreek />
 			</li>

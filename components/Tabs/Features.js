@@ -1,7 +1,7 @@
 import ToggleButton from "../Buttons/Toggle";
-import Cards from "./Cards";
+import Cards from "@/cards/Features";
 
-export default function DesFeaturescription() {
+export default function TabFeatures() {
 	const products = [
 		{
 			title: "Built with Strength",

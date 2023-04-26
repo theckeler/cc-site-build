@@ -1,6 +1,6 @@
-import ToggleButton from "./Buttons/Toggle";
+import ToggleButton from "../Buttons/Toggle";
 
-export default function Reviews({ starNum }) {
+export default function TabReviews({ starNum }) {
 	return (
 		<div className="border-b">
 			<a name="reviews" id="reviews-scroll-to" />

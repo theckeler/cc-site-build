@@ -1,6 +1,6 @@
-import ToggleButton from "./Buttons/Toggle";
+import ToggleButton from "../Buttons/Toggle";
 
-export default function DocumentsGuides() {
+export default function TabDocumentsGuides() {
 	return (
 		<div className="border-b">
 			<ToggleButton title="Documents and Guides" id="docs" />
