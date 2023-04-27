@@ -1,4 +1,4 @@
-import Card from "./Cards/ProductCard";
+import Card from "@/cards/ProductCard";
 import ScrollButton from "@/buttons/Scroll";
 
 export default function ProductBlock({ products }) {

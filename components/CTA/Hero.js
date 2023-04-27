@@ -2,15 +2,21 @@ import Image from "next/image";
 
 import CTABlock from "@/cta/Block";
 
-export default function CTAHero({ block, reverse = false, className = null }) {
+export default function CTAHero({
+	block,
+	reverse = false,
+	className = null,
+	blockWidths = { l: 8, r: 4 },
+	minHeight = "sm",
+}) {
 	{
 		return (
 			<ul
 				className={`flex flex-col xl:flex-row ${
 					!!reverse && "xl:flex-row-reverse"
 				} ${className}`}>
-				<li className="xl:basis-8/12">
-					<div className="relative min-h-[18em] lg:min-h-[34em]">
+				<li className={`xl:basis-${blockWidths.l}/12`}>
+					<div className={`relative h-full min-h-[18em] xl:min-h-${minHeight}`}>
 						<Image
 							src={block.src}
 							fill
@@ -20,7 +26,7 @@ export default function CTAHero({ block, reverse = false, className = null }) {
 						/>
 					</div>
 				</li>
-				<li className="xl:basis-4/12 bg-amber-400 p-10">
+				<li className={`xl:basis-${blockWidths.r}/12 bg-amber-400 p-10`}>
 					<CTABlock
 						title={block.title}
 						copy={block.copy}

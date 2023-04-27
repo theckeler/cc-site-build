@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-import ProductCategories from "@/components/ProductCategories";
 import H1 from "@/components/H1";
 import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
-import ProductFinder from "@/components/ProductFinder";
 import CTABlock from "@/cta/Block";
 import CTAHero from "@/cta/Hero";
-import ProductBlock from "@/components/ProductBlock";
+import ProductBlock from "@/product/Block";
+import ProductFinder from "@/product/Finder";
+import ProductCategories from "@/product/Categories";
 
 import homeJSON from "@/data/home.json";
 
@@ -15,7 +15,7 @@ export default function Index() {
 	return (
 		<ul className="pb-20">
 			<li className="max-w-screen-2xl mx-auto p-3">
-				<CTAHero block={homeJSON.ctaHero[0]} />
+				<CTAHero block={homeJSON.ctaHero[0]} minHeight="xl" />
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3 my-10">
@@ -68,7 +68,15 @@ export default function Index() {
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3">
-				<CTAHero block={homeJSON.ctaHero[1]} reverse />
+				<CTAHero block={homeJSON.ctaHero[1]} reverse minHeight="lg" />
+			</li>
+
+			<li className="max-w-screen-2xl mx-auto p-3">
+				<CTAHero
+					block={homeJSON.ctaHero[1]}
+					blockWidths={{ l: 6, r: 6 }}
+					minHeight="xs"
+				/>
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3 mt-20 pt-8">

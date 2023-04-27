@@ -3,7 +3,7 @@ import BreadCrumbs from "@/components/BreadCrumbs";
 import H1 from "@/components/H1";
 import ProductCard from "@/cards/ProductCard";
 import Sort from "@/components/Buttons/Sort";
-import ProductFinder from "@/components/ProductFinder";
+import ProductFinder from "@/product/Finder";
 import Compare from "@/components/Compare";
 import ViewMore from "@/components/Buttons/ViewMore";
 import IconCompare from "@/components/Icons/Compare";

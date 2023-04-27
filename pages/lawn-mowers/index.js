@@ -1,9 +1,9 @@
-import ProductCategories from "@/components/ProductCategories";
 import BreadCrumbs from "@/components/BreadCrumbs";
 import H1 from "@/components/H1";
 import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
-import ProductFinder from "@/components/ProductFinder";
+import ProductFinder from "@/product/Finder";
+import ProductCategories from "@/product/Categories";
 
 import ridingLawnJSON from "@/data/lawn-mowers";
 

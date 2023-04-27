@@ -23,7 +23,8 @@
 			"@/cards/*": ["components/Cards/*"],
 			"@/icons/*": ["Icons/*"],
 			"@/data/*": ["Data/*"],
-			"@/cta/*": ["components/CTA/*"]
+			"@/cta/*": ["components/CTA/*"],
+			"@/product/*": ["components/Product/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.js"],
