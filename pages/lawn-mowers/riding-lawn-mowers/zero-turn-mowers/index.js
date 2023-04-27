@@ -2,12 +2,12 @@ import Image from "next/image";
 import BreadCrumbs from "@/components/BreadCrumbs";
 import H1 from "@/components/H1";
 import ProductCard from "@/cards/ProductCard";
-import Sort from "@/components/Buttons/Sort";
+import Sort from "@/buttons/Sort";
 import ProductFinder from "@/product/Finder";
 import Compare from "@/components/Compare";
-import ViewMore from "@/components/Buttons/ViewMore";
-import IconCompare from "@/components/Icons/Compare";
-import Filter from "@/components/Buttons/Filter";
+import ViewMore from "@/buttons/ViewMore";
+import IconCompare from "@/icons/Compare";
+import Filter from "@/buttons/Filter";
 import CTAHero from "@/cta/Hero";
 
 import pdpJSON from "@/Data/pdp.json";
@@ -69,7 +69,7 @@ export default function Index() {
 								</li>
 							</ul>
 						</li>
-						<li className="ml-2 lg:ml-auto flex">
+						<li className="ml-2 ml-auto flex">
 							<Filter />
 
 							<button
