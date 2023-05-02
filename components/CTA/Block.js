@@ -8,22 +8,26 @@ export default function CTABlock({
 	src,
 	buttonText,
 	xsCopy,
+	fullButton,
 }) {
 	{
 		return (
-			<ul className="flex flex-col h-full">
+			<ul className="flex flex-col h-full items-start">
 				{!!src && (
-					<li className="pt-[50%] relative">
-						<Image src={src} alt="" fill className="object-cover" />
+					<li className="min-h-xs relative w-full">
+						<Image src={src} alt="" fill className="object-cover w-full" />
 					</li>
 				)}
-				<li className="mt-4 text-3xl font-bold">{title}</li>
-				<li className="mt-2">{copy}</li>
+				<li
+					className={`text-xl lg:text-2xl font-bold`}>
+					{title}
+				</li>
+				<li className="mt-2 text-sm lg:text-md">{copy}</li>
 				{!!xsCopy && <li className="mt-2 pl-4 text-xs">{xsCopy}</li>}
-				<li className="pt-8 mt-auto">
+				<li className={`pt-8 mt-auto ${!!fullButton && "w-full"}`}>
 					<ButtonMain
 						title={buttonText}
-						className="block bg-black text-white px-10 py-2 rounded-2xl w-full text-center"
+						className={`block bg-black text-white px-10 py-2 rounded-2xl text-center`}
 						noIcon
 						href={href}
 					/>

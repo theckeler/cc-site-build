@@ -51,7 +51,7 @@ const IndexID = (id) => {
 						<H1 title={product.title} srOnly="Cub Cadet Zero-Turn Mower" />
 						<H2 title={product.series} />
 						<Price price={product.price} msrp={product.msrp} />
-						<AddCart />
+						<AddCart shippingButtons={product.shippingButtons} />
 						<Desc blocks={product.desc} />
 					</div>
 				</li>

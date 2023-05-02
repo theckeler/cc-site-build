@@ -17,7 +17,7 @@ export default function Cards({
 	displayAvailablity = false,
 }) {
 	return (
-		<div className="h-full">
+		<div className={`h-full ${!!product.ad && "hidden lg:block"}`}>
 			<Link
 				href={
 					product.slug && !product.ad

@@ -20,10 +20,10 @@ module.exports = {
 		"xl:basis-12/12",
 		"xl:min-h-xs",
 		"xl:min-h-sm",
-		"xl:min-h-xl",
 		"xl:min-h-md",
 		"xl:min-h-lg",
 		"xl:min-h-xl",
+		"min-h-[50%]",
 	],
 	theme: {
 		minHeight: {

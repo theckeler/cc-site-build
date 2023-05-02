@@ -52,6 +52,33 @@
 					"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
 					"hidden": true
 				}
+			],
+			"shippingButtons": [
+				{
+					"title": "Dealer Delivery",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconDelivery"
+				},
+				{
+					"title": "Dealer Pick-Up",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconPickUp",
+					"active": true
+				},
+				{
+					"title": "Ship to Home",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Ships in 8-10 days",
+					"type": "Shipping",
+					"icon": "iconShip"
+				}
 			]
 		},
 		{
@@ -105,6 +132,33 @@
 				{
 					"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dwe4350abd/products/Equipment/Cub-Cadet_ZT154_3.jpg?sw=1000&sh=1000&sm=fit",
 					"hidden": true
+				}
+			],
+			"shippingButtons": [
+				{
+					"title": "Dealer Delivery",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconDelivery"
+				},
+				{
+					"title": "Dealer Pick-Up",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"active": true,
+					"icon": "iconPickUp"
+				},
+				{
+					"title": "Ship to Home",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Ships in 8-10 days",
+					"type": "Shipping",
+					"icon": "iconShip"
 				}
 			]
 		},
@@ -163,6 +217,33 @@
 				{
 					"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
 					"hidden": true
+				}
+			],
+			"shippingButtons": [
+				{
+					"title": "Dealer Delivery",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconDelivery"
+				},
+				{
+					"title": "Dealer Pick-Up",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"active": true,
+					"icon": "iconPickUp"
+				},
+				{
+					"title": "Ship to Home",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Ships in 8-10 days",
+					"type": "Shipping",
+					"icon": "iconShip"
 				}
 			]
 		},
@@ -226,6 +307,33 @@
 					"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
 					"hidden": true
 				}
+			],
+			"shippingButtons": [
+				{
+					"title": "Dealer Delivery",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconDelivery"
+				},
+				{
+					"title": "Dealer Pick-Up",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"active": true,
+					"icon": "iconPickUp"
+				},
+				{
+					"title": "Ship to Home",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Ships in 8-10 days",
+					"type": "Shipping",
+					"icon": "iconShip"
+				}
 			]
 		},
 		{
@@ -277,6 +385,33 @@
 				{
 					"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
 					"hidden": true
+				}
+			],
+			"shippingButtons": [
+				{
+					"title": "Dealer Delivery",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconDelivery"
+				},
+				{
+					"title": "Dealer Pick-Up",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"active": true,
+					"icon": "iconPickUp"
+				},
+				{
+					"title": "Ship to Home",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Ships in 8-10 days",
+					"type": "Shipping",
+					"icon": "iconShip"
 				}
 			]
 		},
@@ -330,6 +465,33 @@
 					"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
 					"hidden": true
 				}
+			],
+			"shippingButtons": [
+				{
+					"title": "Dealer Delivery",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconDelivery"
+				},
+				{
+					"title": "Dealer Pick-Up",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"active": true,
+					"icon": "iconPickUp"
+				},
+				{
+					"title": "Ship to Home",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Ships in 8-10 days",
+					"type": "Shipping",
+					"icon": "iconShip"
+				}
 			]
 		},
 		{
@@ -380,6 +542,33 @@
 				{
 					"src": "https://www.cubcadet.com/dw/image/v2/BCSH_PRD/on/demandware.static/-/Sites-mtd-master-catalog/default/dw70676fb6/products/Cub_Cadet_ZT1_54_Parts.jpg?sw=1000&sh=1000&sm=fit",
 					"hidden": true
+				}
+			],
+			"shippingButtons": [
+				{
+					"title": "Dealer Delivery",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"icon": "iconDelivery"
+				},
+				{
+					"title": "Dealer Pick-Up",
+					"status": "FREE",
+					"disabled": false,
+					"availability": "Pick up in 1-2 days",
+					"type": "Delivering",
+					"active": true,
+					"icon": "iconPickUp"
+				},
+				{
+					"title": "Ship to Home",
+					"status": "FREE",
+					"disabled": true,
+					"availability": "Ships in 8-10 days",
+					"type": "Shipping",
+					"icon": "iconShip"
 				}
 			]
 		}

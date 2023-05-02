@@ -3,7 +3,7 @@ import ScrollButton from "@/buttons/Scroll";
 
 export default function ProductBlock({ products }) {
 	return (
-		<div className="group/buttons hidden lg:block relative" id="related-text">
+		<div className="group/buttons relative" id="related-text">
 			<ScrollButton
 				buttonType="back"
 				rotate={true}
@@ -36,7 +36,7 @@ export default function ProductBlock({ products }) {
 			<div
 				className="mb-6 overflow-scrollbar overflow-x-auto py-2"
 				id="related-container">
-				<ul className="md:flex" id="related-scroll">
+				<ul className="flex" id="related-scroll">
 					{products.map(function (product, i) {
 						return (
 							<li key={i} className="p-2" style={{ minWidth: "240px" }}>

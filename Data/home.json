@@ -3,38 +3,22 @@
 		{
 			"h2": "Lawn Mowers",
 			"p": "Innovative zero-turn mowers, riding lawn mowers and push mowers, all designed to give you unmatched strength and durability.",
-			"href": "/lawn-mowers",
-			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwb530063f/images/homepage/category-cards/Home_CC_LawnMowers_XT1-LT46EFI_desktop_435x240_v1.png"
+			"href": "/lawn-mowers"
 		},
 		{
 			"h2": "Snow Blowers",
 			"p": "Three tiers of snow-clearing power engineered so winter never stands in your way.",
-			"href": "#top",
-			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwf3fe8efb/images/homepage/category-cards/Home_CC_Snow_3X-30-ProH_desktop_435x240_v1.png"
-		},
-		{
-			"h2": "UTVs",
-			"p": "Setting a new standard with industry-leading features for utility vehicles that can handle it all.",
-			"href": "#top",
-			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw8cf94a42/images/homepage/category-cards/Home_CC_UTV_Challenger550_desktop_435x240_v1.png"
+			"href": "#top"
 		},
 		{
 			"h2": "Electric Mowers & Tools",
 			"p": "Introducing the all fully electric lineup from Cub Cadet. 100% electric. 0% Compromise. Explore Now.",
-			"href": "#top",
-			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw97db4ff9/images/homepage/category-cards/34ABA2CS710_ZT1LT42E_mobile_476x263.png"
-		},
-		{
-			"h2": "Commercial Equipment",
-			"p": "We started from scratch by designing every element of our commercial line with the professional in mind.",
-			"href": "#top",
-			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw34137b1b/images/homepage/category-cards/Home_CC_CommEquip_ProZ900-Dual_desktop_435x240_v1.png"
+			"href": "#top"
 		},
 		{
 			"h2": "Accessories",
 			"p": "Optimize your equipment with a full line of accessories and attachments such as baggers, snow blades and mulch kits.",
-			"href": "#top",
-			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw38383085/images/homepage/category-cards/17RREACS010_ZT142_right_bagger.png"
+			"href": "#top"
 		}
 	],
 	"recentlyViewed": [
@@ -95,6 +79,13 @@
 			"title": "Tackle Your Yard",
 			"copy": "The Cub Cadet® Enduro Series™ riding lawn mowers were engineered to deliver a premium cut.",
 			"buttonText": "Shop Cub Cadet® Enduro Series™ Mowers",
+			"href": "#top"
+		},
+		{
+			"src": "https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dwcc6644c0/images/product-line-landing/Main-Carousel/RidingMow_ProdLineLand_Hero_Attachment-Wood_03_desktop_1015x630_v1.jpg",
+			"title": "Lorem ipsum dolor sit amet",
+			"copy": "Quisque gravida elementum nibh a sodales. Fusce sed quam non orci cursus mollis vitae eget leo. Nulla in tortor erat. Maecenas mollis massa eget ultricies ultrices. Vivamus tempor tempor blandit. Nulla facilisi.",
+			"buttonText": "Shop Cub Cadet® Cras Dapibus Euismod",
 			"href": "#top"
 		}
 	]

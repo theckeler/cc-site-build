@@ -23,7 +23,10 @@ export default function Index() {
 					srOnly="Cub Cadet"
 					className="text-4xl mb-4"
 				/>
-				<ProductCategories categories={ridingLawnJSON.categories} />
+				<ProductCategories
+					categories={ridingLawnJSON.categories}
+					className="bg-gray-200"
+				/>
 			</li>
 
 			<li className="mt-4 bg-gray-300">

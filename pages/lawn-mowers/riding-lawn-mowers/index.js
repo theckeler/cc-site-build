@@ -33,7 +33,10 @@ export default function Index() {
 					your lawn to life.
 				</p>
 
-				<ProductCategories categories={zeroTurnJSON.categories} />
+				<ProductCategories
+					categories={zeroTurnJSON.categories}
+					className="bg-gray-200"
+				/>
 			</li>
 
 			<li className="mt-4 bg-gray-300">

@@ -1,14 +1,11 @@
-import Image from "next/image";
-import Button from "../Buttons/Main";
-import ButtonEdit from "../Buttons/Edit";
+//import Image from "next/image";
+
+import Button from "@/buttons/Main";
+import ButtonEdit from "@/buttons/Edit";
 import DealerInfo from "./DealerInfo";
 import ShippingButton from "./ShippingButton";
 
-import IconDelivery from "../Icons/Delivery";
-import IconPickUp from "../Icons/PickUp";
-import IconShip from "../Icons/Ship";
-
-export default function AddCart() {
+export default function AddCart({ shippingButtons }) {
 	const buyButtonsClick = (e) => {
 		e.preventDefault();
 		console.log(e.currentTarget.dataset.availability);
@@ -26,32 +23,6 @@ export default function AddCart() {
 		document.querySelector("#availability-type").textContent =
 			e.currentTarget.dataset.type;
 	};
-
-	const shippingButtons = [
-		{
-			title: "Dealer Delivery",
-			status: "Unavailable",
-			disabled: true,
-			icon: IconDelivery,
-		},
-		{
-			title: "Dealer Pick-Up",
-			status: "FREE",
-			disabled: false,
-			availability: "Pick up in 1-2 days",
-			type: "Delivering",
-			active: true,
-			icon: IconPickUp,
-		},
-		{
-			title: "Ship to Home",
-			status: "FREE",
-			disabled: false,
-			availability: "Ships in 8-10 days",
-			type: "Shipping",
-			icon: IconShip,
-		},
-	];
 
 	return (
 		<ul className="min-w-full min-h-full">
@@ -108,16 +79,18 @@ export default function AddCart() {
 				<span id="availability-update">Pick up in 1-2 days</span>
 			</li>
 			<li className="mt-3 border-b pb-4 mb-2">
-				<ul className="flex flex-col xl:flex-row justify-center">
+				<ul className="flex flex-col xl:flex-row">
 					{shippingButtons.map(function (button, i) {
-						return (
-							<li key={i} className="p-1 basis-1/3">
-								<ShippingButton
-									{...{ button }}
-									buyButtonsClick={buyButtonsClick}
-								/>
-							</li>
-						);
+						if (!button.disabled) {
+							return (
+								<li key={i} className="p-1 flex-1">
+									<ShippingButton
+										{...{ button }}
+										buyButtonsClick={buyButtonsClick}
+									/>
+								</li>
+							);
+						}
 					})}
 				</ul>
 			</li>

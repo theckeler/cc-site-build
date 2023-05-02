@@ -1,4 +1,15 @@
+import IconDelivery from "../Icons/Delivery";
+import IconPickUp from "../Icons/PickUp";
+import IconShip from "../Icons/Ship";
+
 export default function ShippingButton({ button, buyButtonsClick }) {
+	const icons = {
+		iconDelivery: IconDelivery,
+		iconPickUp: IconPickUp,
+		iconShip: IconShip,
+	};
+	const Icon = icons[button.icon];
+
 	return (
 		<button
 			className={`buy-button h-full py-3 px-2 xl:py-4 xl:px-3 rounded-md w-full border border-gray-400 ${
@@ -13,7 +24,7 @@ export default function ShippingButton({ button, buyButtonsClick }) {
 			<ul className="flex items-center xl:flex-col w-full text-left xl:h-full">
 				<li className="basis-1/12 mr-2 xl:mr-0 xl:basis-full">
 					<div className="w-12 xl:min-w-full xl:h-14">
-						<button.icon className="" />
+						<Icon className="" />
 					</div>
 				</li>
 				<li className="basis-full text-xs xl:text-center">

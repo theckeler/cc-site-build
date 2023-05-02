@@ -80,7 +80,7 @@ export default function TabMaintenance() {
 				<div
 					className="mb-6 overflow-scrollbar overflow-x-auto py-2"
 					id="maintance-container">
-					<ul className="md:flex" id="maintance-scroll">
+					<ul className="flex" id="maintance-scroll">
 						{articles.map(function (article, i) {
 							return (
 								<li key={i} className="p-2" style={{ minWidth: "240px" }}>
