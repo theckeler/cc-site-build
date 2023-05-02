@@ -11,15 +11,20 @@ export default function DealerSelect({
 }) {
 	return (
 		<div
-			className="flex relative p-2"
+			className={`dealer-select flex relative p-2 ${
+				!!selected && "bg-amber-100"
+			}`}
 			onChange={(e) => {
-				console.log("change");
 				document.querySelectorAll(".dealer-select-address").forEach((e) => {
 					e.classList.add("hidden");
+				});
+				document.querySelectorAll(".dealer-select").forEach((e) => {
+					e.classList.remove("bg-amber-100");
 				});
 				e.currentTarget
 					.querySelector(".dealer-select-address")
 					.classList.remove("hidden");
+				e.currentTarget.classList.add("bg-amber-100");
 			}}>
 			<ul className="z-0 h-full w-full flex">
 				<li>
