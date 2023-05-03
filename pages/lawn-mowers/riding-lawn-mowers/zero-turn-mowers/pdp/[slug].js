@@ -67,11 +67,13 @@ const IndexID = (id) => {
 			</ul>
 			<div className="max-w-screen-2xl mx-auto my-20 p-3">
 				<div>
-					<h2 className="text-3xl mb-8 text-center">Recently Viewed</h2>
+					<h2 className="text-3xl mb-8">Recently Viewed</h2>
 					<ProductBlock products={productsJSON.recentlyViewed} />
 				</div>
 
 				<div className="mt-20">
+					<h2 className="text-3xl mb-8">Related Searches</h2>
+
 					<SEOLinks />
 				</div>
 

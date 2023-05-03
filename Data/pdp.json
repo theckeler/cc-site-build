@@ -149,7 +149,6 @@
 					"disabled": true,
 					"availability": "Pick up in 1-2 days",
 					"type": "Delivering",
-					"active": true,
 					"icon": "iconPickUp"
 				},
 				{
@@ -158,6 +157,7 @@
 					"disabled": false,
 					"availability": "Ships in 8-10 days",
 					"type": "Shipping",
+					"active": true,
 					"icon": "iconShip"
 				}
 			]
