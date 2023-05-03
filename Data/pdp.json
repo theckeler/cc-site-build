@@ -256,7 +256,8 @@
 			"addToCart": false,
 			"displayPrice": false,
 			"displayStars": false,
-			"gallery": null
+			"gallery": null,
+			"shippingButtons": []
 		},
 		{
 			"title": "ZT1 46",
