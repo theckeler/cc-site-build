@@ -73,7 +73,6 @@ const IndexID = (id) => {
 
 				<div className="mt-20">
 					<h2 className="text-3xl mb-8">Related Searches</h2>
-
 					<SEOLinks />
 				</div>
 

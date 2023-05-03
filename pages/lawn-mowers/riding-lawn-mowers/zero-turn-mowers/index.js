@@ -1,4 +1,3 @@
-import Image from "next/image";
 import BreadCrumbs from "@/components/BreadCrumbs";
 import H1 from "@/components/H1";
 import ProductCard from "@/cards/ProductCard";
@@ -9,10 +8,51 @@ import ViewMore from "@/buttons/ViewMore";
 import IconCompare from "@/icons/Compare";
 import Filter from "@/buttons/Filter";
 import CTAHero from "@/cta/Hero";
+import SEOGreek from "@/components/SEOGreek";
+import SEOLinks from "@/components/SEOLinks";
+import Article from "@/product/Article";
 
 import pdpJSON from "@/Data/pdp.json";
 
 export default function Index() {
+	const articles = [
+		{
+			title: "How to Change the Air Filter in Zero-Turn Lawn Mower",
+			copy: "Changing the air filter in your zero-turn lawn mower is very easy with a little direction. Watch our instructional video that will take you step by step through",
+			type: "MAINTENANCE",
+			url: "#top",
+		},
+		{
+			title: "How to Change the Deck Belt on a Cub Cadet Zero-Turn Rider",
+			copy: "Change the mower deck belt on your Cub Cadet zero-turn mower with these helpful tips. Cub Cadet has the mower deck parts and advice you need to do a mower deck belt replacement on your own. Learn mower about repairing your",
+			type: "REPAIRS",
+			url: "#top",
+		},
+		{
+			title: "How to Change the Gas on a Cub Cadet Zero-Turn Rider",
+			copy: "Changing the air filter in your zero-turn lawn mower is very easy with a little direction. Watch our instructional video that will take you step by step through",
+			type: "MAINTENANCE",
+			url: "#top",
+		},
+		{
+			title: "How to Change the Oil on a Cub Cadet Zero-Turn Rider",
+			copy: "Learn how to change the oil in a riding lawn mower with instructions from Cub Cadet. Our video and tips make changing the lawn mower oil on your zero-turn",
+			type: "MAINTENANCE",
+			url: "#top",
+		},
+		{
+			title: "Maintenance Schedule and Tips",
+			copy: "Learn how to keep your mower running smoothly with Cub Cadet's zero-turn mower maintenance schedule and tips.",
+			type: "MAINTENANCE",
+			url: "#top",
+		},
+		{
+			title: "Zero-Turn Operation Tips",
+			copy: "Find out how to use a zero-turn riding lawn mower with these tips from Cub Cadet. Zero-turn mowers allow you greater control over your lawn, especially",
+			type: "TRICKS AND TIPS",
+			url: "#top",
+		},
+	];
 	return (
 		<>
 			<ul className="">
@@ -150,6 +190,20 @@ export default function Index() {
 
 				<li className="max-w-screen-2xl mx-auto p-3 lg:py-8">
 					<CTAHero block={pdpJSON.ctaHero[0]} />
+				</li>
+
+				<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">
+					<h2 className="text-3xl mb-8">Related Articles</h2>
+					<Article articles={articles} />
+				</li>
+
+				<li className="max-w-screen-2xl mx-auto p-3 pt-8">
+					<h2 className="text-3xl mb-8">Related Searches</h2>
+					<SEOLinks />
+				</li>
+
+				<li className="max-w-screen-2xl mx-auto p-3 my-10">
+					<SEOGreek />
 				</li>
 			</ul>
 		</>

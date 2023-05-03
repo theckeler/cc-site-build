@@ -46,6 +46,7 @@ export default function Index() {
 			</li>
 
 			<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">
+				<h2 className="text-3xl mb-8">Related Searches</h2>
 				<SEOLinks />
 			</li>
 
