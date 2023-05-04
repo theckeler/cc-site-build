@@ -10,7 +10,7 @@ export default function BreadCrumbs({
 	return (
 		<ul className="flex flex-col lg:flex-row flex-wrap w-full py-2">
 			<li className="lg:basis-auto">
-				<ul className="flex items-center text-xs w-full min-w-full">
+				<ul className="grid grid-flow-col auto-rows-min items-center text-xs w-full min-w-full">
 					{crumbs.map(function (crumb, i) {
 						const checkNum = i < crumbs.length - 1 ? true : false;
 						const LinkElement = checkNum ? "a" : "div";
@@ -20,8 +20,8 @@ export default function BreadCrumbs({
 								<li
 									className={`${crumbCSS} ${
 										checkNum
-											? "w-auto truncate md:whitespace-nowrap md:overflow-visible"
-											: "basis-full"
+											? "truncate md:whitespace-nowrap md:overflow-visible"
+											: ""
 									} `}>
 									<LinkElement
 										href={crumb.url ? crumb.url : "#top"}
