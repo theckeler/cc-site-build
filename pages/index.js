@@ -28,7 +28,7 @@ export default function Index() {
 						className="mb-8 text-center"
 					/>
 
-					<ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
+					<ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
 						<li>
 							<Large
 								src="https://www.cubcadet.com/on/demandware.static/-/Sites-cubcadet-Library/default/dw5e9e50e9/images/product-line-landing/Main-Carousel/RidingMow_ProdLineLand_Hero_ZT1-50_01_desktop_1015x630_v1.jpg"
@@ -59,7 +59,7 @@ export default function Index() {
 						</li>
 					</ul>
 
-					<ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-6">
+					<ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-2">
 						{homeJSON.categories.map(function (category, i) {
 							return (
 								<li className="" key={i} style={{ backgroundColor: "#ecedee" }}>
