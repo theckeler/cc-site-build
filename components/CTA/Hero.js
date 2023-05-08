@@ -26,8 +26,7 @@ export default function CTAHero({
 						/>
 					</div>
 				</li>
-				<li
-					className={`xl:basis-${blockWidths.r}/12 px-6 p-3 lg:p-10 bg-amber-400`}>
+				<li className={`xl:basis-${blockWidths.r}/12 p-8 bg-amber-400`}>
 					<CTABlock
 						title={block.title}
 						copy={block.copy}

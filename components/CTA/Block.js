@@ -25,7 +25,7 @@ export default function CTABlock({
 					className={`w-full pt-3 lg:pt-8 mt-auto ${!!fullButton && "w-full"}`}>
 					<ButtonMain
 						title={buttonText}
-						className={`lg:block max-w-fit w-full lg:w-auto bg-black text-white px-10 py-2 rounded-2xl text-center`}
+						className={`w-full lg:w-auto mt-auto p-2 px-10 inline-flex justify-center bg-amber-400 rounded-2xl bg-black text-white`}
 						noIcon
 						href={href}
 					/>

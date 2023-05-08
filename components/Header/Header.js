@@ -4,7 +4,7 @@ import Cart from "@/icons/Cart";
 
 export default function Header({ className }) {
 	return (
-		<ul className="pb-20">
+		<ul className="mb-3">
 			<li className="bg-gray-600">
 				<div className="max-w-screen-2xl mx-auto text-center text-white p-1">
 					<ul className="flex p-3">
