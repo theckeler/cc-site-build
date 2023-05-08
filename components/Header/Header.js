@@ -1,5 +1,6 @@
 import Button from "@/header/Button";
 import Ham from "@/icons/Hamburger";
+import Cart from "@/icons/Cart";
 
 export default function Header({ className }) {
 	return (
@@ -14,7 +15,7 @@ export default function Header({ className }) {
 							<div>Promo</div>
 						</li>
 						<li className="basis-4/12 flex justify-end">
-							<ul className="flex w-full text-xs">
+							<ul className="flex items-center w-full text-xs">
 								<li className="basis-full">
 									<Button title="Find a Store" fillColor="fill-white" />
 								</li>
@@ -29,6 +30,13 @@ export default function Header({ className }) {
 									<Button
 										title="Account"
 										buttonIcon="account"
+										fillColor="fill-white"
+									/>
+								</li>
+								<li className="basis-full">
+									<Button
+										title="Cart"
+										buttonIcon="cart"
 										fillColor="fill-white"
 									/>
 								</li>
