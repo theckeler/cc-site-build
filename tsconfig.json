@@ -25,7 +25,8 @@
 			"@/data/*": ["Data/*"],
 			"@/cta/*": ["components/CTA/*"],
 			"@/product/*": ["components/Product/*"],
-			"@/addtocart/*": ["components/AddCart/*"]
+			"@/addtocart/*": ["components/AddCart/*"],
+			"@/header/*": ["components/Header/*"]
 		}
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.js"],

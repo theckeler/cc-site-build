@@ -11,6 +11,14 @@ const nextConfig = {
 				protocol: "https",
 				hostname: "ubcadet.com",
 			},
+			{
+				protocol: "https",
+				hostname: "www.google.com",
+			},
+			{
+				protocol: "https",
+				hostname: "google.com",
+			},
 		],
 	},
 };

@@ -18,16 +18,14 @@ export default function CTABlock({
 						<Image src={src} alt="" fill className="object-cover w-full" />
 					</li>
 				)}
-				<li
-					className={`text-xl lg:text-2xl font-bold`}>
-					{title}
-				</li>
+				<li className={`mt-3 text-xl lg:text-2xl font-bold`}>{title}</li>
 				<li className="mt-2 text-sm lg:text-md">{copy}</li>
 				{!!xsCopy && <li className="mt-2 pl-4 text-xs">{xsCopy}</li>}
-				<li className={`pt-8 mt-auto ${!!fullButton && "w-full"}`}>
+				<li
+					className={`w-full pt-3 lg:pt-8 mt-auto ${!!fullButton && "w-full"}`}>
 					<ButtonMain
 						title={buttonText}
-						className={`block bg-black text-white px-10 py-2 rounded-2xl text-center`}
+						className={`lg:block max-w-fit w-full lg:w-auto bg-black text-white px-10 py-2 rounded-2xl text-center`}
 						noIcon
 						href={href}
 					/>

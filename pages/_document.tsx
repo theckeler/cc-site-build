@@ -1,16 +1,13 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import Link from "next/link";
+import Header from "@/header/Header";
 
 export default function Document() {
 	return (
 		<Html lang="en">
 			<Head />
 			<body className="bg-white">
-				<div className="bg-gray-200" style={{ minHeight: "160px" }}>
-					<Link href="/" className="p-4 block">
-						Home
-					</Link>
-				</div>
+				<Header className="" />
 				<main className="">
 					<Main />
 				</main>

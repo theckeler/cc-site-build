@@ -32,12 +32,12 @@ export default function DealerSelect({
 						type="radio"
 						name="inventory"
 						id={id}
-						className="mr-2"
+						className="appearance-none mr-2 checked:bg-gray-800 ring-gray-600 ring-offset-2 ring-1 rounded-full p-1"
 						defaultChecked={selected}
 					/>
 					<span className="font-bold">{dealer}</span>
 					<div
-						className={`dealer-select-address text-xs pl-8 ${
+						className={`dealer-select-address text-xs ml-7 mt-1 ${
 							!selected && "hidden"
 						}`}>
 						{street}

@@ -26,7 +26,7 @@ export default function AddCart({ shippingButtons }) {
 
 	return (
 		<ul className="min-w-full min-h-full">
-			<li className="mt-3 border-b border-t py-4 my-2">
+			<li className="mt-3 border-b border-t pt-4 my-2">
 				<DealerInfo />
 			</li>
 			<li className="mt-3 border-b pb-4 mb-2 text-sm">

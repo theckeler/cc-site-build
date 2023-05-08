@@ -27,6 +27,7 @@ module.exports = {
 	],
 	theme: {
 		minHeight: {
+			default: "3em",
 			xs: "13.5em",
 			sm: "18em",
 			md: "23em",

@@ -4,6 +4,17 @@ import Button from "../Buttons/Main";
 import DealerSelect from "./DealerSelect";
 
 export default function DealerInfo() {
+	const swapInfo = (e, which = "dealer-list") => {
+		document.querySelectorAll(".dealer-view").forEach((block) => {
+			block.classList.add("hidden");
+		});
+		document.querySelectorAll(".toggle-button").forEach((block) => {
+			block.classList.remove("bg-amber-200");
+		});
+		document.querySelector(`#${which}`).classList.remove("hidden");
+		e.currentTarget.classList.add("bg-amber-200");
+	};
+
 	return (
 		<div>
 			<p className="mb-2 text-xs">
@@ -16,9 +27,9 @@ export default function DealerInfo() {
 				alt=""
 				className="mb-4 max-w-xs mx-auto"
 			/> */}
-			<ul className="flex">
-				<li className="basis-11/12 text-sm pr-4">
-					<ul className="">
+			<ul className="flex flex-wrap">
+				<li className="basis-10/12 text-sm">
+					<ul className="dealer-view" id="dealer-list">
 						<li>
 							<DealerSelect
 								dealer="Worcester Sales and Service, Inc."
@@ -51,8 +62,16 @@ export default function DealerInfo() {
 							/>
 						</li>
 					</ul>
+					<div id="dealer-map" className="hidden dealer-view relative min-h-xs">
+						<Image
+							src="https://www.google.com/maps/d/thumbnail?mid=1PnZbJHczAGCMhrJalaRQ8AcKnS8&hl=en"
+							alt=""
+							fill
+							className="object-cover"
+						/>
+					</div>
 				</li>
-				<li className="basis-1/12">
+				<li className="basis-2/12 flex justify-end">
 					<ButtonEdit
 						addClick={() => {
 							// document.querySelector("#dealeredit").classList.toggle("hidden");
@@ -61,6 +80,28 @@ export default function DealerInfo() {
 							});
 						}}
 					/>
+				</li>
+				<li className="basis-full text-xs">
+					<ul className="flex border-t">
+						<li className="basis-6/12">
+							<button
+								className="block p-2 w-full bg-amber-200 toggle-button"
+								onClick={(e) => {
+									swapInfo(e, "dealer-list");
+								}}>
+								List View
+							</button>
+						</li>
+						<li className="basis-6/12">
+							<button
+								className="block p-2 w-full toggle-button"
+								onClick={(e) => {
+									swapInfo(e, "dealer-map");
+								}}>
+								Map View
+							</button>
+						</li>
+					</ul>
 				</li>
 			</ul>
 			<div className="hidden" id="dealeredit">
