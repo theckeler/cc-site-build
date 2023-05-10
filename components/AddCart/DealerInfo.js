@@ -1,6 +1,6 @@
 import Image from "next/image";
-import ButtonEdit from "../Buttons/Edit";
-import Button from "../Buttons/Main";
+import ButtonEdit from "@/buttons/Edit";
+import Button from "@/buttons/Main";
 import DealerSelect from "./DealerSelect";
 
 export default function DealerInfo() {
@@ -20,13 +20,7 @@ export default function DealerInfo() {
 			<p className="mb-2 text-xs">
 				You&rsquo;re shopping available inventory from:
 			</p>
-			{/* <Image
-				src="https://www.cubcadet.com/on/demandware.static/-/Sites/default/dw0e63aa38/images/stores/dealer-logos/WorcestersInc_BW.png"
-				width={423}
-				height={52}
-				alt=""
-				className="mb-4 max-w-xs mx-auto"
-			/> */}
+
 			<ul className="flex flex-wrap">
 				<li className="basis-10/12 text-sm">
 					<ul className="dealer-view" id="dealer-list">

@@ -115,30 +115,18 @@ export default function Cards({
 
 			{!!displayAvailablity && (
 				<div className="mt-2 px-3 pb-4 border-b border-gray-400 lg:border-0">
-					{/* {!!product.inStock && (
-						<div className="flex items-center text-sm">
-							<span className="block bg-green-400 rounded-full h-4 w-4"></span>
-							{product.inStock} [change]
-						</div>
-					)} */}
 					{!!product.available && (
-						// <ul className="flex items-center mt-2">
-						// 	<li className="mr-2">
-						// 		<span className="block bg-green-400 rounded-full h-4 w-4"></span>
-						// 	</li>
-						// 	<li className="text-sm">{product.available}</li>
-						// </ul>
 						<ul className="mt-2">
 							{product.shippingButtons.map(function (button, i) {
 								return (
 									<>
-										<li className="flex items-center w-full text-sm mb-1">
+										<li className="flex items-center w-full text-xs mb-1">
 											<span
-												className={`block rounded-full h-4 w-4 mr-2 ${
+												className={`block rounded-full h-4 w-4 mr-2  ${
 													button.disabled ? "bg-red-500" : "bg-green-500"
 												}`}></span>
 											<span className="">{button.title}</span>
-											<span className="ml-auto pl-1 block text-xs">
+											<span className="ml-auto pl-1 block">
 												{button.disabled
 													? "Unavailable"
 													: `${button.availability}`}

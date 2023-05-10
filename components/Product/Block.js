@@ -34,20 +34,24 @@ export default function ProductBlock({ products }) {
 			/>
 
 			<div
-				className="mb-6 overflow-scrollbar overflow-x-auto py-2"
+				className="mb-6 overflow-scrollbar overflow-x-auto snap-x py-2 flex"
 				id="related-container">
-				<ul className="flex" id="related-scroll">
-					{products.map(function (product, i) {
-						return (
-							<li key={i} className="p-2" style={{ minWidth: "240px" }}>
-								<Card
-									{...{ product }}
-									className="border lg:hover:bg-gray-300 h-full"
-								/>
-							</li>
-						);
-					})}
-				</ul>
+				{/* <ul className="flex snap-x" id="related-scroll"> */}
+				{products.map(function (product, i) {
+					return (
+						<div
+							key={i}
+							className="p-2 snap-center"
+							style={{ minWidth: "240px" }}>
+							<Card
+								key={i}
+								{...{ product }}
+								className="snap-center border lg:hover:bg-gray-300 h-full"
+							/>
+						</div>
+					);
+				})}
+				{/* </ul> */}
 			</div>
 		</div>
 	);

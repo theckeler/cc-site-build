@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import Stars from "@/components/Stars";
+
 export default function DealerSelect({
 	dealer,
 	miles,
@@ -27,7 +29,7 @@ export default function DealerSelect({
 				e.currentTarget.classList.add("bg-amber-100");
 			}}>
 			<ul className="z-0 h-full w-full flex">
-				<li>
+				<li className="w-full">
 					<input
 						type="radio"
 						name="inventory"
@@ -36,8 +38,14 @@ export default function DealerSelect({
 						defaultChecked={selected}
 					/>
 					<span className="font-bold">{dealer}</span>
+
+					<div className="flex items-center text-xs pl-4">
+						Dealer Review: <Stars className="" starSize={12} /> (
+						{Math.floor(Math.random() * 100)})
+					</div>
+
 					<div
-						className={`dealer-select-address text-xs ml-7 mt-1 ${
+						className={`dealer-select-address text-xs mt-1 pl-4 ${
 							!selected && "hidden"
 						}`}>
 						{street}
