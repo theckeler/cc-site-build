@@ -8,7 +8,10 @@ export default function Article({ articles }) {
 			<ul className="flex" id="maintance-scroll">
 				{articles.map(function (article, i) {
 					return (
-						<li key={i} className="p-2" style={{ minWidth: "240px" }}>
+						<li
+							key={i}
+							className="p-2"
+							style={{ minWidth: "240px", maxWidth: "240px" }}>
 							<a
 								href="#top"
 								className="group flex flex-col mb-4 md:mb-0 px-5 py-7 bg-gray-200 lg:hover:bg-amber-200 rounded-md h-full select-auto">

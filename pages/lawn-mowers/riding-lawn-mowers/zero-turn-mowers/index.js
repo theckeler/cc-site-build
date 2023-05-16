@@ -12,12 +12,44 @@ import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
 import Article from "@/product/Article";
 import DealerSelect from "@/addtocart/DealerSelect";
-import ButtonEdit from "@/buttons/Edit";
+//import ButtonEdit from "@/buttons/Edit";
+//import ButtonMap from "@/buttons/Map";
+import Faqs from "@/components/Faqs";
 
 import pdpJSON from "@/data/pdp.json";
 import InputButton from "@/components/InputButton";
 
 export default function Index() {
+	const faqs = [
+		{
+			question: "Nulla fermentum quis tellus sed suscipit?",
+			answer:
+				"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices erat ut justo vulputate, vitae laoreet ligula auctor. Vivamus vel efficitur massa, nec rhoncus velit. Aliquam id efficitur augue, at porta enim. Praesent ut felis at leo dictum elementum eget ac justo. Etiam ultrices euismod tempus. Nunc molestie ultrices luctus. Integer vestibulum tempor tellus sed dignissim. Nam fermentum sit amet ante vitae mollis. Integer at orci nec quam posuere mattis sit amet quis leo. Nulla fermentum quis tellus sed suscipit. Morbi et purus ultricies, laoreet metus posuere, porta leo.",
+		},
+		{
+			question:
+				"Sed eleifend volutpat ante at bibendum est sollicitudin sit amet?",
+			answer:
+				"Morbi rutrum mi quis mauris mollis blandit. Sed porttitor, est quis auctor molestie, purus tellus ultricies tortor, vitae posuere metus massa in turpis. In neque tellus, tempor eget dapibus at, luctus vitae massa. Donec interdum lacus sed dui aliquet, at luctus urna interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tristique dui ut eros faucibus, nec faucibus tellus interdum. Sed cursus fermentum est, non accumsan lectus rutrum sit amet. Sed eleifend volutpat ante, at bibendum est sollicitudin sit amet. Phasellus blandit lorem id enim mollis tincidunt. Integer varius tellus ligula, dignissim volutpat nulla pellentesque ac. Nam mauris elit, luctus vitae justo sed, convallis consequat lectus. Fusce tristique enim ac dolor gravida condimentum. Ut elementum finibus sem vel ultricies. Suspendisse potenti.",
+		},
+		{
+			question:
+				"Etiam dictum sapien tempor laoreet semper diam metus tristique arcu?",
+			answer:
+				"Duis vestibulum augue interdum massa rutrum auctor. Etiam in mattis magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce vulputate enim vitae dolor accumsan vehicula. Integer laoreet sed lorem sit amet volutpat. Nulla at magna varius, cursus turpis vel, elementum lorem. Donec laoreet feugiat erat id mollis. Cras pulvinar, nunc eu faucibus ultrices, mi metus ornare massa, sed malesuada lacus dolor vitae mi. Vestibulum rhoncus, sapien a pellentesque condimentum, orci mi vehicula nisl, at finibus leo odio dictum libero. Sed varius, lorem et ultrices faucibus, magna magna malesuada nunc, sed placerat magna massa nec nunc. Etiam dictum, sapien tempor laoreet semper, diam metus tristique arcu, vel suscipit urna est sit amet arcu. Quisque id est vitae quam hendrerit aliquet ac vitae tortor.",
+		},
+		{
+			question: "Quisque vestibulum leo odio?",
+			answer:
+				"Mauris laoreet, dui a eleifend dictum, enim felis vehicula orci, in congue sem dui vel risus. Cras interdum, nunc in vestibulum tristique, est purus viverra eros, sodales pretium diam mi et sapien. Quisque ornare, ipsum vel suscipit venenatis, leo lectus laoreet ligula, in finibus enim tortor eu odio. In tristique consequat elit vel ornare. Mauris accumsan congue metus, in pulvinar lacus rhoncus vel. Nulla laoreet faucibus nisl, quis condimentum quam finibus in. Quisque vestibulum leo odio, ac mollis lectus rutrum eu. Maecenas ac vehicula dui, sed facilisis diam. Praesent id quam facilisis, viverra turpis et, vehicula augue. In quis risus sed diam sollicitudin sollicitudin. Nunc quis neque facilisis, sagittis mi vel, aliquet libero. Integer posuere, felis scelerisque sagittis egestas, erat elit tempor lacus, ac consequat diam ligula sed velit. Mauris condimentum suscipit fermentum. Sed enim eros, pharetra at turpis non, malesuada eleifend ex. Vestibulum pulvinar laoreet imperdiet.",
+		},
+		{
+			question: "In rutrum lectus id blandit iaculis?",
+			answer:
+				"Aliquam convallis purus quis tristique varius. Etiam vel nibh ultrices, egestas augue vitae, varius nunc. In tristique accumsan mauris, in sollicitudin leo condimentum ut. In finibus dui scelerisque, vulputate tortor non, gravida urna. In rutrum lectus id blandit iaculis. Ut rhoncus, quam sed dictum congue, mi neque bibendum eros, eget sodales erat neque at magna. Nunc nec erat eu est ultrices fringilla eu eget nunc.",
+		},
+	];
+
 	const articles = [
 		{
 			title: "How to Change the Air Filter in Zero-Turn Lawn Mower",
@@ -103,6 +135,9 @@ export default function Index() {
 									padding="p-2"
 								/>
 							</li>
+							{/* <li>
+								<ButtonMap />
+							</li> */}
 						</ul>
 
 						<p className="text-xs mt-1">
@@ -270,18 +305,20 @@ export default function Index() {
 					<CTAHero block={pdpJSON.ctaHero[0]} />
 				</li>
 
-				<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20 pt-8">
-					<h2 className="text-3xl mb-8">Related Articles</h2>
+				<li className="max-w-screen-2xl mx-auto p-3 border-t mt-20">
+					{/* <SEOGreek /> */}
+					<h2 className="text-3xl mb-4">Questions & Answers</h2>
+					<Faqs faqs={faqs} addID="faqs" className="" />
+				</li>
+
+				<li className="max-w-screen-2xl mx-auto p-3">
+					<h2 className="text-3xl mb-4">Related Articles</h2>
 					<Article articles={articles} />
 				</li>
 
-				<li className="max-w-screen-2xl mx-auto p-3 pt-8">
-					<h2 className="text-3xl mb-8">Related Searches</h2>
+				<li className="max-w-screen-2xl mx-auto p-3">
+					<h2 className="text-3xl mb-4">Related Searches</h2>
 					<SEOLinks />
-				</li>
-
-				<li className="max-w-screen-2xl mx-auto p-3 my-10">
-					<SEOGreek />
 				</li>
 			</ul>
 		</>
