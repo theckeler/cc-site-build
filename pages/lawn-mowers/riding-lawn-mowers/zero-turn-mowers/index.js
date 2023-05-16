@@ -14,7 +14,7 @@ import Article from "@/product/Article";
 import DealerSelect from "@/addtocart/DealerSelect";
 import ButtonEdit from "@/buttons/Edit";
 
-import pdpJSON from "@/Data/pdp.json";
+import pdpJSON from "@/data/pdp.json";
 import InputButton from "@/components/InputButton";
 
 export default function Index() {
