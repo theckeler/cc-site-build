@@ -119,20 +119,18 @@ export default function Cards({
 						<ul className="mt-2">
 							{product.shippingButtons.map(function (button, i) {
 								return (
-									<>
-										<li className="flex items-center w-full text-xs mb-1">
-											<span
-												className={`block rounded-full h-4 w-4 mr-2  ${
-													button.disabled ? "bg-red-500" : "bg-green-500"
-												}`}></span>
-											<span className="">{button.title}</span>
-											<span className="ml-auto pl-1 block">
-												{button.disabled
-													? "Unavailable"
-													: `${button.availability}`}
-											</span>
-										</li>
-									</>
+									<li className="flex items-center w-full text-xs mb-1" key={i}>
+										<span
+											className={`block rounded-full h-4 w-4 mr-2  ${
+												button.disabled ? "bg-red-500" : "bg-green-500"
+											}`}></span>
+										<span className="">{button.title}</span>
+										<span className="ml-auto pl-1 block">
+											{button.disabled
+												? "Unavailable"
+												: `${button.availability}`}
+										</span>
+									</li>
 								);
 							})}
 						</ul>

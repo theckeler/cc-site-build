@@ -32,6 +32,7 @@ export default function DealerInfo() {
 								cityState="NORTH RIDGEVILLE, OH 44039"
 								phone="(330) 554-5434"
 								id="Worcester"
+								reviewNum={44}
 								selected
 							/>
 						</li>
@@ -42,6 +43,7 @@ export default function DealerInfo() {
 								street="49 MEADOW LANE"
 								cityState="NORTHFIELD, OH 44067"
 								phone="(330) 467-0020"
+								reviewNum={67}
 								id="Northfield"
 							/>
 						</li>
@@ -52,6 +54,7 @@ export default function DealerInfo() {
 								street="5151 MAYFIELD ROAD"
 								cityState="LYNDHURST, OH 44124"
 								phone="(440) 442-1846"
+								reviewNum={23}
 								id="Marshall"
 							/>
 						</li>

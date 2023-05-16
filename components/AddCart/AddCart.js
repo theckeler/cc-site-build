@@ -1,9 +1,8 @@
-//import Image from "next/image";
-
 import Button from "@/buttons/Main";
 import ButtonEdit from "@/buttons/Edit";
 import DealerInfo from "./DealerInfo";
 import ShippingButton from "./ShippingButton";
+import InputButton from "@/components/InputButton";
 
 export default function AddCart({ shippingButtons }) {
 	const buyButtonsClick = (e) => {
@@ -53,24 +52,11 @@ export default function AddCart({ shippingButtons }) {
 						<p className="text-xs mb-3">
 							The zip code you entered may change the shipping method.
 						</p>
-						<ul className="flex items-center w-full">
-							<li className="basis-full">
-								<input
-									required=""
-									type="text"
-									className="p-3 text-sm w-full rounded-l-lg"
-									id="zipcode-postal-code"
-									placeholder="Enter Zipcode"
-									name="zipcode"
-								/>
-							</li>
-							<li className="basis-1/4">
-								<Button
-									title="Next"
-									className="flex items-center justify-center  p-3 text-sm font-bold bg-amber-400 rounded-r-lg"
-								/>
-							</li>
-						</ul>
+						<InputButton
+							id="zipcode-postal-code"
+							placeholder="Enter Zipcode"
+							name="zipcode"
+						/>
 					</div>
 				</div>
 			</li>

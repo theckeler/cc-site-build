@@ -11,8 +11,11 @@ import CTAHero from "@/cta/Hero";
 import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
 import Article from "@/product/Article";
+import DealerSelect from "@/addtocart/DealerSelect";
+import ButtonEdit from "@/buttons/Edit";
 
 import pdpJSON from "@/Data/pdp.json";
+import InputButton from "@/components/InputButton";
 
 export default function Index() {
 	const articles = [
@@ -67,21 +70,96 @@ export default function Index() {
 							},
 							{ title: "Zero-Turn Mowers" },
 						]}
-						cta={{ title: "Buy Stuff", url: "#products" }}
+						cta={{
+							title: "Help me decide",
+							url: "#product-finder",
+							className: "text-sm",
+						}}
 					/>
 				</li>
 				<li className="max-w-screen-2xl mx-auto p-3">
 					<H1 title="Zero-Turn Mowers" srOnly="Cub Cadet" />
-					<p className="text-sm mt-8 max-w-6xl leading-loose">
+
+					<p className="text-sm leading-loose">
 						Zero-turn lawn mowers answer the call of challenging yards and
 						difficult obstacles. It’s time to explore the full Cub Cadet line-up
 						of innovative zero-turns, including lap bar and Cub Cadet exclusive
 						steering wheel options as part of the Ultima series. With a
 						zero-turn mower, the possibilities are at every turn.
 					</p>
+
+					<div className="p-2 lg:p-4 border mt-4">
+						<ul className="flex flex-col lg:flex-row">
+							<li className="lg:basis-8/12">
+								<h2 className="text-2xl">Shop Your Dealer:</h2>
+							</li>
+							<li className="lg:basis-4/12">
+								<InputButton
+									id="zipcode-postal-code"
+									placeholder="44280"
+									name="zipcode"
+									className="mt-2 lg:mt-0 lg:ml-4"
+									classNameButton="bg-gray-300 text-white"
+									padding="p-2"
+								/>
+							</li>
+						</ul>
+
+						<p className="text-xs mt-1">
+							Donec arcu orci, porttitor in eros aliquam, ultrices convallis
+							magna. Nam finibus molestie dolor. Mauris in varius lorem. Mauris
+							nec erat neque. Phasellus ut enim velit.
+						</p>
+
+						<ul className="mt-2 lg:mt-4 grid grid-cols-1 lg:grid-cols-3 gap-2 lg:divide-x divide-gray-300">
+							<li className="">
+								<DealerSelect
+									dealer="Worcester Sales and Service, Inc."
+									miles="22.1"
+									street="34200 LORAIN ROAD"
+									cityState="NORTH RIDGEVILLE, OH 44039"
+									phone="(330) 554-5434"
+									id="Worcester"
+									reviewNum={44}
+									className="text-xs rounded-lg lg:p-3"
+									showAddress
+									selected
+									activeColor="bg-amber-400"
+								/>
+							</li>
+							<li className="">
+								<DealerSelect
+									dealer="Northfield Power Equipment"
+									miles="25.0"
+									street="49 MEADOW LANE"
+									cityState="NORTHFIELD, OH 44067"
+									phone="(330) 467-0020"
+									reviewNum={67}
+									className="text-xs rounded-lg lg:p-3 lg:ml-2"
+									id="Northfield"
+									activeColor="bg-amber-400"
+									showAddress
+								/>
+							</li>
+							<li className="">
+								<DealerSelect
+									dealer="Marshall Equipment Company"
+									miles="28.5"
+									street="5151 MAYFIELD ROAD"
+									cityState="LYNDHURST, OH 44124"
+									phone="(440) 442-1846"
+									reviewNum={23}
+									className="text-xs rounded-lg lg:p-3 lg:ml-2"
+									id="Marshall"
+									activeColor="bg-amber-400"
+									showAddress
+								/>
+							</li>
+						</ul>
+					</div>
 				</li>
 				<li className="sticky top-0 z-50 bg-gray-200" id="products">
-					<ul className="flex items-center max-w-screen-2xl mx-auto px-3 py-2 mt-20">
+					<ul className="flex items-center max-w-screen-2xl mx-auto px-3 py-2 mt-2 xl:mt-6">
 						<li>
 							<Sort />
 						</li>
@@ -117,7 +195,7 @@ export default function Index() {
 								onClick={(e) => {
 									const productFinder =
 										document.querySelector("#product-finder");
-									productFinder.classList.toggle("hidden");
+									//productFinder.classList.toggle("hidden");
 									productFinder.scrollIntoView();
 								}}>
 								<ul className="flex items-center">
@@ -150,9 +228,9 @@ export default function Index() {
 					<section className="hidden" id="compare">
 						<Compare className="p-2" />
 					</section>
-					<section className="hidden" id="product-finder">
+					{/* <section className="hidden" id="product-finder">
 						<ProductFinder className="p-2" />
-					</section>
+					</section> */}
 				</li>
 				<li className="px-3 py-10">
 					<ul className="md:grid lg:grid-cols-2 xl:grid-cols-4 gap-3 max-w-screen-2xl mx-auto">
@@ -182,7 +260,7 @@ export default function Index() {
 					</div>
 				</li>
 
-				<li className="mt-4 bg-gray-300">
+				<li className="mt-4 bg-gray-300" id="product-finder">
 					<div className="p-3 lg:py-8 max-w-screen-2xl mx-auto">
 						<ProductFinder />
 					</div>

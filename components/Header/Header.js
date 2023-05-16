@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Button from "@/header/Button";
 import Ham from "@/icons/Hamburger";
 import Cart from "@/icons/Cart";
@@ -5,7 +7,7 @@ import Cart from "@/icons/Cart";
 export default function Header({ className }) {
 	return (
 		<ul className="mb-3">
-			<li className="bg-gray-600">
+			{/* <li className="bg-gray-600">
 				<div className="max-w-screen-2xl mx-auto text-center text-white p-1">
 					<ul className="flex flex-col lg:flex-row p-3">
 						<li className="basis-2/12 flex justify-start">
@@ -44,15 +46,18 @@ export default function Header({ className }) {
 						</li>
 					</ul>
 				</div>
-			</li>
+			</li> */}
 
 			<li className="bg-black">
 				<div className="max-w-screen-2xl mx-auto">
 					<ul className="p-3 flex flex-col lg:flex-row text-white">
-						<li>Lawn Mowers</li>
+						<li>
+							<Link href="/">Home</Link>
+						</li>
+						{/* <li>Lawn Mowers</li>
 						<li>Commerical</li>
 						<li>Service & Parts</li>
-						<li>Attachments</li>
+						<li>Attachments</li> */}
 					</ul>
 				</div>
 			</li>

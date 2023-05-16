@@ -1,6 +1,6 @@
 import BreadCrumbs from "@/components/BreadCrumbs";
 import Gallery from "@/components/Gallery";
-import AddCart from "@/components/AddCart/AddCart";
+import AddCart from "@/addtocart/AddCart";
 import Reviews from "@/tabs/Reviews";
 import Features from "@/tabs/Features";
 import Specs from "@/tabs/Specs";
