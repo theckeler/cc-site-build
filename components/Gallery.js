@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ViewMore from "../components/Buttons/ViewMore";
+import ViewMore from "@/buttons/ViewMore";
 
 export default function Gallery({ gallery = null }) {
 	{
@@ -54,7 +54,7 @@ export default function Gallery({ gallery = null }) {
 										block.classList.remove("hidden");
 									});
 							}}
-							className="bg-amber-200 absolute -top-7"
+							className="bg-amber-400 absolute -top-7"
 						/>
 					</li>
 				</ul>

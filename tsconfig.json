@@ -28,6 +28,14 @@
 			"@/header/*": ["components/Header/*"]
 		}
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.js", "pages/lawn-mowers/riding-lawn-mowers/zero-turn-mowers/index.js"],
+	"include": [
+		"next-env.d.ts",
+		"**/*.ts",
+		"**/*.tsx",
+		"pages/index.js",
+		"pages/*.js",
+		"**/[*].js",
+		"pages/lawn-mowers/riding-lawn-mowers/zero-turn-mowers/index.js"
+	],
 	"exclude": ["node_modules"]
 }

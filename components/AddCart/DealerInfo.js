@@ -21,8 +21,8 @@ export default function DealerInfo() {
 				You&rsquo;re shopping available inventory from:
 			</p>
 
-			<ul className="flex flex-wrap">
-				<li className="basis-10/12 text-sm">
+			<ul className="grid grid-cols-[1fr_50px] gap-1">
+				<li className="text-sm">
 					<ul className="dealer-view" id="dealer-list">
 						<li>
 							<DealerSelect
@@ -68,39 +68,38 @@ export default function DealerInfo() {
 						/>
 					</div>
 				</li>
-				<li className="basis-2/12 flex justify-end">
+				<li className="flex justify-end">
 					<ButtonEdit
 						addClick={() => {
-							// document.querySelector("#dealeredit").classList.toggle("hidden");
 							document.querySelectorAll("#dealeredit").forEach((block) => {
 								block.classList.toggle("hidden");
 							});
 						}}
 					/>
 				</li>
-				<li className="basis-full text-xs">
-					<ul className="flex border-t">
-						<li className="basis-6/12">
-							<button
-								className="block p-2 w-full bg-amber-200 toggle-button"
-								onClick={(e) => {
-									swapInfo(e, "dealer-list");
-								}}>
-								List View
-							</button>
-						</li>
-						<li className="basis-6/12">
-							<button
-								className="block p-2 w-full toggle-button"
-								onClick={(e) => {
-									swapInfo(e, "dealer-map");
-								}}>
-								Map View
-							</button>
-						</li>
-					</ul>
+			</ul>
+
+			<ul className="flex border-t">
+				<li className="basis-6/12">
+					<button
+						className="block p-2 w-full bg-amber-200 toggle-button"
+						onClick={(e) => {
+							swapInfo(e, "dealer-list");
+						}}>
+						List View
+					</button>
+				</li>
+				<li className="basis-6/12">
+					<button
+						className="block p-2 w-full toggle-button"
+						onClick={(e) => {
+							swapInfo(e, "dealer-map");
+						}}>
+						Map View
+					</button>
 				</li>
 			</ul>
+
 			<div className="hidden" id="dealeredit">
 				<div className="p-4 bg-amber-200 rounded-md mt-4">
 					<h3 className="font-bold mb-3">Find a Dealer</h3>

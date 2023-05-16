@@ -12,7 +12,7 @@ import H1 from "@/components/H1";
 import H2 from "@/components/H2";
 import Price from "@/components/Price";
 import Desc from "@/components/Desc";
-import SEOGreek from "@/components/SEOGreek";
+// import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
 import ProductBlock from "@/product/Block";
 import Faqs from "@/components/Faqs";
@@ -80,7 +80,7 @@ const IndexID = (id) => {
 
 				<div className="mt-20">
 					<h2 className="text-3xl mb-4">Questions & Answers</h2>
-					<Faqs faqs={faqs} addID="faqs" className="" />{" "}
+					<Faqs faqs={faqs} addID="faqs" className="" />
 				</div>
 			</div>
 		</>
