@@ -9,7 +9,7 @@ import AddtoCart from "../Icons/AddtoCart";
 import Compare from "../Icons/Compare";
 import CatAd from "../Ad";
 
-export default function Cards({
+export default function Card({
 	product,
 	displayButton = true,
 	displayMSRP = true,

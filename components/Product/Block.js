@@ -36,7 +36,6 @@ export default function ProductBlock({ products }) {
 			<div
 				className="mb-6 overflow-scrollbar overflow-x-auto snap-x py-2 flex"
 				id="related-container">
-				{/* <ul className="flex snap-x" id="related-scroll"> */}
 				{products.map(function (product, i) {
 					return (
 						<div
@@ -51,7 +50,6 @@ export default function ProductBlock({ products }) {
 						</div>
 					);
 				})}
-				{/* </ul> */}
 			</div>
 		</div>
 	);

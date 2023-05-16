@@ -15,8 +15,10 @@ import Desc from "@/components/Desc";
 import SEOGreek from "@/components/SEOGreek";
 import SEOLinks from "@/components/SEOLinks";
 import ProductBlock from "@/product/Block";
+import Faqs from "@/components/Faqs";
 
 import productsJSON from "@/data/pdp.json";
+import faqs from "@/data/faqs.json";
 
 const IndexID = (id) => {
 	const product = productsJSON.products[Number(id.slug - 1)];
@@ -77,7 +79,8 @@ const IndexID = (id) => {
 				</div>
 
 				<div className="mt-20">
-					<SEOGreek />
+					<h2 className="text-3xl mb-4">Questions & Answers</h2>
+					<Faqs faqs={faqs} addID="faqs" className="" />{" "}
 				</div>
 			</div>
 		</>

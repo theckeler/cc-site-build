@@ -21,7 +21,7 @@
 			"@/tabs/*": ["components/Tabs/*"],
 			"@/cards/*": ["components/Cards/*"],
 			"@/icons/*": ["components/Icons/*"],
-			"@/data/*": ["Data/*"],
+			"@/data/*": ["data/*"],
 			"@/cta/*": ["components/CTA/*"],
 			"@/product/*": ["components/Product/*"],
 			"@/addtocart/*": ["components/AddCart/*"],
