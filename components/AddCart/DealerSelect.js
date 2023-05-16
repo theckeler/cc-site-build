@@ -19,9 +19,14 @@ export default function DealerSelect({
 	return (
 		<div
 			className={`dealer-select flex relative p-2 ${
-				!!selected && activeColor
+				!!selected ? activeColor : inactiveColor
 			} ${className}`}
 			onChange={(e) => {
+				document.querySelectorAll(".dealer-select").forEach((e) => {
+					e.classList.remove("active");
+				});
+				e.currentTarget.classList.add("active");
+
 				if (!showAddress) {
 					document.querySelectorAll(".dealer-select-address").forEach((e) => {
 						e.classList.add("hidden");
@@ -30,10 +35,16 @@ export default function DealerSelect({
 						.querySelector(".dealer-select-address")
 						.classList.remove("hidden");
 				}
+
 				document.querySelectorAll(".dealer-select").forEach((e) => {
 					e.classList.remove(activeColor);
+					e.classList.add(inactiveColor);
+					if (e.classList.contains("active")) {
+						e.classList.remove(inactiveColor);
+						e.classList.add(activeColor);
+					}
 				});
-				e.currentTarget.classList.add(activeColor);
+				//e.currentTarget.classList.add(activeColor);
 			}}>
 			<ul className="z-0 h-full w-full flex">
 				<li>
