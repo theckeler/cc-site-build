@@ -37,10 +37,10 @@ export default function ShopYourDealer() {
 						id="Worcester"
 						reviewNum={44}
 						className="text-xs rounded-lg lg:p-3"
-						showAddress
 						selected
 						activeColor="bg-amber-400"
 						inactiveColor="bg-gray-200"
+						shopYourDealer
 					/>
 				</li>
 				<li className="">
@@ -55,7 +55,7 @@ export default function ShopYourDealer() {
 						id="Northfield"
 						activeColor="bg-amber-400"
 						inactiveColor="bg-gray-200"
-						showAddress
+						shopYourDealer
 					/>
 				</li>
 				<li className="">
@@ -70,7 +70,7 @@ export default function ShopYourDealer() {
 						id="Marshall"
 						activeColor="bg-amber-400"
 						inactiveColor="bg-gray-200"
-						showAddress
+						shopYourDealer
 					/>
 				</li>
 			</ul>

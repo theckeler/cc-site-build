@@ -32,6 +32,7 @@ export default function Card({
 							src={product.img}
 							alt=""
 							fill
+							className="object-cover"
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						/>
 					</div>
@@ -39,7 +40,7 @@ export default function Card({
 					<CatAd />
 				)}
 
-				<div className="mt-2 text-lg font-bold" itemProp="name">
+				<div className="mt-2 font-bold" itemProp="name">
 					{product.title}
 				</div>
 

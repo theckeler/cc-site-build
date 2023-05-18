@@ -16,7 +16,7 @@ const Faqs = ({ faqs, className, id }) => {
 									dangerouslySetInnerHTML={{
 										__html: block.question,
 									}}
-									className=""></li>
+									className="text-left"></li>
 								<li className="ml-auto">
 									<div className="rotate-45">✖</div>
 								</li>

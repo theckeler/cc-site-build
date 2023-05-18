@@ -12,13 +12,13 @@ export default function DealerSelect({
 	id,
 	reviewNum,
 	className = null,
-	showAddress = false,
+	shopYourDealer = false,
 	activeColor = "bg-amber-100",
 	inactiveColor = "bg-white",
 }) {
 	return (
 		<div
-			className={`dealer-select flex relative p-2 ${
+			className={`dealer-select group flex relative p-2 ${
 				!!selected ? activeColor : inactiveColor
 			} ${className}`}
 			onChange={(e) => {
@@ -27,14 +27,14 @@ export default function DealerSelect({
 				});
 				e.currentTarget.classList.add("active");
 
-				if (!showAddress) {
-					document.querySelectorAll(".dealer-select-address").forEach((e) => {
-						e.classList.add("hidden");
-					});
-					e.currentTarget
-						.querySelector(".dealer-select-address")
-						.classList.remove("hidden");
-				}
+				//if (!shopYourDealer) {
+				document.querySelectorAll(".dealer-select-address").forEach((e) => {
+					e.classList.add("hidden");
+				});
+				e.currentTarget
+					.querySelector(".dealer-select-address")
+					.classList.remove("hidden");
+				//}
 
 				document.querySelectorAll(".dealer-select").forEach((e) => {
 					e.classList.remove(activeColor);
@@ -44,7 +44,6 @@ export default function DealerSelect({
 						e.classList.add(activeColor);
 					}
 				});
-				//e.currentTarget.classList.add(activeColor);
 			}}>
 			<ul className="z-0 h-full w-full flex">
 				<li>
@@ -57,15 +56,17 @@ export default function DealerSelect({
 					/>
 				</li>
 				<li className="w-full">
-					<ul
+					{/* <ul
 						className={`flex flex-col ${
-							!!showAddress && "xl:items-center xl:flex-row"
-						}`}>
+							!!shopYourDealer && "xl:items-center xl:flex-row"
+						}`}> */}
+					<ul className={`flex flex-col`}>
 						<li className="font-bold">{dealer}</li>
-						<li
+						{/* <li
 							className={`flex items-center text-xs mt-1 ${
-								!!!!showAddress && "xl:mt-0 xl:ml-2"
-							}`}>
+								!!shopYourDealer && "xl:mt-0 xl:ml-2"
+							}`}> */}
+						<li className={`flex items-center text-xs mt-1 xl:mt-0 xl:ml-2"`}>
 							<span className="md:hidden">Dealer Review:</span>{" "}
 							<Stars className="" starSize={12} /> ({reviewNum})
 						</li>
@@ -75,9 +76,13 @@ export default function DealerSelect({
 						Dealer Review: <Stars className="" starSize={12} /> ({reviewNum})
 					</div> */}
 
+					{/* <div
+						className={`dealer-select-address text-xs mt-1 ${
+							!selected && !shopYourDealer && "hidden"
+						}`}> */}
 					<div
 						className={`dealer-select-address text-xs mt-1 ${
-							!selected && !showAddress && "hidden"
+							!selected && "hidden"
 						}`}>
 						{street}
 						<br />
